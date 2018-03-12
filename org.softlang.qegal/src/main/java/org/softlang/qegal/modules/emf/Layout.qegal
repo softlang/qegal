@@ -6,7 +6,7 @@ import org.softlang.qegal.buildins.Children
 @prefix sl: <http://org.softlang.com/>.
 
 (?file, sl:manifestsAs, sl:File) Children(?file, ?project, "META-INF", "MANIFEST.MF") ->
-    (?y, sl:elementOf, sl:Manifest) (?project, sl:elementOf, sl:OSGiProject).
+    (?file, sl:elementOf, sl:Manifest) (?project, sl:elementOf, sl:OSGiProject).
 
 (?file, sl:elementOf, sl:Manifest) StrManifest(?file, "Require-Bundle", ?x)
     // Replace all strings.
