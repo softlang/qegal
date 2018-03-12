@@ -1,0 +1,16 @@
+// Phase 0
+// Detection of XML Specific knowledge.
+
+@prefix sl: <http://org.softlang.com/>.
+@prefix system: <http://org.softlang.com/qegal/>.
+@prefix metric: <http://org.softlang.com/qegal/metrics/>.
+
+(?x sl:manifestsAs sl:File) extension(?x,?ext)
+    notEqual(?ext,"java")
+    notEqual(?ext,"html")
+    notEqual(?ext,"xhtml")
+    notEqual(?ext,"svg")
+    notEqual(?ext,"cpp")
+    notEqual(?ext,"h")
+    xmlWellformed(?x) ->
+    (?x sl:elementOf sl:XML).

@@ -1,0 +1,52 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+/* OMG namespace */
+@prefix omg: <http://www.omg.org/>.
+
+// Decompose Ecore into structural containment features needed for instance decomposition.
+[ecoreStructuralFeatureXMI: (?classifier, sl:elementOf, sl:EcoreClassifierXMI) ->
+    DecXml(?classifier, "/eStructuralFeatures[@containment='true']", sl:partOf, ?classifier)
+    DecXml(?classifier, "/eStructuralFeatures[@containment='true']", sl:elementOf, sl:EcoreStructuralFeatureXMI)]
+
+// Extract reference and names of these structural features.
+[featureReferences: (?structuralFeature, sl:elementOf,sl:EcoreStructuralFeatureXMI) (?structuralFeature, sl:partOf, ?classifier)
+    (?classifier, sl:nsUri, ?nsUri) StrXml(?structuralFeature, "/@eType", ?type) UriConcat(?nsUri, ?type, ?references) ->
+    (?structuralFeature, sl:references, ?references)]
+
+[featureName: (?structuralFeature, sl:elementOf, sl:EcoreStructuralFeatureXMI) ->
+    StrXml(?structuralFeature, ?structuralFeature, sl:name, "/@name")]
+
+// XMI files detection using namespaces.  TODO: xmlns relationship is way too specific for MegaL
+[xmlNS: (?file, sl:elementOf, sl:XML) -> UriXml(?file, ?file, sl:xmlns, "/namespace::*")]
+
+[elementOfXMI: (?file, sl:elementOf, sl:XML) (?file, sl:xmlns, omg:XMI) -> (?file, sl:elementOf, sl:XMI)]
+
+// Root instances.
+[xmiFragmentConformance: (?file, sl:elementOf, sl:XMI)  (?file, sl:xmlns, ?nsUri) 
+	(?xmiPackage, sl:nsUri, ?nsUri)
+    (?xmiPackage, sl:elementOf, sl:EcorePackageXMI) 
+    (?xmiPackage, sl:nsPrefix, ?nsPrefix)
+    (?xmiClassifier, sl:partOf, ?xmiPackage) 
+    (?xmiClassifier, sl:elementOf, sl:EcoreClassifierXMI)
+    (?xmiClassifier, sl:name, ?classifierName) 
+    StrConcat("/", ?nsPrefix, ":", ?classifierName, ?xpath) ->
+    DecXml(?file,?xpath,sl:conformsTo,?xmiClassifier)
+    DecXml(?file,?xpath,sl:elementOf,sl:XMIFragment)]
+
+// Nested instances.
+[nestedXmiFragmentConformance: (?xmiFragment, sl:elementOf, sl:XMIFragment)
+    (?xmiFragment, sl:conformsTo, ?xmiClassifier)
+    (?xmiStructuralFeature, sl:partOf, ?xmiClassifier)
+    (?xmiStructuralFeature, sl:elementOf, sl:EcoreStructuralFeatureXMI)
+    (?xmiStructuralFeature, sl:name, ?sfname)
+    (?xmiStructuralFeature, sl:references, ?xmiClassifierUri)
+    (?referencesXmiClassifier, sl:uri, ?xmiClassifierUri)
+    (?referencesXmiClassifier, sl:elementOf, sl:EcoreClassifierXMI)
+    StrConcat("/",?sfname,?xpath) ->
+    DecXml(?xmiFragment,?xpath,sl:conformsTo,?referencesXmiClassifier)
+    DecXml(?xmiFragment,?xpath,sl:elementOf,sl:XMIFragment)]

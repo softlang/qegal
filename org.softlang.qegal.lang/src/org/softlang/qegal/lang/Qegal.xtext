@@ -1,0 +1,48 @@
+grammar org.softlang.qegal.lang.Qegal with org.eclipse.xtext.xbase.Xbase
+
+generate qegal "http://www.softlang.org/qegal/lang/Qegal"
+
+Model:
+	('layer' layer=INT)?
+	importSection=XImportSection?
+	((prefix+=Prefix | instances+=Instance | rules+=Rule))*;
+
+Prefix:
+	'@prefix' name=ID ':' uri=URI '.';
+
+Instance:
+	'instance' triple=Triple '.';
+
+Rule:
+	((left+=Term)+ direction=('->' | '<-') (right+=Term)+ '.') |
+	'[' (name=ID)? ':' (left+=Term)+ direction=('->' | '<-') (right+=Term)+ ']';
+
+Term:
+	Triple | Builtin;
+
+Triple:
+	'(' subject=Node ',' predicate=Node ',' object=Node ')';
+
+Builtin:
+	builin=JvmTypeReference '(' (nodes+=Node (',' nodes+=Node)*)? ')';
+
+Node:
+	URIRef | Variable | Literal | URILocal;
+
+URILocal:
+	prefix=[Prefix|ID] ':' name=ID;
+
+URIRef:
+	value=URI;
+
+Variable:
+	name=VAR;
+
+Literal:
+	value=STRING;
+
+terminal URI:
+	'<' ('a'..'z' | ':' | 'A'..'Z' | '.' | '0'..'9' | '/' | '-' | '_' | '#')* '>';
+
+terminal VAR:
+	('?') ('a'..'z' | 'A'..'Z' | '_') ('a'..'z' | 'A'..'Z' | '-' | '_' | '0'..'9')*; 

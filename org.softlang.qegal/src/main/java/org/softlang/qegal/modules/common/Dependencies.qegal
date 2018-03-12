@@ -1,0 +1,11 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// TODO: Add prefix path thing!
+(?file1, sl:role, sl:BuildFile) (?file1, sl:decOccurs, ?reference1)	(?file1, sl:refOccurs, ?reference2) (?reference1, sl:resolvesTo, ?project1) (?reference2, sl:resolvesTo, ?project2)
+	-> (?project1, sl:dependsOn, ?project2).

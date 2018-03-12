@@ -1,0 +1,3 @@
+@prefix sl: <http://org.softlang.com/> .
+
+sl:PDEProject sl:subsetOf sl:Project.

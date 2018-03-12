@@ -1,0 +1,205 @@
+<repository:/Nested.genmodel#/genmodel:GenModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.genmodel> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageGenmodel> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.genmodel> .
+
+<repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "NestedCls2" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/nested> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://org.softlang/nested#//NestedCls2> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//NestedCls2" .
+
+<repository:/>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> .
+
+<repository:/Nested.ecore#/ecore:EPackage(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageXMI> ;
+      <http://org.softlang.com/nsPrefix>
+              "nested" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/nested> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/Nested.ecore>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> , <http://org.softlang.com/Ecore> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/Ecore> , <http://www.w3.org/2001/XMLSchema-instance> , <http://www.omg.org/XMI> .
+
+<repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "NestedCls" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/nested> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://org.softlang/nested#//NestedCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//NestedCls" .
+
+<repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageGenmodel> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.genmodel#/genmodel:GenModel(1)> , <repository:/Nested.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.genmodel> .
+
+<repository:/Nested.genmodel>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Genmodel> , <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/GenModel> , <http://www.omg.org/XMI> .
+
+<http://org.softlang.com/qegal/Evaluation>
+      <http://org.softlang.com/Ecore>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/EcoreClassifierXMI>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)> ;
+      <http://org.softlang.com/EcorePackageGenmodel>
+              <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/EcorePackageXMI>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/File>
+              <repository:/Nested.genmodel> , <repository:/Nested.ecore> ;
+      <http://org.softlang.com/Folder>
+              <repository:/> ;
+      <http://org.softlang.com/Genmodel>
+              <repository:/Nested.genmodel> ;
+      <http://org.softlang.com/XMI>
+              <repository:/Nested.genmodel> , <repository:/Nested.ecore> ;
+      <http://org.softlang.com/XMIFragment>
+              <repository:/Nested.genmodel#/genmodel:GenModel(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/foreignModel(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/XML>
+              <repository:/Nested.genmodel> , <repository:/Nested.ecore> ;
+      <http://org.softlang.com/elementOf>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-http://org.softlang.com/XMIFragment> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.ecore-http://org.softlang.com/XML> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/Nested.genmodel-http://org.softlang.com/Genmodel> , <repository:/Nested.genmodel-http://org.softlang.com/XML> , <repository:/Nested.ecore-http://org.softlang.com/Ecore> , <repository:/Nested.ecore#/ecore:EPackage(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.genmodel-http://org.softlang.com/XMI> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/foreignModel(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/Nested.ecore#/ecore:EPackage(1)-http://org.softlang.com/EcorePackageXMI> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://org.softlang.com/XMIFragment> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)-http://org.softlang.com/EcorePackageXMI> , <repository:/Nested.genmodel#/genmodel:GenModel(1)-http://org.softlang.com/XMIFragment> , <repository:/Nested.ecore-http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <repository:/Nested.ecore-http://org.softlang.com/File> , <repository:/Nested.genmodel-http://org.softlang.com/File> , <repository:/-http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/name>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-NestedCls> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-NestedInnerCls> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-NestedCls2> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-NestedInnerCls2> ;
+      <http://org.softlang.com/nsPrefix>
+              <repository:/Nested.ecore#/ecore:EPackage(1)-nested> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)-inner> ;
+      <http://org.softlang.com/nsUri>
+              <repository:/Nested.ecore#/ecore:EPackage(1)-http://org.softlang/nested> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)-http://org.softlang/nested/inner> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/nested> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://org.softlang/nested> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-http://org.softlang/nested/inner> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-http://org.softlang/nested/inner> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.genmodel-repository:/> , <repository:/Nested.ecore#/ecore:EPackage(1)-repository:/Nested.ecore> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/Nested.genmodel#/genmodel:GenModel(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-repository:/Nested.ecore#/ecore:EPackage(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/Nested.genmodel> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/Nested.ecore#/ecore:EPackage(1)> , <repository:/Nested.ecore-repository:/> , <repository:/Nested.genmodel#/genmodel:GenModel(1)-repository:/Nested.genmodel> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/Nested.genmodel#/genmodel:GenModel(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)-repository:/Nested.ecore#/ecore:EPackage(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)-repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/qegal/E>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/qegal/EJ1>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> , <repository:/Nested.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/qegal/G>
+              <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-repository:/Nested.ecore> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-repository:/Nested.ecore> , <repository:/Nested.ecore#/ecore:EPackage(1)-repository:/Nested.ecore> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/nestedGenPackages(1)-repository:/Nested.genmodel> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/Nested.genmodel> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/Nested.ecore> , <repository:/Nested.genmodel#/genmodel:GenModel(1)-repository:/Nested.genmodel> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/Nested.genmodel> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)-repository:/Nested.ecore> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-repository:/Nested.ecore> , <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/Nested.genmodel> ;
+      <http://org.softlang.com/uri>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/nested#//NestedCls> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-http://org.softlang/nested/inner#//NestedInnerCls2> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://org.softlang/nested#//NestedCls2> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-http://org.softlang/nested/inner#//NestedInnerCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(1)-#//NestedCls> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)-#//inner/NestedInnerCls2> , <repository:/Nested.ecore#/ecore:EPackage(1)-#/> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)-#//inner/NestedInnerCls> , <repository:/Nested.genmodel#/genmodel:GenModel(1)-#/> , <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)-#//inner> , <repository:/Nested.ecore#/ecore:EPackage(1)/eClassifiers(2)-#//NestedCls2> ;
+      <http://org.softlang.com/xmlns>
+              <repository:/Nested.genmodel-http://www.eclipse.org/emf/2002/GenModel> , <repository:/Nested.ecore-http://www.eclipse.org/emf/2002/Ecore> , <repository:/Nested.genmodel-http://www.omg.org/XMI> , <repository:/Nested.ecore-http://www.w3.org/2001/XMLSchema-instance> , <repository:/Nested.ecore-http://www.omg.org/XMI> .
+
+<repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageXMI> ;
+      <http://org.softlang.com/nsPrefix>
+              "inner" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/nested/inner> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//inner" .
+
+<repository:/Nested.genmodel#/genmodel:GenModel(1)/foreignModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.genmodel> .
+
+<repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.genmodel> .
+
+<repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "NestedInnerCls" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/nested/inner> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://org.softlang/nested/inner#//NestedInnerCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//inner/NestedInnerCls" .
+
+<repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)/eClassifiers(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "NestedInnerCls2" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/nested/inner> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Nested.ecore#/ecore:EPackage(1)/eSubpackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Nested.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://org.softlang/nested/inner#//NestedInnerCls2> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//inner/NestedInnerCls2" .

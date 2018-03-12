@@ -1,0 +1,22 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+import org.softlang.qegal.buildins.Children
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// TODO: This needs to be reverted on parsing xml. Building an effective model for poms is not in this scope.
+(?file, sl:manifestsAs, sl:File) (?file, sl:elementOf, sl:XML) Children(?file, ?project, "pom.xml") ->
+    (?file, sl:elementOf, sl:Pom) (?file, sl:role, sl:BuildFile).
+
+//(?file, sl:elementOf, sl:Pom) (?file, sl:partOf, ?project) StrPom(?file, "/groupId", ?groupId) StrPom(?file, "/artifactId", ?artifactId)
+//    UriConcat(sl:dec ,"/",?groupId, ":", ?artifactId, ?reference)  -> (?file, sl:decOccurs, ?reference) (?reference, sl:resolvesTo, ?project).
+//    
+//(?file, sl:elementOf, sl:Pom) ->
+//	DecPom(?file, "/dependencies", sl:partOf, ?file)
+//	DecPom(?file, "/dependencies", sl:elementOf, sl:PomDependency).
+//
+//(?dependency, sl:partOf, ?pom) (?dependency, sl:elementOf, sl:PomDependency) StrPom(?dependency,"/groupId",?groupId)
+//	StrPom(?dependency,"/artifactId",?artifactId) UriConcat(sl:dec ,"/", ?groupId, ":", ?artifactId, ?reference) -> (?pom, sl:refOccurs, ?reference).

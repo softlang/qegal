@@ -1,0 +1,13 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+import org.softlang.qegal.buildins.Children
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// TODO: Add dependencies.
+(?file, sl:manifestsAs, sl:File) (?file, sl:elementOf, sl:XML) Children(?file, ?project, "build.xml") ->
+    (?file, sl:elementOf, sl:Ant) (?file, sl:role, sl:BuildFile).
+    

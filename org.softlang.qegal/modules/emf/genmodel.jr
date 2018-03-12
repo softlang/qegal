@@ -1,0 +1,43 @@
+@prefix sl: <http://org.softlang.com/>.
+@prefix system: <http://org.softlang.com/qegal/>.
+
+[languageGenmodel: (?x sl:manifestsAs sl:File) extension(?x,"genmodel") (?x sl:elementOf sl:XML) ->
+    (?x sl:elementOf sl:Genmodel)]
+
+//(?genmodel sl:elementOf sl:Genmodel) (strXml(?genmodel,"/genmodel:GenModel/usedGenPackages",?query) -> strText(?query,"").
+
+//TODO: build uri to existing ecore
+[genModelForeignModel: (?rule sl:elementOf sl:Genmodel) StrXml(?genmodel,"/genmodel:GenModel/foreignModel",?foreignmodel) 
+    -> (?genmodel sl:refersTo ?foreignmodel)]
+
+[genModelDecPack: (?genmodel sl:elementOf sl:Genmodel) -> 
+    DecXml(?x, "/genmodel:GenModel/genPackages", sl:partOf,?genmodel)
+    DecXml(?x, "/genmodel:GenModel/genPackages", sl:elementOf, sl:GenPackage)]
+
+[genModelPackMapping: (?genpack sl:elementOf sl:GenPackage) 
+    (?genpack sl:partOf ?model)
+    StrXml(?model, "/genModel:GenModel/@modelDirectory", ?modelDir)
+    //javapackage = modelDir + basePack
+    //ecorePackage = folder of genModel + ecorePack
+    StrXml(?genpack,"/@basePackage",?basePack)
+    StrXml(?genpack,"/@ecorePackage",?ecorePack)
+    -> 
+    (?genpack sl:mapsFrom ?ecorePackUri)
+    (?genpack sl:mapsTo ?javaPackUri)]
+    
+
+[genPackDecClass: (?genpack sl:elementOf sl:GenPackage) ->
+    DecXml(?genpack,"/genClasses",sl:partOf,genpack)
+    DecXml(?genpack,"/genClasses",sl:elementOf sl:GenClass)]
+    
+[genModelClassMapping: (?genclass sl:elementOf sl:GenClass)
+    (?genpack sl:mapsFrom ?ecorePackUri)
+    (?genpack sl:mapsTo ?javaPackUri)
+    (?ecoreclassifier, sl:elementOf, sl:EcoreClassifierXMI)
+    (?javaclassifier sl:elementOf sl:EcoreClassifierJava)
+    (?javaclassifier sl:name ?javaclassifiername) //??? maybe solution
+    StrXml(?genpack,"/@ecoreClass",?ecoreClass)
+    //concatenate ecoreclassifier = ecorePackURI + ecoreClassURI????
+	->
+	(?genclass sl:mapsFrom ?ecoreclassifier)
+	(?genclass sl:mapsTo ?javaclassifier)]

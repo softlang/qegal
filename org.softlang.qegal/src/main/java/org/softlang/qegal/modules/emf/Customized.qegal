@@ -1,0 +1,26 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// Customisation of the interface
+(?file, sl:elementOf, sl:EcoreClassifierJava)
+ 	StrJava(?file, "comments", ?comment)
+ 	Regex(?comment, "(?s).*[\\n\\r].*@generated NOT.*") ->
+    (?file, sl:elementOf, sl:EcoreClassifierCustomizedJava).
+
+// Customisation of the implementation in convenient path.
+(?file, sl:elementOf, sl:EcoreClassifierJava) (?file, sl:partOf, ?folder)
+	StrJava(?file, "type[1]/extendedTypes[1]/name", ?name)
+	StrConcat(?folder,"/impl/",?name,"Impl.java",?impl)
+	(?impl, sl:elementOf, sl:Java)
+ 	StrJava(?impl, "comments", ?comment)
+ 	Regex(?comment, "(?s).*[\\n\\r].*@generated NOT.*") -> 
+    (?file, sl:elementOf, sl:EcoreClassifierCustomizedJava).
+    
+(?pkg, sl:elementOf, sl:EcorePackageJava) (?classifierJava, sl:partOf, ?pkg) (?classifierJava, sl:elementOf, sl:EcoreClassifierCustomizedJava) ->
+    (?pkg,sl:elementOf,sl:EcorePackageCustomJava).
+ 

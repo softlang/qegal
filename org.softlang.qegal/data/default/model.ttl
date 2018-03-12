@@ -1,0 +1,135 @@
+<repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Default.genmodel> .
+
+<repository:/Default.genmodel#/genmodel:GenModel(1)/foreignModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Default.genmodel> .
+
+<http://org.softlang.com/qegal/Evaluation>
+      <http://org.softlang.com/Ecore>
+              <repository:/Default.ecore> ;
+      <http://org.softlang.com/EcoreClassifierXMI>
+              <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)> ;
+      <http://org.softlang.com/EcorePackageGenmodel>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/EcorePackageXMI>
+              <repository:/Default.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/File>
+              <repository:/Default.genmodel> , <repository:/Default.ecore> ;
+      <http://org.softlang.com/Folder>
+              <repository:/> ;
+      <http://org.softlang.com/Genmodel>
+              <repository:/Default.genmodel> ;
+      <http://org.softlang.com/XMI>
+              <repository:/Default.genmodel> , <repository:/Default.ecore> ;
+      <http://org.softlang.com/XMIFragment>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/Default.genmodel#/genmodel:GenModel(1)/foreignModel(1)> , <repository:/Default.ecore#/ecore:EPackage(1)> , <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/Default.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/XML>
+              <repository:/Default.genmodel> , <repository:/Default.ecore> ;
+      <http://org.softlang.com/elementOf>
+              <repository:/Default.ecore#/ecore:EPackage(1)-http://org.softlang.com/XMIFragment> , <repository:/Default.ecore#/ecore:EPackage(1)-http://org.softlang.com/EcorePackageXMI> , <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-http://org.softlang.com/XMIFragment> , <repository:/Default.genmodel#/genmodel:GenModel(1)/foreignModel(1)-http://org.softlang.com/XMIFragment> , <repository:/Default.genmodel#/genmodel:GenModel(1)-http://org.softlang.com/XMIFragment> , <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/XMIFragment> , <repository:/Default.ecore-http://org.softlang.com/Ecore> , <repository:/Default.genmodel-http://org.softlang.com/XML> , <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/Default.genmodel-http://org.softlang.com/XMI> , <repository:/Default.ecore-http://org.softlang.com/XML> , <repository:/Default.genmodel-http://org.softlang.com/Genmodel> , <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/Default.ecore-http://org.softlang.com/XMI> , <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/manifestsAs>
+              <repository:/Default.ecore-http://org.softlang.com/File> , <repository:/Default.genmodel-http://org.softlang.com/File> , <repository:/-http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/name>
+              <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-DefaultCls> ;
+      <http://org.softlang.com/nsPrefix>
+              <repository:/Default.ecore#/ecore:EPackage(1)-default> ;
+      <http://org.softlang.com/nsUri>
+              <repository:/Default.ecore#/ecore:EPackage(1)-http://org.softlang/default> , <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/default> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/Default.ecore#/ecore:EPackage(1)> , <repository:/Default.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/Default.genmodel#/genmodel:GenModel(1)> , <repository:/Default.genmodel#/genmodel:GenModel(1)-repository:/Default.genmodel> , <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/Default.genmodel> , <repository:/Default.ecore-repository:/> , <repository:/Default.genmodel-repository:/> , <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/Default.genmodel#/genmodel:GenModel(1)> , <repository:/Default.ecore#/ecore:EPackage(1)-repository:/Default.ecore> ;
+      <http://org.softlang.com/qegal/E>
+              <repository:/Default.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/qegal/EJ1>
+              <repository:/Default.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/qegal/G>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/Default.genmodel> , <repository:/Default.genmodel#/genmodel:GenModel(1)-repository:/Default.genmodel> , <repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/Default.genmodel> , <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/Default.ecore> , <repository:/Default.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/Default.genmodel> , <repository:/Default.ecore#/ecore:EPackage(1)-repository:/Default.ecore> ;
+      <http://org.softlang.com/uri>
+              <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/default#//DefaultCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              <repository:/Default.genmodel#/genmodel:GenModel(1)-#/> , <repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)-#//DefaultCls> , <repository:/Default.ecore#/ecore:EPackage(1)-#/> ;
+      <http://org.softlang.com/xmlns>
+              <repository:/Default.ecore-http://www.eclipse.org/emf/2002/Ecore> , <repository:/Default.genmodel-http://www.omg.org/XMI> , <repository:/Default.ecore-http://www.w3.org/2001/XMLSchema-instance> , <repository:/Default.genmodel-http://www.eclipse.org/emf/2002/GenModel> , <repository:/Default.ecore-http://www.omg.org/XMI> .
+
+<repository:/Default.ecore#/ecore:EPackage(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageXMI> ;
+      <http://org.softlang.com/nsPrefix>
+              "default" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/default> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Default.ecore> ;
+      <http://org.softlang.com/resource>
+              <repository:/Default.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/Default.genmodel>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Genmodel> , <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/GenModel> , <http://www.omg.org/XMI> .
+
+<repository:/Default.ecore#/ecore:EPackage(1)/eClassifiers(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "DefaultCls" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/default> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Default.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Default.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://org.softlang/default#//DefaultCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//DefaultCls" .
+
+<repository:/Default.genmodel#/genmodel:GenModel(1)/genPackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EcorePackageGenmodel> , <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Default.genmodel> , <repository:/Default.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/Default.genmodel> .
+
+<repository:/>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> .
+
+<repository:/Default.ecore>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> , <http://org.softlang.com/Ecore> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/Ecore> , <http://www.w3.org/2001/XMLSchema-instance> , <http://www.omg.org/XMI> .
+
+<repository:/Default.genmodel#/genmodel:GenModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/Default.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/Default.genmodel> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .

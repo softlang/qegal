@@ -1,0 +1,13 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+/* Qegal system namespace */
+@prefix sys: <http://org.softlang.com/qegal/>.
+
+// Metric for counting all manifestation and language types.
+(sys:Evaluation, ?m, ?x)  <- (?x, sl:manifestsAs, ?m).
+(sys:Evaluation, ?l, ?x)  <- (?x, sl:elementOf, ?l).

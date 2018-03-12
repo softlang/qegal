@@ -1,0 +1,7 @@
+org.softlang.qegal.buildins.XmlWellformed
+org.softlang.qegal.buildins.Extension
+org.softlang.qegal.buildins.decompose.DecFs
+org.softlang.qegal.buildins.decompose.DecXml
+org.softlang.qegal.buildins.decompose.DecJava
+org.softlang.qegal.buildins.decompose.StrJava
+org.softlang.qegal.buildins.decompose.StrXml

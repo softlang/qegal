@@ -1,0 +1,42 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+import org.softlang.qegal.buildins.Children
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// OSGi
+(?file, sl:manifestsAs, sl:File) Children(?file, ?project, "META-INF", "MANIFEST.MF") ->
+    (?file, sl:elementOf, sl:Manifest).
+
+// Maven
+(?file, sl:manifestsAs, sl:File) (?file, sl:elementOf, sl:XML) Children(?file, ?project, "pom.xml") ->
+    (?file, sl:elementOf, sl:Pom).
+    
+// Ant
+(?file, sl:manifestsAs, sl:File) (?file, sl:elementOf, sl:XML) Children(?file, ?project, "build.xml") ->
+    (?file, sl:elementOf, sl:Ant).
+    
+// Gradle
+(?file, sl:manifestsAs, sl:File) Children(?file,?project,"build.gradle") -> 
+	(?file, sl:elementOf, sl:Gradle).
+	
+// Extraction of declaration.
+(?file, sl:elementOf, sl:Manifest)
+	StrManifest(?file, "Bundle-SymbolicName", ?literal) ReplaceAllToUri(?literal, "(;[^,]*)|\\s", "", ?declaration) ->
+    (?file, sl:decOccurs, ?declaration).
+
+// Extraction of references.
+(?file, sl:elementOf, sl:Manifest) StrManifest(?file, "Require-Bundle", ?x)
+    // Replace all strings.
+    ReplaceAll(?x, '("[^"]*)"', "", ?xi) 
+    // Replace all details.
+    ReplaceAll(?xi, "(;[^,]*)|\\s", "", ?xii) ->
+    SplitToUri(?xii, ?file, sl:refOccurs, ',').
+
+// Connection of dependencies.
+(?a, sl:elementOf, sl:Manifest) (?b, sl:elementOf, sl:Manifest) 
+	(?a, sl:decOccurs, ?deca) (?a, sl:refOccurs, ?decb) (?b, sl:decOccurs, ?decb) ->
+    (?deca, sl:dependsOn, ?decb).

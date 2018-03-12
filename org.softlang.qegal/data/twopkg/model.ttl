@@ -1,0 +1,279 @@
+<repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EcorePackageGenmodel> , <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkg.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.genmodel> .
+
+<repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EcorePackageGenmodel> , <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkg.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.genmodel> .
+
+<repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/FirstPkg.genmodel> .
+
+<repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EcorePackageGenmodel> , <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)> , <repository:/FirstPkg.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/FirstPkg.genmodel> .
+
+<repository:/SecondPkg.genmodel#/genmodel:GenModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.genmodel> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> .
+
+<repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkgReferencing.genmodel> .
+
+<repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.genmodel> .
+
+<repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "FirstPkgCls" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/firstPkg> ;
+      <http://org.softlang.com/partOf>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/FirstPkg.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://org.softlang/firstPkg#//FirstPkgCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FirstPkgCls" .
+
+<repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/foreignModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkgReferencing.genmodel> .
+
+<repository:/SecondPkg.ecore>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> , <http://org.softlang.com/Ecore> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/Ecore> , <http://www.w3.org/2001/XMLSchema-instance> , <http://www.omg.org/XMI> .
+
+<repository:/FirstPkg.ecore#/ecore:EPackage(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageXMI> ;
+      <http://org.softlang.com/nsPrefix>
+              "firstPkg" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/firstPkg> ;
+      <http://org.softlang.com/partOf>
+              <repository:/FirstPkg.ecore> ;
+      <http://org.softlang.com/resource>
+              <repository:/FirstPkg.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/SecondPkg.genmodel>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Genmodel> , <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/GenModel> , <http://www.omg.org/XMI> .
+
+<repository:/SecondPkgReferencing.genmodel>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Genmodel> , <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/GenModel> , <http://www.omg.org/XMI> .
+
+<repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "SecondPkgCls" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/secondPkg> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://org.softlang/secondPkg#//SecondPkgCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//SecondPkgCls" .
+
+<repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EcorePackageGenmodel> , <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkgReferencing.genmodel> .
+
+<repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.genmodel> .
+
+<repository:/SecondPkg.ecore#/ecore:EPackage(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageXMI> ;
+      <http://org.softlang.com/nsPrefix>
+              "secondPkg" ;
+      <http://org.softlang.com/nsUri>
+              <http://org.softlang/secondPkg> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.ecore> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkgReferencing.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkgReferencing.genmodel> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/FirstPkg.ecore>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> , <http://org.softlang.com/Ecore> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/Ecore> , <http://www.w3.org/2001/XMLSchema-instance> , <http://www.omg.org/XMI> .
+
+<http://org.softlang.com/qegal/Evaluation>
+      <http://org.softlang.com/Ecore>
+              <repository:/FirstPkg.ecore> , <repository:/SecondPkg.ecore> ;
+      <http://org.softlang.com/EcoreClassifierXMI>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)> ;
+      <http://org.softlang.com/EcorePackageGenmodel>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/EcorePackageXMI>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/File>
+              <repository:/FirstPkg.ecore> , <repository:/SecondPkg.ecore> , <repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkg.genmodel> , <repository:/FirstPkg.genmodel> ;
+      <http://org.softlang.com/Folder>
+              <repository:/> ;
+      <http://org.softlang.com/Genmodel>
+              <repository:/SecondPkgReferencing.genmodel> , <repository:/FirstPkg.genmodel> , <repository:/SecondPkg.genmodel> ;
+      <http://org.softlang.com/XMI>
+              <repository:/FirstPkg.ecore> , <repository:/SecondPkg.ecore> , <repository:/SecondPkgReferencing.genmodel> , <repository:/FirstPkg.genmodel> , <repository:/SecondPkg.genmodel> ;
+      <http://org.softlang.com/XMIFragment>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/foreignModel(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)/genClasses(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/XML>
+              <repository:/FirstPkg.ecore> , <repository:/SecondPkg.ecore> , <repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkg.genmodel> , <repository:/FirstPkg.genmodel> ;
+      <http://org.softlang.com/elementOf>
+              <repository:/FirstPkg.ecore-http://org.softlang.com/XMI> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/SecondPkg.ecore-http://org.softlang.com/Ecore> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/foreignModel(1)-http://org.softlang.com/XMIFragment> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)-http://org.softlang.com/EcorePackageXMI> , <repository:/SecondPkgReferencing.genmodel-http://org.softlang.com/XML> , <repository:/FirstPkg.genmodel-http://org.softlang.com/Genmodel> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/SecondPkg.genmodel-http://org.softlang.com/Genmodel> , <repository:/FirstPkg.genmodel-http://org.softlang.com/XML> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/SecondPkgReferencing.genmodel-http://org.softlang.com/Genmodel> , <repository:/SecondPkg.ecore-http://org.softlang.com/XMI> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)-http://org.softlang.com/XMIFragment> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.genmodel-http://org.softlang.com/XML> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)-http://org.softlang.com/XMIFragment> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/XMIFragment> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/XMIFragment> , <repository:/FirstPkg.genmodel-http://org.softlang.com/XMI> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkgReferencing.genmodel-http://org.softlang.com/XMI> , <repository:/SecondPkg.ecore-http://org.softlang.com/XML> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/XMIFragment> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)/genClasses(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)-http://org.softlang.com/EcorePackageXMI> , <repository:/SecondPkg.genmodel-http://org.softlang.com/XMI> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/XMIFragment> , <repository:/FirstPkg.ecore-http://org.softlang.com/Ecore> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-http://org.softlang.com/XMIFragment> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/FirstPkg.ecore-http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <repository:/FirstPkg.genmodel-http://org.softlang.com/File> , <repository:/SecondPkg.ecore-http://org.softlang.com/File> , <repository:/FirstPkg.ecore-http://org.softlang.com/File> , <repository:/SecondPkgReferencing.genmodel-http://org.softlang.com/File> , <repository:/SecondPkg.genmodel-http://org.softlang.com/File> , <repository:/-http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/name>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-FirstPkgCls> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-SecondPkgCls> ;
+      <http://org.softlang.com/nsPrefix>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)-firstPkg> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)-secondPkg> ;
+      <http://org.softlang.com/nsUri>
+              <repository:/SecondPkg.ecore#/ecore:EPackage(1)-http://org.softlang/secondPkg> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)-http://org.softlang/firstPkg> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/firstPkg> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/secondPkg> ;
+      <http://org.softlang.com/partOf>
+              <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)-repository:/SecondPkg.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)-repository:/SecondPkg.ecore> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)-repository:/SecondPkg.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/FirstPkg.genmodel#/genmodel:GenModel(1)> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)-repository:/FirstPkg.ecore> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)-repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)-repository:/SecondPkg.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/SecondPkg.genmodel> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/SecondPkg.ecore#/ecore:EPackage(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/FirstPkg.genmodel> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/FirstPkg.ecore#/ecore:EPackage(1)> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)/genClasses(1)-repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)> , <repository:/SecondPkg.genmodel-repository:/> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)-repository:/FirstPkg.genmodel> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/FirstPkg.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkg.ecore-repository:/> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/SecondPkg.genmodel#/genmodel:GenModel(1)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/SecondPkg.genmodel#/genmodel:GenModel(1)> , <repository:/FirstPkg.genmodel-repository:/> , <repository:/SecondPkgReferencing.genmodel-repository:/> , <repository:/FirstPkg.ecore-repository:/> ;
+      <http://org.softlang.com/qegal/E>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/qegal/EJ1>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/qegal/G>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)-repository:/SecondPkg.genmodel> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)-repository:/SecondPkg.ecore> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)-repository:/FirstPkg.genmodel> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/FirstPkg.genmodel> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/SecondPkg.ecore> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/FirstPkg.ecore> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/SecondPkgReferencing.genmodel> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)-repository:/SecondPkgReferencing.genmodel> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)-repository:/FirstPkg.ecore> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/SecondPkg.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/SecondPkg.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)-repository:/SecondPkg.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/SecondPkg.genmodel> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/FirstPkg.genmodel> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)/genClasses(1)-repository:/SecondPkg.genmodel> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/FirstPkg.genmodel> ;
+      <http://org.softlang.com/uri>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/firstPkg#//FirstPkgCls> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang/secondPkg#//SecondPkgCls> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              <repository:/FirstPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-#//FirstPkgCls> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)/eClassifiers(1)-#//SecondPkgCls> , <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)-#/> , <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)-#/> , <repository:/FirstPkg.ecore#/ecore:EPackage(1)-#/> , <repository:/SecondPkg.ecore#/ecore:EPackage(1)-#/> , <repository:/SecondPkgReferencing.genmodel#/genmodel:GenModel(1)-#/> ;
+      <http://org.softlang.com/xmlns>
+              <repository:/SecondPkg.genmodel-http://www.eclipse.org/emf/2002/GenModel> , <repository:/SecondPkg.ecore-http://www.omg.org/XMI> , <repository:/SecondPkg.ecore-http://www.eclipse.org/emf/2002/Ecore> , <repository:/SecondPkgReferencing.genmodel-http://www.omg.org/XMI> , <repository:/FirstPkg.ecore-http://www.eclipse.org/emf/2002/Ecore> , <repository:/FirstPkg.ecore-http://www.w3.org/2001/XMLSchema-instance> , <repository:/SecondPkg.ecore-http://www.w3.org/2001/XMLSchema-instance> , <repository:/FirstPkg.genmodel-http://www.omg.org/XMI> , <repository:/SecondPkgReferencing.genmodel-http://www.eclipse.org/emf/2002/GenModel> , <repository:/FirstPkg.ecore-http://www.omg.org/XMI> , <repository:/FirstPkg.genmodel-http://www.eclipse.org/emf/2002/GenModel> , <repository:/SecondPkg.genmodel-http://www.omg.org/XMI> .
+
+<repository:/FirstPkg.genmodel#/genmodel:GenModel(1)/foreignModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/FirstPkg.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/FirstPkg.genmodel> .
+
+<repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)/genClasses(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/SecondPkg.genmodel#/genmodel:GenModel(1)/genPackages(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/SecondPkg.genmodel> .
+
+<repository:/FirstPkg.genmodel#/genmodel:GenModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/FirstPkg.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/FirstPkg.genmodel> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/FirstPkg.genmodel>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Genmodel> , <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/GenModel> , <http://www.omg.org/XMI> .

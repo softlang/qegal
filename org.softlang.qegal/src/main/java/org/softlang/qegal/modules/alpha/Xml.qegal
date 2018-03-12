@@ -1,0 +1,18 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// White list of extensions due to computations efforts of xml wellformedness check.
+(?x, sl:manifestsAs, sl:File) Extension(?x,?ext)
+    NotEqual(?ext,"java")
+    NotEqual(?ext,"html")
+    NotEqual(?ext,"xhtml")
+    NotEqual(?ext,"svg")
+    NotEqual(?ext,"cpp")
+    NotEqual(?ext,"h")
+    XmlWellformed(?x) ->
+    (?x, sl:elementOf, sl:XML).

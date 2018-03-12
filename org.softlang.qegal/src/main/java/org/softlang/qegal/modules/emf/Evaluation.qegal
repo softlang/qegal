@@ -1,0 +1,54 @@
+layer 1
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+/* Qegal system namespace */
+@prefix sys: <http://org.softlang.com/qegal/>.
+
+// Generic counting.
+(sys:Evaluation, ?m, ?x)  <- (?x, sl:manifestsAs, ?m)  NotEqual(?x,sys:Evaluation).
+(sys:Evaluation, ?l, ?x)  <- (?x, sl:elementOf, ?l) NotEqual(?x,sys:Evaluation).
+(sys:Evaluation, ?r, ?x)  <- (?a,?r,?b) UriConcat(?a, '-', ?b, ?x) NotEqual(?a,sys:Evaluation).
+
+// Simple presence.
+(sys:Evaluation, sys:E, ?x) <- (?x,sl:elementOf,sl:EcorePackageXMI).
+(sys:Evaluation, sys:J, ?x) <- (?x,sl:elementOf,sl:EcorePackageJava).
+(sys:Evaluation, sys:G, ?x) <- (?x,sl:elementOf,sl:EcorePackageGenmodel).
+(sys:Evaluation, sys:C, ?x) <- (?x,sl:elementOf,sl:EcorePackageCustomJava).
+
+// Ecore Package Only
+(sys:Evaluation, sys:EJ1, ?pkg) <- (?pkg,sl:elementOf,sl:EcorePackageXMI) NoValue(?pkg,sl:correspondsTo).
+
+// Java Package Only
+(sys:Evaluation, sys:EJ2, ?pkg) <- (?pkg,sl:elementOf,sl:EcorePackageJava) NoValue(?wildcard,sl:correspondsTo,?pkg).
+
+// Corresponding Package NsUri
+(sys:Evaluation, sys:EJ3, ?x) <- (?pkgXmi,sl:elementOf,sl:EcorePackageXMI)  (?pkgJava,sl:elementOf,sl:EcorePackageJava) 
+	(?pkgXmi, sl:correspondsTo, ?pkgJava) UriConcat(?pkgXmi, "-", ?pkgJava, ?x).
+	
+// Double Ecore.
+(sys:Evaluation, sys:EE, ?pkg) <- (?pkg,sl:elementOf,sl:EcorePackageXMI) (?other,sl:elementOf,sl:EcorePackageXMI) 
+	(?pkg, sl:nsUri, ?nsUri) (?other, sl:nsUri, ?nsUri) NotEqual(?pkg,?other). 
+	
+// No Corresponding Classifiers
+(sys:Evaluation, sys:EJc1, ?id) <- 
+	(?pkgXmi,sl:elementOf,sl:EcorePackageXMI)  (?pkgJava,sl:elementOf,sl:EcorePackageJava) 
+	(?pkgXmi, sl:correspondsTo, ?pkgJava) UriConcat(?pkgXmi, "-", ?pkgJava, ?id)
+	(?classifier, sl:partOf, ?pkgJava) (?classifier, sl:elementOf,sl:EcoreClassifierJava) 
+	NoValue(?wildcard,sl:correspondsTo,?classifier).
+	
+(sys:Evaluation, sys:EJc2, ?id) <- 
+	(?pkgXmi,sl:elementOf,sl:EcorePackageXMI)  (?pkgJava,sl:elementOf,sl:EcorePackageJava) 
+	(?pkgXmi, sl:correspondsTo, ?pkgJava) UriConcat(?pkgXmi, "-", ?pkgJava, ?id)
+	(?classifier, sl:partOf, ?pkgXmi) (?classifier, sl:elementOf,sl:EcoreClassifierXMI) 
+	NoValue(?classifier,sl:correspondsTo).
+	
+// Corresponding Package NsUri (1-to-n)
+(sys:Evaluation, sys:EJJ, ?pkgXmi) <- (?pkgXmi,sl:elementOf,sl:EcorePackageXMI)  (?pkgJava1,sl:elementOf,sl:EcorePackageJava) 
+	(?pkgJava2,sl:elementOf,sl:EcorePackageJava) (?pkgXmi, sl:correspondsTo, ?pkgJava1) (?pkgXmi, sl:correspondsTo, ?pkgJava2) 
+	NotEqual(?pkgJava1,?pkgJava2).
+	

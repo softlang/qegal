@@ -1,0 +1,18 @@
+// Phase 0
+// Initial phase collection all java files and source folder.
+
+@prefix sl: <http://org.softlang.com/>.
+@prefix system: <http://org.softlang.com/qegal/>.
+@prefix metric: <http://org.softlang.com/qegal/metrics/>.
+
+// Language subset relation.
+
+(?lx sl:subsetOf ?ly) (?x sl:elementOf ?lx) -> (?x sl:elementOf ?ly).
+
+// Metric for counting all manifestation and language types.
+(system:Evaluation ?m ?x)  <- (?x sl:manifestsAs ?m).
+(system:Evaluation ?l ?x)  <- (?x sl:elementOf ?l).
+
+// Metrics for counting all relationships between two different languages except the partOf.
+(system:Evaluation ?p ?x) <-
+    (?a sl:elementOf ?p1) (?a ?p2 ?b) (?b sl:elementOf ?p3) notEqual(?p2,sl:partOf) uriConcat(?p1,'-',?p2,'-',?p3,?p).

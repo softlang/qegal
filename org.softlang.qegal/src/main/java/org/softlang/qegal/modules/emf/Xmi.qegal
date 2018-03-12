@@ -1,0 +1,26 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+/* OMG namespace */
+@prefix omg: <http://www.omg.org/>.
+
+(?file, sl:elementOf, sl:XML) -> UriXml(?file, ?file, sl:xmlns, "/namespace::*").
+
+(?file, sl:elementOf, sl:XML) (?file, sl:xmlns, omg:XMI) -> (?file, sl:elementOf, sl:XMI).
+
+// Root XMI
+(?file, sl:elementOf, sl:XMI) DecXml(?file,"/*", ?root) -> 
+	(?root, sl:xmiDecOccurs, "#/") (?root,sl:resource, ?file) (?root, sl:partOf, ?file) (?root, sl:elementOf, sl:XMIFragment).
+	
+// Nested XMI
+(?x, sl:elementOf, sl:XMIFragment) (?x, sl:resource, ?resource) ->
+	DecXml(?x,"/*", sl:partOf, ?x)
+	DecXml(?x,"/*", sl:resource, ?resource)
+	DecXml(?x,"/*", sl:elementOf, sl:XMIFragment).
+
+(?x, sl:elementOf, sl:XMIFragment) (?y, sl:elementOf, sl:XMIFragment) (?x, sl:partOf, ?y) 
+	 (?y,sl:xmiDecOccurs,?ydec) StrXml(?x,"/@name",?name) StrConcat(?ydec,"/",?name, ?xdec) -> (?x,sl:xmiDecOccurs,?xdec).

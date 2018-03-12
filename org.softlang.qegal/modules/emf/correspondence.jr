@@ -1,0 +1,14 @@
+@prefix sl: <http://org.softlang.com/>.
+@prefix system: <http://org.softlang.com/qegal/>.
+
+
+// Correspondence between XMI and Java Packages.
+(?xmi sl:elementOf sl:EcorePackageXMI) (?java sl:elementOf sl:EcorePackageJava)
+    (?xmi sl:nsUri ?nsUri) (?java sl:nsUri ?nsUri) ->
+    (?xmi sl:correspondsTo ?java).
+
+// Correspondence between XMI and Java Classifiers.
+(?xmiClassifier sl:uri ?uri) (?javaClassifier sl:uri ?uri)
+    (?xmiClassifier sl:elementOf sl:EcoreClassifierXMI)
+    (?javaClassifier sl:elementOf sl:EcoreClassifierJava) ->
+    (?xmiClassifier sl:correspondsTo ?javaClassifier).

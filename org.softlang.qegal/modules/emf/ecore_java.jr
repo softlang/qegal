@@ -1,0 +1,35 @@
+@prefix sl: <http://org.softlang.com/>.
+@prefix system: <http://org.softlang.com/qegal/>.
+
+// Java Ecore Package.
+(?package sl:elementOf sl:Java) match(?package,".*Package.java")
+    uriJava(?package,"type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value",?nsUri) ->
+    (?package sl:elementOf sl:EcorePackageJava) (?package sl:nsUri ?nsUri).
+
+// Java Ecore Factory for Packages.
+(?factory sl:elementOf sl:Java) match(?factory,".*Factory.java") (?factory sl:partOf ?folder)
+    (?package sl:partOf ?folder) (?package sl:elementOf sl:EcorePackageJava)
+    (?package sl:nsUri ?nsUri) strJava(?factory,"type[1]/extendedTypes[1]/name","EFactory") ->
+    (?factory sl:elementOf sl:EcoreFactoryJava) (?factory sl:nsUri ?nsUri).
+
+// Get Java classifiers of each package and factory sharing the same nsUri.
+(?package sl:nsUri ?nsUri) (?factory sl:nsUri ?nsUri)
+    (?package sl:elementOf sl:EcorePackageJava) (?factory sl:elementOf sl:EcoreFactoryJava)
+
+    // Get for potential classifiers java files next to the package and factory.
+    (?package sl:partOf ?folder)
+    (?file sl:partOf ?folder) (?file sl:elementOf sl:Java)
+
+    // Check that the classifier it is not the factory or package.
+    notEqual(?file,?package) notEqual(?file,?factory)
+
+    // Check internal hints in the java file. ('(?s)' means single line mode in regex)
+    strJava(?file, "comments[2]", ?comment)
+    regex(?comment, "(?s).*[\\n\\r].*@model.*")
+    regex(?comment, "(?s).*[\\n\\r].*@generated.*")
+
+    // Get some additional information.
+    strJava(?file, "type[1]/name/identifier", ?classifierName)
+    uriConcat(?nsUri,'#//',?classifierName,?uri) ->
+    (?file sl:elementOf sl:EcoreClassifierJava) (?file sl:uri ?uri).
+

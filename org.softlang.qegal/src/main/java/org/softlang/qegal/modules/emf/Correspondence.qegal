@@ -1,0 +1,18 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// Correspondence between XMI and Java Packages.
+[ecorePackageCorrespondenceJavaXMI: (?xmi, sl:elementOf, sl:EcorePackageXMI) (?java, sl:elementOf, sl:EcorePackageJava)
+    (?xmi, sl:nsUri, ?nsUri) (?java, sl:nsUri, ?nsUri) ->
+    (?xmi, sl:correspondsTo, ?java)]
+
+// Correspondence between XMI and Java Classifiers.
+[ecoreClassifierCorrespondenceJavaXMI: (?xmiClassifier, sl:uri, ?uri) (?javaClassifier, sl:uri, ?uri)
+    (?xmiClassifier, sl:elementOf, sl:EcoreClassifierXMI)
+    (?javaClassifier, sl:elementOf, sl:EcoreClassifierJava) ->
+    (?xmiClassifier, sl:correspondsTo, ?javaClassifier)]

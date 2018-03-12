@@ -1,0 +1,32 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+import org.softlang.qegal.buildins.Children
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// File detection.
+(?file, sl:manifestsAs, sl:File) Children(?file, ?project, "META-INF", "MANIFEST.MF") ->
+    (?file, sl:elementOf, sl:Manifest) (?file, sl:role, sl:BuildFile).
+
+// Project declaration.
+(?file, sl:elementOf, sl:Manifest) (?folder, sl:partOf, ?project) (?file, sl:partOf, ?folder) 
+	StrManifest(?file, "Bundle-SymbolicName", ?literal) ReplaceAllToUri(?literal, "(;[^,]*)|\\s", "", ?reference) ->
+    (?file, sl:decOccurs, ?reference) (?reference, sl:resolvesTo, ?project) (?project ,sl:elementOf, sl:PDEProject).
+
+// Dependencies.
+(?file, sl:elementOf, sl:Manifest) StrManifest(?file, "Require-Bundle", ?x)
+    // Replace all strings.
+    ReplaceAll(?x, '("[^"]*)"', "", ?xi) 
+    // Replace all details.
+    ReplaceAll(?xi, "(;[^,]*)|\\s", "", ?xii) ->
+    SplitToUri(?xii, ?file, sl:refOccurs, ',').
+
+// TODO:  Dependencies are defined on declarations to limit effects of duplicated declarations.
+(?a, sl:elementOf, sl:Manifest) (?b, sl:elementOf, sl:Manifest) (?a, sl:decOccurs, ?deca) (?a, sl:refOccurs, ?decb) (?b, sl:decOccurs, ?decb) ->
+    (?deca, sl:dependsOn, ?decb).
+    
+// Subset relation between project types. 
+instance (sl:PDEProject, sl:subsetOf, sl:Project).

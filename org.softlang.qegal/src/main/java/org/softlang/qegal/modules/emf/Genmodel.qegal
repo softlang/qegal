@@ -1,0 +1,58 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// Genmodel file detection.
+(?x, sl:manifestsAs, sl:File) Extension(?x,"genmodel") (?x, sl:elementOf, sl:XML) ->
+    (?x, sl:elementOf, sl:Genmodel).
+    
+// Genmodel package detection and nested package detection.
+(?genmodel, sl:elementOf, sl:Genmodel) -> 
+	DecXml(?genmodel,"/genmodel:GenModel/genPackages",sl:partOf,?genmodel)
+	DecXml(?genmodel,"/genmodel:GenModel/genPackages",sl:elementOf,sl:EcorePackageGenmodel).
+
+(?genpkg, sl:elementOf,sl:EcorePackageGenmodel) -> 
+	DecXml(?genpkg,"/nestedGenPackages", sl:partOf, ?genpkg)
+	DecXml(?genpkg,"/nestedGenPackages", sl:elementOf, sl:EcorePackageGenmodel).
+
+// Introducing some hard referencing through environment for Ecore and Genmodle.
+//// (i) Plain name for classifiers
+//(?x, sl:elementOf, sl:EcoreClassifierXMI) (?classifier, sl:name, ?name)  MakeTemp(?env) ->  
+//	(?x, sl:env, ?env) (?env, ?x, ?name).
+//// (i) Subpackages add subpackage name.
+//(?pkg, sl:elementOf, sl:EcoreSubPackageXMI) StrXml(?pkg,"@name",?pkgname) MakeTemp(?env) -> 
+//	(?pkg, sl:env, ?env) (?env, ?pkg, ?pkgname).
+//(?pkg, sl:elementOf, sl:EcoreSubPackageXMI) StrXml(?pkg,"@name",?pkgname) (?cls, sl:partOf, ?pkg) (?cls, sl:env, ?env) (?env, ?x, ?name)  MakeTemp(?env) -> 
+//	(?pkg, sl:env, ?env) (?env, ?pkg, ?pkgname).	 
+//// (ii) Rootpackage adds '#// 
+//// (iii) File adds its name. 
+
+
+
+
+
+//// Extractiton and delegation of references to ecore packages.
+//// i) File reference extraction.
+//(?genmodel, sl:elementOf, sl:Genmodel) StrXml(?genmodel,"/genmodel:GenModel/foreignModel",?fmpath) 
+//	(?genmodel, sl:partOf, ?folder) DecFs(?folder,?fmpath,?foreignmodel)-> 
+//    (?genmodel, sl:refersTo, ?foreignmodel).
+//    
+//// ii) Root package extraction.
+//(?genmodel, sl:elementOf, sl:Genmodel) (?genpkg, sl:partOf, ?genmodel) (?genpkg, sl:elementOf, sl:EcorePackageGenmodel) 
+//	(?genmodel, sl:refersTo, ?ecore) (?ecore, sl:elementOf, sl:Ecore) (?ecorepkg, sl:partOf, ?ecore) (?ecorepkg, sl:elementOf, sl:EcorePackageXMI) -> 
+//	(?genpkg, sl:mapsFrom, ?ecorepkg).
+//
+//// iii) Nested package extraction (based on naming of inner package).
+//(?gpkg, sl:elementOf, sl:EcorePackageGenmodel) (?gpkg, sl:mapsFrom, ?epkg) (?nestedGpkg, sl:elementOf, sl:EcorePackageGenmodel) 
+//	(?nestedGpkg, sl:partOf, ?gpkg) (?nestedEpkg, sl:partOf, ?epkg) (?nestedEpkg, sl:elementOf, sl:EcorePackageXMI) ->  .
+
+
+
+
+// (?genmodel, sl:elementOf, sl:Genmodel) 
+//    StrXml(?model, "/genModel:GenModel/@modelDirectory", ?mdpath)
+//    ...

@@ -1,0 +1,38 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// Search ecore files
+[ecoreFiles: (?x, sl:manifestsAs, sl:File) Extension(?x,"ecore") (?x, sl:elementOf, sl:XML) ->
+    (?x, sl:elementOf, sl:Ecore)]
+
+// Introduce the EcorePackageXMI language for XMI Ecore's root element.
+[ecorePackageXMIParent: (?x, sl:elementOf, sl:Ecore) ->
+    DecXml(?x, "/ecore:EPackage", sl:partOf,?x)
+    DecXml(?x, "/ecore:EPackage", sl:elementOf, sl:EcorePackageXMI)]
+
+// Detection of sub-packages (also element of EcorePackageXMI).
+[ecorePackageXMISub: (?x, sl:elementOf, sl:EcorePackageXMI) ->
+    DecXml(?x, "/eSubpackages", sl:partOf, ?x)
+    DecXml(?x, "/eSubpackages", sl:elementOf, sl:EcorePackageXMI)]
+
+[ecorePackageXMINSUriPrefix: (?x, sl:elementOf, sl:EcorePackageXMI) ->
+    UriXml(?x, ?x, sl:nsUri, "/@nsURI")
+    StrXml(?x, ?x, sl:nsPrefix, "/@nsPrefix")]
+
+// Introducing the EcoreClassifierXMI language.
+[ecoreClassifierXMI: (?x, sl:elementOf, sl:EcorePackageXMI) ->
+    DecXml(?x, "/eClassifiers", sl:partOf, ?x)
+    DecXml(?x, "/eClassifiers", sl:elementOf, sl:EcoreClassifierXMI)]
+
+// Assign uri and nsUri to XMIClassifiers.
+[ecoreClassifierUris: (?classifier, sl:elementOf, sl:EcoreClassifierXMI) (?classifier, sl:partOf, ?package)
+    (?package, sl:nsUri, ?nsUri) StrXml(?classifier, "/@name", ?classifierName)
+    UriConcat(?nsUri, '#//', ?classifierName, ?uri) ->
+    (?classifier, sl:uri, ?uri) (?classifier, sl:nsUri, ?nsUri) (?classifier, sl:name, ?classifierName)]
+     
+// Inner referencing mechanism.

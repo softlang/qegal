@@ -1,0 +1,71 @@
+//Phase 0
+@prefix sl: <http://org.softlang.com/>.
+@prefix system: <http://org.softlang.com/qegal/>.
+
+// A sample of filesystem, xml and java decomposition.
+// Body usage 'dec(decomposee,xpath,assignee)' where assignee means contains if assignee is bound. (TODO: Check if match order is fixed)
+// Head usage 'dec(decomposee,subject,predicate,object)' where one of the last three parameters can be replace by an xpath.
+
+// Definition of sample folder in module that is decomposed.
+(?module rdfs:Class system:Module) decFs(?module,"/sample",?sample) -> (?sample sl:manifestsAs sl:File).
+
+// Recursive filesystem decomposition that ignores temp files (Decomposition head usage):
+(?file sl:manifestsAs sl:File) ->
+    decFs(?file,"/*[not(@extension='temp')]",sl:partOf,?file)
+    decFs(?file,"/*[not(@extension='temp')]",sl:manifestsAs, sl:File).
+
+// Language detection based on XML well-formedness and extension check:
+(?x sl:manifestsAs sl:File) xmlWellformed(?x) -> (?x sl:elementOf sl:XML).
+// TODO: Correct this.
+(?file sl:partOf ?root) extension(?file,"java") -> (?file sl:elementOf sl:Java).
+
+// Decomposition of XML into second level fragments (Decomposition head usage):
+(?xml sl:elementOf sl:XML) ->
+    decXml(?xml,"/*/*",sl:partOf,?xml)
+    decXml(?xml,"/*/*",sl:elementOf,sl:XMLFragment).
+
+// Extraction of an XML fragment's 'name' attribute as a string literal if available (String decomposition body usage):
+(?xmlFragment sl:elementOf sl:XMLFragment) strXml(?xmlFragment,"/@name",?name) -> (?xmlFragment sl:name ?name).
+
+// Decomposition of java checking for EObject import:
+// (The order of builtins is somehow important for decomposition with many results since this may imply a containment check.
+(?file sl:elementOf sl:Java) strConcat("org.eclipse.emf.ecore",".","EObject", ?import) strJava(?file,"imports/name",?import)
+    -> (?file sl:elementOf sl:EcoreUsingJava).
+
+
+// TODO: Deprecated: General idea for decomposing of xml, the file-system and the java ast. Check those!
+// TODO: DO NOT READ THIS:
+// (a) Two different queries may point to the same resource or fragment. Since the query is taken as URI, they will be
+//     referenced as not the same RDF Node. We refer to this problem as non-unified way of resource identification (U)RIs.
+// (e1) Current example an (U)RI pointing to the first state of turnstile.fsml is: C:/myanalysis/turnstile.fsml#//states[1]
+// (b) There must be a optional resolve mechanism for the particular format that bridges the (U)RI to an URI.
+//     Easy solution in available for the filesystem.
+// (c) We have two query mechanisms: (i) One in the body of a rule, binding the first query result to a parameter and (ii)
+//     one in the head, adding the list of results as a set of triples to the context. All queries results are converted
+//     to (U)RIs by appending [i] to the original query where i is the position of the result. Thereby the query can be
+//     re-executed. We use 'dec<format>' as name in head and body with altering semantics.
+// (d) In the case of a relation with inverted semantics, the builtin can be prefixed with 'i' to create these triples
+//     in the head of a rule (e.g. idecFs).
+
+// TODO: DO NOT READ THIS:
+// Head usage:
+// ...body... -> decFs("xpath", ?subj, ?pred)... // This uses xpath on file system.
+// ...body... -> decXml("xpath", ?subj, ?pred)... // This use xpath on xml.
+// ...body... -> decJava("xpath", ?subj, ?pred, )... // This uses xpath on JDT parse tree.
+
+// Body usage:
+// decFs("xpath", ?fs, ?fragment1, ?fragment2, ?fragment3)... -> ...head...
+// decXml("xpath", ?xml, ?fragment)... -> ...head...
+// decJava("xpath", ?java, ?fragment)... -> ...head...
+
+// Previous builtins are extracting (U)RIs only. Following builtins extract properties and are defined for body and
+// head usage. The "xpath" is optional if e.g. the ?xml already points to intended value in the decomposed document.
+
+// Extracting strings (integers, booleans or uris) from xml nodes:
+// stringXml("xpath",?xml,?string1, ?string2)... -> ... head ... // Body usage.
+// stringXml(?xml,?string)... -> ... head ... // No path in a body usage.
+// ... -> stringXml(?subject,?predicate,"xpath")... // Head usage.
+
+// Very special builtins like extracting the type of a file-system node (i.e. folder or file).
+// typeFs("xpath",?fs,?fsType)... -> ... head ...
+// ... -> typeFs("xpath",?subject,?predicate)...

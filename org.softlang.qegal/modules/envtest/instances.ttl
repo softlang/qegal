@@ -1,0 +1,12 @@
+@prefix sl: <http://org.softlang.com/> .
+
+sl:a sl:references sl:b1.
+sl:a sl:references sl:b2.
+sl:b1 sl:references sl:c.
+sl:a sl:references sl:b3.
+
+sl:a sl:partOf sl:target.
+sl:b1 sl:partOf sl:target.
+sl:b2 sl:partOf sl:target.
+sl:b3 sl:partOf sl:target.
+sl:c sl:partOf sl:target.

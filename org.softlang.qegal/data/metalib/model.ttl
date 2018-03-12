@@ -1,0 +1,1569 @@
+<repository:/org.softlang.metalib.emf.fsml.editor/.project>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/META-INF>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMTransitionItemProvider.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/plugin.xml>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/plugin.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/.classpath>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/.classpath>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/build.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Manifest> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/META-INF> ;
+      <http://org.softlang.com/refOccurs>
+              <org.softlang.metalib.emf.fsml> , <org.eclipse.emf.edit> , <org.eclipse.core.runtime> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/StandaloneFSMLScenario.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/isReachable/diagnostics" .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/icons/full>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/icons> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/transitions" .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/.gitignore>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreClassifierJava> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> ;
+      <http://org.softlang.com/uri>
+              <http://www.softlang.org/metalib/emf/Fsml#//FSMTransition> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/.gitignore>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/OSGiProject> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlExample.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> , <http://org.softlang.com/Ecore> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/Ecore> , <http://www.w3.org/2001/XMLSchema-instance> , <http://www.omg.org/XMI> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/plugin.xml>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Manifest> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/META-INF> ;
+      <http://org.softlang.com/refOccurs>
+              <org.softlang.metalib.emf.fsml> , <org.junit> , <org.eclipse.emf.ecore.xmi> , <org.eclipse.core.runtime> .
+
+<repository:/>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml/src>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMTransition/input" .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlValidator.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlFactoryImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons/full> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EcorePackageGenmodel> , <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLRefactorings.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/plugin.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/META-INF>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/.classpath>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditorPlugin.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)>
+      <http://org.softlang.com/correspondsTo>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java> ;
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "FSMTransition" ;
+      <http://org.softlang.com/nsUri>
+              <http://www.softlang.org/metalib/emf/Fsml> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://www.softlang.org/metalib/emf/Fsml#//FSMTransition> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMTransition" .
+
+<repository:/org.softlang.metalib.emf.fsml>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/OSGiProject> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/name" .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/isReachable/context" .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16/FsmlModelFile.gif>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Manifest> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/META-INF> ;
+      <http://org.softlang.com/refOccurs>
+              <org.softlang.metalib.emf.fsml.edit> , <org.eclipse.core.resources> , <org.eclipse.emf.ecore.xmi> , <org.eclipse.emf.edit.ui> , <org.eclipse.core.runtime> , <org.eclipse.ui.ide> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSM/hasExactOneInitialState/diagnostics" .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMTransition/action" .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/.classpath>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile> .
+
+<repository:/org.softlang.metalib.emf.fsml/transformation/.gitignore>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/transformation> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTransitionTest.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSM_states_FSMState.gif>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/SimulationListener.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMTransition.gif>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/hasDistinctEvents/context" .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/initial" .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml/plugin.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSM/hasExactOneInitialState/context" .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMItemProvider.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/.gitignore>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlSwitch.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMTransition/target" .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlPackageImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlEditPlugin.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/OSGiProject> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSM/hasExactOneInitialState" .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlActionBarContributor.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditor.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/.project>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/OSGiProject> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/hasDistinctEvents/diagnostics" .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlAllTests.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genFeatures(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/emfturnstile.PNG>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EcorePackageJava> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/nsUri>
+              <http://www.softlang.org/metalib/emf/Fsml> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Genmodel> , <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/Ecore> , <http://www.eclipse.org/emf/2002/GenModel> , <http://www.omg.org/XMI> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/build.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//exception" .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> , <http://org.softlang.com/XMI> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.softlang.org/metalib/emf/Fsml> , <http://www.omg.org/XMI> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib> .
+
+<repository:/org.softlang.metalib.emf.fsml/META-INF>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreFactoryJava> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/nsUri>
+              <http://www.softlang.org/metalib/emf/Fsml> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/build.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/icons/full> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlAdapterFactory.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMTransitionImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> .
+
+<repository:/org.softlang.metalib.emf.fsml/.settings>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eStructuralFeatures(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSM/states" .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model> ;
+      <http://org.softlang.com/xmlns>
+              <http://www.eclipse.org/emf/2002/Ecore> , <http://www.softlang.org/metalib/emf/Fsml> , <http://www.w3.org/2001/XMLSchema> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreClassifierJava> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> ;
+      <http://org.softlang.com/uri>
+              <http://www.softlang.org/metalib/emf/Fsml#//FSM> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban/NewFsml.gif>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlTests.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/.project>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//unlocked" .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/META-INF>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml/.gitignore>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlModelWizard.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF/MANIFEST.MF>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Manifest> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF> ;
+      <http://org.softlang.com/refOccurs>
+              <org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/icons>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSMState_transitions_FSMTransition.gif>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMStateTest.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlItemProviderAdapterFactory.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons/full> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSM.gif>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/foreignModel(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/src/StandaloneTurnstile.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/src> .
+
+<repository:/org.softlang.metalib.emf.fsml/plugin.xml>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/build.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml/.classpath>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/build.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTest.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/isReachable" .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/src>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLUtils.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/Simulation.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//locked" .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/.project>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMState.gif>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Manifest> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/META-INF> ;
+      <http://org.softlang.com/refOccurs>
+              <org.eclipse.emf.ecore.xmi> , <org.eclipse.core.runtime> , <org.eclipse.emf.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/OSGiProject> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src> .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMStateImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)>
+      <http://org.softlang.com/correspondsTo>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java> ;
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "FSMState" ;
+      <http://org.softlang.com/nsUri>
+              <http://www.softlang.org/metalib/emf/Fsml> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://www.softlang.org/metalib/emf/Fsml#//FSMState> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState" .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/.settings/org.eclipse.jdt.core.prefs>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/.settings> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMStateItemProvider.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> .
+
+<repository:/org.softlang.metalib.emf.fsml.tests/.project>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests> .
+
+<repository:/org.softlang.metalib.emf.fsml/transformation>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSMState/hasDistinctEvents" .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)>
+      <http://org.softlang.com/correspondsTo>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java> ;
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcoreClassifierXMI> ;
+      <http://org.softlang.com/name>
+              "FSM" ;
+      <http://org.softlang.com/nsUri>
+              <http://www.softlang.org/metalib/emf/Fsml> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/uri>
+              <http://www.softlang.org/metalib/emf/Fsml#//FSM> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#//FSM" .
+
+<repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreClassifierJava> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> ;
+      <http://org.softlang.com/uri>
+              <http://www.softlang.org/metalib/emf/Fsml#//FSMState> .
+
+<repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> .
+
+<repository:/metamodel.PNG>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)>
+      <http://org.softlang.com/correspondsTo>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java> ;
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> , <http://org.softlang.com/EcorePackageXMI> ;
+      <http://org.softlang.com/nsPrefix>
+              "fsml" ;
+      <http://org.softlang.com/nsUri>
+              <http://www.softlang.org/metalib/emf/Fsml> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              "#/" .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/plugin.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor> .
+
+<repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.editor/icons/full> .
+
+<http://org.softlang.com/qegal/Evaluation>
+      <http://org.softlang.com/Ecore>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> ;
+      <http://org.softlang.com/EcoreClassifierJava>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java> ;
+      <http://org.softlang.com/EcoreClassifierXMI>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)> ;
+      <http://org.softlang.com/EcoreFactoryJava>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java> ;
+      <http://org.softlang.com/EcorePackageGenmodel>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/EcorePackageJava>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java> ;
+      <http://org.softlang.com/EcorePackageXMI>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/File>
+              <repository:/org.softlang.metalib.emf.fsml.editor/.project> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTest.java> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16/FsmlModelFile.gif> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMTransitionItemProvider.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.xml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.classpath> , <repository:/org.softlang.metalib.emf.fsml.tests/plugin.properties> , <repository:/org.softlang.metalib.emf.fsml/transformation/.gitignore> , <repository:/org.softlang.metalib.emf.fsml.turnstile/build.properties> , <repository:/org.softlang.metalib.emf.fsml.tests/.classpath> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTransitionTest.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLUtils.java> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/Simulation.java> , <repository:/org.softlang.metalib.emf.fsml.edit/.classpath> , <repository:/org.softlang.metalib.emf.fsml.editor/build.properties> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSM_states_FSMState.gif> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/SimulationListener.java> , <repository:/org.softlang.metalib.emf.fsml.edit/.project> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMTransition.gif> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMState.gif> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java> , <repository:/org.softlang.metalib.emf.fsml.tests/build.properties> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/StandaloneFSMLScenario.java> , <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlAdapterFactory.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMStateImpl.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMTransitionImpl.java> , <repository:/org.softlang.metalib.emf.fsml/.settings/org.eclipse.jdt.core.prefs> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java> , <repository:/org.softlang.metalib.emf.fsml.tests/.gitignore> , <repository:/org.softlang.metalib.emf.fsml.editor/.gitignore> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMStateItemProvider.java> , <repository:/org.softlang.metalib.emf.fsml/plugin.properties> , <repository:/org.softlang.metalib.emf.fsml.tests/.project> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlExample.java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMItemProvider.java> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.xml> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban/NewFsml.gif> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml.edit/.gitignore> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlTests.java> , <repository:/org.softlang.metalib.emf.fsml/.project> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlSwitch.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlPackageImpl.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlEditPlugin.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlValidator.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlFactoryImpl.java> , <repository:/org.softlang.metalib.emf.fsml/.gitignore> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlModelWizard.java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlActionBarContributor.java> , <repository:/metamodel.PNG> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLRefactorings.java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditor.java> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.properties> , <repository:/org.softlang.metalib.emf.fsml.editor/.classpath> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.properties> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.project> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSMState_transitions_FSMTransition.gif> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMStateTest.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlItemProviderAdapterFactory.java> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSM.gif> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlAllTests.java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditorPlugin.java> , <repository:/org.softlang.metalib.emf.fsml/plugin.xml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src/StandaloneTurnstile.java> , <repository:/org.softlang.metalib.emf.fsml.edit/build.properties> , <repository:/org.softlang.metalib.emf.fsml/transformation/rename.atl> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.gitignore> , <repository:/emfturnstile.PNG> , <repository:/org.softlang.metalib.emf.fsml/.classpath> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMImpl.java> , <repository:/org.softlang.metalib.emf.fsml/build.properties> ;
+      <http://org.softlang.com/Folder>
+              <repository:/org.softlang.metalib.emf.fsml.tests/META-INF> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/icons> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org> , <repository:/org.softlang.metalib.emf.fsml/src/org> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml/META-INF> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml.editor/src> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml/.settings> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> , <repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml/transformation> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> , <repository:/> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml/src> , <repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml.tests/src> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml.edit/src> , <repository:/org.softlang.metalib.emf.fsml.editor/icons> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban> , <repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml/model> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml> ;
+      <http://org.softlang.com/Genmodel>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> ;
+      <http://org.softlang.com/Java>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTest.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMItemProvider.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMTransitionItemProvider.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlTests.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlSwitch.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlPackageImpl.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlEditPlugin.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlValidator.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlFactoryImpl.java> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTransitionTest.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLUtils.java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlModelWizard.java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlActionBarContributor.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/Simulation.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/SimulationListener.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLRefactorings.java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditor.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMStateTest.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/StandaloneFSMLScenario.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlItemProviderAdapterFactory.java> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlAllTests.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlAdapterFactory.java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditorPlugin.java> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src/StandaloneTurnstile.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMStateImpl.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMTransitionImpl.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMImpl.java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMStateItemProvider.java> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlExample.java> ;
+      <http://org.softlang.com/Manifest>
+              <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF/MANIFEST.MF> ;
+      <http://org.softlang.com/OSGiProject>
+              <repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.tests> ;
+      <http://org.softlang.com/XMI>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> ;
+      <http://org.softlang.com/XMIFragment>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(2)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(2)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eStructuralFeatures(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(3)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/foreignModel(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genFeatures(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(2)> ;
+      <http://org.softlang.com/XML>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml.editor/.project> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.xml> , <repository:/org.softlang.metalib.emf.fsml.editor/.classpath> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.project> , <repository:/org.softlang.metalib.emf.fsml/.project> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.xml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.classpath> , <repository:/org.softlang.metalib.emf.fsml/plugin.xml> , <repository:/org.softlang.metalib.emf.fsml.tests/.classpath> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/.classpath> , <repository:/org.softlang.metalib.emf.fsml/.classpath> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd> , <repository:/org.softlang.metalib.emf.fsml.edit/.project> , <repository:/org.softlang.metalib.emf.fsml.tests/.project> ;
+      <http://org.softlang.com/correspondsTo>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java> ;
+      <http://org.softlang.com/elementOf>
+              <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlTests.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/org.softlang.metalib.emf.fsml.tests/.classpath-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java-http://org.softlang.com/EcoreClassifierJava> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java-http://org.softlang.com/EcorePackageJava> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/StandaloneFSMLScenario.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlModelWizard.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditor.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/foreignModel(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.edit-http://org.softlang.com/OSGiProject> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlAllTests.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genFeatures(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/plugin.xml-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTransitionTest.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/.classpath-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMStateTest.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMTransitionItemProvider.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/.project-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/EcorePackageGenmodel> , <repository:/org.softlang.metalib.emf.fsml.tests-http://org.softlang.com/OSGiProject> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMStateImpl.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlExample.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java-http://org.softlang.com/EcoreFactoryJava> , <repository:/org.softlang.metalib.emf.fsml-http://org.softlang.com/OSGiProject> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.editor/.classpath-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-http://org.softlang.com/XMI> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/SimulationListener.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMImpl.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditorPlugin.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml-http://org.softlang.com/XMI> , <repository:/org.softlang.metalib.emf.fsml.tests/.project-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.xml-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java-http://org.softlang.com/EcoreClassifierJava> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlValidator.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlSwitch.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.editor/.project-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-http://org.softlang.com/EcoreClassifierXMI> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlEditPlugin.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.classpath-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-http://org.softlang.com/XMI> , <repository:/org.softlang.metalib.emf.fsml.edit/.classpath-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF/MANIFEST.MF-http://org.softlang.com/Manifest> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java-http://org.softlang.com/EcoreClassifierJava> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.edit/.project-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-http://org.softlang.com/EcorePackageXMI> , <repository:/org.softlang.metalib.emf.fsml.editor-http://org.softlang.com/OSGiProject> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMTransitionImpl.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-http://org.softlang.com/Manifest> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(3)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTest.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.project-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLUtils.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLRefactorings.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eStructuralFeatures(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMStateItemProvider.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMItemProvider.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-http://org.softlang.com/Ecore> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF-http://org.softlang.com/Manifest> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-http://org.softlang.com/Genmodel> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.turnstile-http://org.softlang.com/OSGiProject> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlAdapterFactory.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlItemProviderAdapterFactory.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src/StandaloneTurnstile.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlActionBarContributor.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlFactoryImpl.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/Simulation.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF-http://org.softlang.com/Manifest> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF-http://org.softlang.com/Manifest> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(1)-http://org.softlang.com/XMIFragment> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlPackageImpl.java-http://org.softlang.com/Java> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.xml-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd-http://org.softlang.com/XML> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(1)-http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/manifestsAs>
+              <repository:/emfturnstile.PNG-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/src-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditor.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/META-INF-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMImpl.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMState.gif-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlAllTests.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/.project-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlEditPlugin.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.gitignore-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlActionBarContributor.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/.gitignore-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/icons-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/.gitignore-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.turnstile-http://org.softlang.com/Folder> , <repository:/-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlModelWizard.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/.classpath-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/.classpath-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlValidator.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/transformation-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/build.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/build.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/Simulation.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/plugin.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/plugin.xml-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.classpath-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMStateItemProvider.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/build.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMTransition.gif-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlAdapterFactory.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMItemProvider.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/src-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/.classpath-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF/MANIFEST.MF-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlTests.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.xml-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16/FsmlModelFile.gif-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/.settings/org.eclipse.jdt.core.prefs-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLUtils.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTest.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMTransitionImpl.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/.project-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlPackageImpl.java-http://org.softlang.com/File> , <repository:/metamodel.PNG-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/.classpath-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/model-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/transformation/rename.atl-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/.gitignore-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src/StandaloneTurnstile.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlSwitch.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.xml-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.project-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.turnstile/build.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/transformation/.gitignore-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlFactoryImpl.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlItemProviderAdapterFactory.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/SimulationListener.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditorPlugin.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/plugin.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/.project-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/StandaloneFSMLScenario.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/build.properties-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban/NewFsml.gif-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/.gitignore-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLRefactorings.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSM.gif-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSMState_transitions_FSMTransition.gif-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/icons-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlExample.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.editor/.project-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMStateTest.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMTransitionItemProvider.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/.settings-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSM_states_FSMState.gif-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTransitionTest.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMStateImpl.java-http://org.softlang.com/File> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml-http://org.softlang.com/Folder> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java-http://org.softlang.com/File> ;
+      <http://org.softlang.com/name>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-FSMState> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-FSMTransition> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-FSM> ;
+      <http://org.softlang.com/nsPrefix>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-fsml> ;
+      <http://org.softlang.com/nsUri>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://www.softlang.org/metalib/emf/Fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-http://www.softlang.org/metalib/emf/Fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://www.softlang.org/metalib/emf/Fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java-http://www.softlang.org/metalib/emf/Fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-http://www.softlang.org/metalib/emf/Fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java-http://www.softlang.org/metalib/emf/Fsml> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml-repository:/> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml/.project-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml/src-repository:/org.softlang.metalib.emf.fsml> , <repository:/emfturnstile.PNG-repository:/> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src-repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang-repository:/org.softlang.metalib.emf.fsml.tests/src/org> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMStateTest.java-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> , <repository:/org.softlang.metalib.emf.fsml.editor/build.properties-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang-repository:/org.softlang.metalib.emf.fsml/src/org> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml/transformation/.gitignore-repository:/org.softlang.metalib.emf.fsml/transformation> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTransitionTest.java-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16-repository:/org.softlang.metalib.emf.fsml.editor/icons/full> , <repository:/org.softlang.metalib.emf.fsml.edit/build.properties-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlModelWizard.java-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF-repository:/org.softlang.metalib.emf.fsml.tests/META-INF> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.classpath-repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlFactory.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlEditPlugin.java-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)> , <repository:/org.softlang.metalib.emf.fsml.editor/.project-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.edit/icons-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSM.gif-repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16> , <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF-repository:/org.softlang.metalib.emf.fsml/META-INF> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMTransition.gif-repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/org.softlang.metalib.emf.fsml/transformation/rename.atl-repository:/org.softlang.metalib.emf.fsml/transformation> , <repository:/org.softlang.metalib.emf.fsml.tests/.classpath-repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org-repository:/org.softlang.metalib.emf.fsml.editor/src> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlExample.java-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> , <repository:/org.softlang.metalib.emf.fsml.edit/src-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlValidator.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eStructuralFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml-repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang-repository:/org.softlang.metalib.emf.fsml.editor/src/org> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full-repository:/org.softlang.metalib.emf.fsml.edit/icons> , <repository:/org.softlang.metalib.emf.fsml/.settings/org.eclipse.jdt.core.prefs-repository:/org.softlang.metalib.emf.fsml/.settings> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMImpl.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> , <repository:/org.softlang.metalib.emf.fsml/model-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml/META-INF-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.gitignore-repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/Simulation.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlPackageImpl.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMStateImpl.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16-repository:/org.softlang.metalib.emf.fsml.edit/icons/full> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.xml-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)> , <repository:/metamodel.PNG-repository:/> , <repository:/org.softlang.metalib.emf.fsml/build.properties-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditor.java-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> , <repository:/org.softlang.metalib.emf.fsml.edit/.classpath-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlAdapterFactory.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util> , <repository:/org.softlang.metalib.emf.fsml.editor/icons-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.turnstile/build.properties-repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF-repository:/org.softlang.metalib.emf.fsml.edit/META-INF> , <repository:/org.softlang.metalib.emf.fsml/src/org-repository:/org.softlang.metalib.emf.fsml/src> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)> , <repository:/org.softlang.metalib.emf.fsml.editor/.gitignore-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlActionBarContributor.java-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util/FsmlSwitch.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib-repository:/org.softlang.metalib.emf.fsml/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation/FsmlEditorPlugin.java-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml/presentation> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org-repository:/org.softlang.metalib.emf.fsml.edit/src> , <repository:/org.softlang.metalib.emf.fsml/plugin.xml-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FSMTest.java-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> , <repository:/org.softlang.metalib.emf.fsml.tests/.project-repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml.editor-repository:/> , <repository:/org.softlang.metalib.emf.fsml.tests/build.properties-repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-repository:/org.softlang.metalib.emf.fsml/model> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full-repository:/org.softlang.metalib.emf.fsml.editor/icons> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMItemProvider.java-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf> , <repository:/org.softlang.metalib.emf.fsml/transformation-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-repository:/org.softlang.metalib.emf.fsml/model> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban/NewFsml.gif-repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml.editor/plugin.properties-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSMState_transitions_FSMTransition.gif-repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMStateItemProvider.java-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/wizban-repository:/org.softlang.metalib.emf.fsml.editor/icons/full> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlTests.java-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> , <repository:/org.softlang.metalib.emf.fsml.turnstile/.project-repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests/FsmlAllTests.java-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml/tests> , <repository:/org.softlang.metalib.emf.fsml/.settings-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FsmlItemProviderAdapterFactory.java-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> , <repository:/org.softlang.metalib.emf.fsml/plugin.properties-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.tests/.gitignore-repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)> , <repository:/org.softlang.metalib.emf.fsml.edit-repository:/> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF/MANIFEST.MF-repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd-repository:/org.softlang.metalib.emf.fsml/model> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FsmlFactoryImpl.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> , <repository:/org.softlang.metalib.emf.fsml.editor/.classpath-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16-repository:/org.softlang.metalib.emf.fsml.edit/icons/full> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl/FSMTransitionImpl.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/impl> , <repository:/org.softlang.metalib.emf.fsml.tests/src-repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)> , <repository:/org.softlang.metalib.emf.fsml.tests/plugin.properties-repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml/fsml-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile-repository:/> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)> , <repository:/org.softlang.metalib.emf.fsml.editor/src-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml/.gitignore-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)> , <repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml/fsml-repository:/org.softlang.metalib.emf.fsml.editor/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)> , <repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16/FsmlModelFile.gif-repository:/org.softlang.metalib.emf.fsml.editor/icons/full/obj16> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.properties-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/SimulationListener.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/util-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/StandaloneFSMLScenario.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib/emf-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF-repository:/org.softlang.metalib.emf.fsml.editor> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF-repository:/org.softlang.metalib.emf.fsml.turnstile> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org-repository:/org.softlang.metalib.emf.fsml.tests/src> , <repository:/org.softlang.metalib.emf.fsml.turnstile/src/StandaloneTurnstile.java-repository:/org.softlang.metalib.emf.fsml.turnstile/src> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(3)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)> , <repository:/org.softlang.metalib.emf.fsml.edit/.project-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16/CreateFSM_states_FSMState.gif-repository:/org.softlang.metalib.emf.fsml.edit/icons/full/ctool16> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)> , <repository:/org.softlang.metalib.emf.fsml.edit/.gitignore-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml.edit/plugin.xml-repository:/org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLUtils.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml> , <repository:/org.softlang.metalib.emf.fsml/.classpath-repository:/org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16/FSMState.gif-repository:/org.softlang.metalib.emf.fsml.edit/icons/full/obj16> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider/FSMTransitionItemProvider.java-repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang/metalib/emf/fsml/fsml/provider> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/FSMLRefactorings.java-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-repository:/org.softlang.metalib.emf.fsml.editor/META-INF> , <repository:/org.softlang.metalib.emf.fsml.tests-repository:/> , <repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang/metalib-repository:/org.softlang.metalib.emf.fsml.tests/src/org/softlang> , <repository:/org.softlang.metalib.emf.fsml.edit/src/org/softlang-repository:/org.softlang.metalib.emf.fsml.edit/src/org> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF-repository:/org.softlang.metalib.emf.fsml.tests> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)> ;
+      <http://org.softlang.com/qegal/E>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)> ;
+      <http://org.softlang.com/qegal/EJ3>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java> ;
+      <http://org.softlang.com/qegal/G>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)> ;
+      <http://org.softlang.com/qegal/J>
+              <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FsmlPackage.java> ;
+      <http://org.softlang.com/refOccurs>
+              <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF-org.eclipse.emf.ecore.xmi> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-org.eclipse.emf.edit.ui> , <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF-org.eclipse.emf.ecore> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-org.eclipse.core.resources> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF-org.eclipse.core.runtime> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-org.softlang.metalib.emf.fsml.edit> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF-org.junit> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-org.eclipse.core.runtime> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF-org.eclipse.emf.ecore.xmi> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF-org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml/META-INF/MANIFEST.MF-org.eclipse.core.runtime> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-org.eclipse.ui.ide> , <repository:/org.softlang.metalib.emf.fsml.turnstile/META-INF/MANIFEST.MF-org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF-org.softlang.metalib.emf.fsml> , <repository:/org.softlang.metalib.emf.fsml.editor/META-INF/MANIFEST.MF-org.eclipse.emf.ecore.xmi> , <repository:/org.softlang.metalib.emf.fsml.edit/META-INF/MANIFEST.MF-org.eclipse.emf.edit> , <repository:/org.softlang.metalib.emf.fsml.tests/META-INF/MANIFEST.MF-org.eclipse.core.runtime> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eStructuralFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)/eGenericType(1)/eTypeArguments(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)/transitions(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/foreignModel(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)/transitions(3)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)/genOperations(1)/genParameters(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(2)/genFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(1)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(2)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)/transitions(1)-repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)/genPackages(1)/genClasses(3)/genFeatures(2)-repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel> ;
+      <http://org.softlang.com/uri>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-http://www.softlang.org/metalib/emf/Fsml#//FSMTransition> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-http://www.softlang.org/metalib/emf/Fsml#//FSMState> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMState.java-http://www.softlang.org/metalib/emf/Fsml#//FSMState> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-http://www.softlang.org/metalib/emf/Fsml#//FSM> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSM.java-http://www.softlang.org/metalib/emf/Fsml#//FSM> , <repository:/org.softlang.metalib.emf.fsml/src/org/softlang/metalib/emf/fsml/fsml/FSMTransition.java-http://www.softlang.org/metalib/emf/Fsml#//FSMTransition> ;
+      <http://org.softlang.com/xmiDecOccurs>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(1)-#//FSMState/hasDistinctEvents/diagnostics> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)/eParameters(2)-#//FSMState/hasDistinctEvents/context> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(2)-#//unlocked> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel#/genmodel:GenModel(1)-#/> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(3)-#//FSMState/transitions> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(1)-#//locked> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eStructuralFeatures(1)-#//FSM/states> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(1)-#//FSMTransition/input> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)-#//FSM> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(3)-#//FSMTransition/target> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)-#/> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(1)-#//FSMState/isReachable/diagnostics> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(1)-#//FSM/hasExactOneInitialState/diagnostics> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)-#//FSMState/isReachable> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(2)-#//FSMState/name> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(2)/eParameters(2)-#//FSMState/isReachable/context> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eStructuralFeatures(1)-#//FSMState/initial> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)-#//FSMTransition> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(3)/eStructuralFeatures(2)-#//FSMTransition/action> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)-#//FSM/hasExactOneInitialState> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)-#/> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)-#//FSMState> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml#/fsml:FSM(1)/states(3)-#//exception> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)-#//FSM/hasExactOneInitialState/context> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(2)/eOperations(1)-#//FSMState/hasDistinctEvents> ;
+      <http://org.softlang.com/xmlns>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd-http://www.eclipse.org/emf/2002/Ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-http://www.eclipse.org/emf/2002/Ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-http://www.omg.org/XMI> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd-http://www.softlang.org/metalib/emf/Fsml> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml-http://www.omg.org/XMI> , <repository:/org.softlang.metalib.emf.fsml.turnstile/Turnstile.fsml-http://www.softlang.org/metalib/emf/Fsml> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-http://www.omg.org/XMI> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-http://www.eclipse.org/emf/2002/Ecore> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.xsd-http://www.w3.org/2001/XMLSchema> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.genmodel-http://www.eclipse.org/emf/2002/GenModel> , <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore-http://www.w3.org/2001/XMLSchema-instance> .
+
+<repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)/eTypeArguments(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XMIFragment> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore#/ecore:EPackage(1)/eClassifiers(1)/eOperations(1)/eParameters(2)/eGenericType(1)> ;
+      <http://org.softlang.com/resource>
+              <repository:/org.softlang.metalib.emf.fsml/model/Fsml.ecore> .
+
+<repository:/org.softlang.metalib.emf.fsml/transformation/rename.atl>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml/transformation> .
+
+<repository:/org.softlang.metalib.emf.fsml.turnstile/.gitignore>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/org.softlang.metalib.emf.fsml.turnstile> .

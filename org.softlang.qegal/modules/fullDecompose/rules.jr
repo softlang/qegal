@@ -1,0 +1,20 @@
+//Phase 0
+@prefix sl: <http://org.softlang.com/>.
+@prefix system: <http://org.softlang.com/qegal/>.
+
+// Definition of sample folder in module that is decomposed.
+(?module rdfs:Class system:Module) decFs(?module,"/sample",?sample) -> (?sample sl:manifestsAs sl:File).
+
+// File system decomposition.
+(?x sl:manifestsAs sl:File) -> decFs(?x,"/*",sl:manifestsAs, sl:File) decFs(?x,"/*",sl:partOf, ?x).
+(?x sl:manifestsAs sl:File) xmlWellformed(?x) -> (?x sl:elementOf sl:XML).
+
+// Full decompose.
+(?x sl:elementOf sl:XML) -> decXml(?x).
+(?x sl:elementOf sl:XML) (?part sl:partOf ?x) -> (?part sl:elementOf, sl:XMLFragment).
+(?x sl:elementOf sl:XMLFragment) (?part sl:partOf ?x) -> (?part sl:elementOf, sl:XMLFragment).
+
+// Recursive decompose (not that efficient).
+//(?x sl:elementOf sl:XML) -> decXml(?x,"/*",sl:partOf,?x) decXml(?x,"/*",sl:elementOf,sl:XMLFragment).
+//(?x sl:elementOf sl:XMLFragment) -> decXml(?x,"/*",sl:partOf,?x) decXml(?x,"/*",sl:elementOf,sl:XMLFragment).
+
