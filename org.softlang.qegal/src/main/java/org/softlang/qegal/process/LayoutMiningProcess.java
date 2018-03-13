@@ -38,7 +38,7 @@ import com.google.common.base.Charsets;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Table;
 
-public class AlphaMiningProcess {
+public class LayoutMiningProcess {
 	public static void main(String[] args) throws MissingObjectException, IncorrectObjectTypeException, IOException {
 
 		CSVParser records = CSVFormat.DEFAULT.withHeader().parse(new FileReader("data/repository_raw.csv"));
@@ -57,7 +57,7 @@ public class AlphaMiningProcess {
 		header.add("http://org.softlang.com/Ant");
 
 		CSVPrinter printer = CSVFormat.DEFAULT.withHeader(header.toArray(new String[] {}))
-				.print(new File("data/repository_alpha.csv"), Charsets.UTF_8);
+				.print(new File("data/repository_layout.csv"), Charsets.UTF_8);
 
 		for (CSVRecord record : records) {
 			// Bare access on GitHub repository.
@@ -74,7 +74,7 @@ public class AlphaMiningProcess {
 				System.out.println("Starting " + address);
 				IMinedRepository mined = QegalProcess2.execute(iolayer,
 						new File(JUtils.configuration("temp") + "/mined_alpha_repositories/" + address),
-						Collections.singleton(new File("src/main/java/org/softlang/qegal/modules/alpha")),
+						Collections.singleton(new File("src/main/java/org/softlang/qegal/modules/layout")),
 						1000 * 60 * 10, QegalLogging.EXCEPTIONS, false);
 
 				// Duplicate declaration and component detection.
