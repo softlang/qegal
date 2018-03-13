@@ -15,8 +15,8 @@ Rule-based fact extraction in a megamodeling context
 * Use Eclipse Maven to automatically build the project.
 * Create a file "config.properties" in the project org.softlang.qegal with the following entries:
 * ``temp=<filepath to a temporary folder>`` (used to check out the target repositories and might require up to 250GB)
-* ``login_git=<github-username>`` (needed to use the Git API)
-* ``password_git=<github-password>`` (needed to use the Git API)
+* (Optional) ``login_git=<github-username>`` 
+* (Optional) ``password_git=<github-password>`` (only needed for the Git API)
 * When running Java add the VM Arguments *-Xss* and *-Xmx* depending on your system (e.g., -Xss4m -Xmx10000m).
 * (Optional) Run the main in [QueryGitProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/QueryGitProcess.java) to query recently indexed EMF related files on GitHub producing `files_ecore_raw.csv`, `files_eobject_raw.csv` and `files_genmodel_raw.csv` in the data folder.
 * (Optional) Run the python script [combine_raw.py](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/combine_raw.py) to combine the data of the previous step and to annotate meta-data to the repositories producing `repository_raw.csv`.
