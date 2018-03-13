@@ -19,12 +19,11 @@ Rule-based fact extraction in a megamodeling context
 * ``temp=<filepath to a temporary folder>`` (used to check out the target repositories and might require up to 250GB)
 * ``login_git=<github-username>`` (needed to use the Git API)
 * ``password_git=<github-password>`` (needed to use the Git API)
-* (Optional) Run the main in [QueryGitProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/QueryGitProcess.java) to process to query of recently indexed EMF related files on GitHub (producing `files_ecore_raw.csv`, `files_eobject_raw.csv` and `files_genmodel_raw.csv` in the data older).
-* (Optional) Run the python script [combine_raw.py](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/combine_raw.py) to combine the data of the previous step and to annotate meta-data to the repositories (producing `repository_raw.csv`).
-* (Optional) Run the main in [LayoutMiningProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/LayoutMiningProcess.java) to mine the repository layout detection ([rules](https://github.com/softlang/qegal/tree/master/org.softlang.qegal/src/main/java/org/softlang/qegal/modules/layout)) of `repository_raw.csv` (producing `repository_raw.csv`).
-
-
-
+* (Optional) Run the main in [QueryGitProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/QueryGitProcess.java) to query recently indexed EMF related files on GitHub producing `files_ecore_raw.csv`, `files_eobject_raw.csv` and `files_genmodel_raw.csv` in the data folder.
+* (Optional) Run the python script [combine_raw.py](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/combine_raw.py) to combine the data of the previous step and to annotate meta-data to the repositories producing `repository_raw.csv`.
+* (Optional) Run the main in [LayoutMiningProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/LayoutMiningProcess.java) to mine the repository layout detection ([rules](https://github.com/softlang/qegal/tree/master/org.softlang.qegal/src/main/java/org/softlang/qegal/modules/layout)) on `repository_raw.csv` to produce `repository_layout.csv`.
+* (Optional) Run the python script [filter_vanilla.py](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/filter_vanilla.py) to filter the `repository_layout.csv` and to produce `repository_vanilla.csv`.
+* Run the main in [EMFMiningProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/EMFMiningProcess.java) to mine the EMF pattern detection ([rules](https://github.com/softlang/qegal/tree/master/org.softlang.qegal/src/main/java/org/softlang/qegal/modules/emf)) on `repository_vanilla.csv` to produce `repository_emf.csv`.
 
 # How to write and apply a custom mining:
 
