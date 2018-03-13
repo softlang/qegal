@@ -1,9 +1,0 @@
-// Phase 0
-// Detection of Maven artifacts
-
-@prefix sl: <http://org.softlang.com/>.
-@prefix system: <http://org.softlang.com/qegal/>.
-@prefix metric: <http://org.softlang.com/qegal/metrics/>.
-
-(?file sl:manifestsAs sl:File) (?file sl:elementOf sl:XML) fragments(?file,?project,"build.xml") ->
-    (?file sl:elementOf sl:Ant).

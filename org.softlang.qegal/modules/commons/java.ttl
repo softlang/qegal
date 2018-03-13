@@ -1,3 +1,0 @@
-@prefix sl: <http://org.softlang.com/> .
-
-sl:JavaProject sl:subsetOf sl:Project.

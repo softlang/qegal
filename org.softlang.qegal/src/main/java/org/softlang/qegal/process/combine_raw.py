@@ -46,18 +46,11 @@ if __name__ == '__main__':
         return json.loads(requests.get(service, headers=headers).text)
 
 
-    ecore_raw = pd.read_csv(
-        'files_ecore_raw_ 66780_2018_02_16_14_10_54.csv',
-        encoding='ISO-8859-1')
-    genmodel_raw = pd.read_csv(
-        'files_genmodel_raw_ 15564_2018_02_16_16_02_43.csv',
-        encoding='ISO-8859-1')
-    eobject_raw = pd.read_csv(
-        'files_eobject_raw_ 153919_2018_02_20_09_53_13.csv',
-        encoding='ISO-8859-1')
-    # TODO: Add XMI raw.
-
-    repository_raw_file = 'repository_raw.csv'
+    ecore_raw = pd.read_csv('../../../../../../../data/files_ecore_raw.csv', encoding='ISO-8859-1')
+    genmodel_raw = pd.read_csv('../../../../../../../data/files_genmodel_raw', encoding='ISO-8859-1')
+    eobject_raw = pd.read_csv('../../../../../../../data/files_eobject_raw', encoding='ISO-8859-1')
+  
+    repository_raw_file = ''../../../../../../../data/repository_raw.csv'
 
     ecore_raw['type'] = 'ecore'
     genmodel_raw['type'] = 'genmodel'

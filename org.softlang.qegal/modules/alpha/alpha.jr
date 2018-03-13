@@ -1,7 +1,0 @@
-// Phase 0
-// Initial phase collection all java files and source folder.
-
-@prefix sl: <http://org.softlang.com/>.
-@prefix system: <http://org.softlang.com/qegal/>.
-@prefix metric: <http://org.softlang.com/qegal/metrics/>.
-

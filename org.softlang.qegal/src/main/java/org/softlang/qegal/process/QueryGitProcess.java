@@ -21,22 +21,10 @@ public class QueryGitProcess {
 
 	public static final int GIT_INDEXED_MAX_SIZE = 384000;
 
-	// TODO: Ecore, Genmodel, Java, XMI and Annotated.
 	public static void main(String[] args) throws IOException {
-		queryAnnotated();
-	}
-
-	public static void queryXMI() throws IOException {
-		String query = "https://api.github.com/search/code?q=xml+www+omg+org+XMI+version+xmlns";
-
-		int totalCount = collect(query + "+size:0..384000").getAsJsonObject().get("total_count").getAsInt();
-
-		File file = new File("data/files_xmi_raw_ " + totalCount + "_" + JUtils.date() + ".csv");
-
-		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);
-		printer.printRecord("total", "low", "high", "page", "repository", "url");
-		collectAll(printer, query, 0, GIT_INDEXED_MAX_SIZE);
-		printer.close();
+		queryGenmodel();
+		queryEcore();
+		queryEObject();
 	}
 
 	public static void queryEObject() throws IOException {
@@ -44,20 +32,7 @@ public class QueryGitProcess {
 
 		int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
 
-		File file = new File("data/files_eobject_raw_ " + totalCount + "_" + JUtils.date() + ".csv");
-
-		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);
-		printer.printRecord("total", "low", "high", "page", "repository", "url");
-		collectAll(printer, query, 0, GIT_INDEXED_MAX_SIZE);
-		printer.close();
-	}
-
-	public static void queryAnnotated() throws IOException {
-		String query = "https://api.github.com/search/code?q=interface+model++containment+eclipse+emf+ecore+NOT+generated+extension:java";
-
-		int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
-
-		File file = new File("data/files_annotated_raw_ " + totalCount + "_" + JUtils.date() + ".csv");
+		File file = new File("data/files_eobject_raw.csv");
 
 		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);
 		printer.printRecord("total", "low", "high", "page", "repository", "url");
@@ -70,7 +45,7 @@ public class QueryGitProcess {
 
 		int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
 
-		File file = new File("data/files_genmodel_raw_ " + totalCount + "_" + JUtils.date() + ".csv");
+		File file = new File("data/files_genmodel_raw.csv");
 
 		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);
 		printer.printRecord("total", "low", "high", "page", "repository", "url");
@@ -82,7 +57,7 @@ public class QueryGitProcess {
 		String query = "https://api.github.com/search/code?q=EClass+extension:ecore";
 		int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
 
-		File file = new File("data/files_ecore_raw_ " + totalCount + "_" + JUtils.date() + ".csv");
+		File file = new File("data/files_ecore_raw.csv");
 
 		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);
 		printer.printRecord("total", "low", "high", "page", "repository", "url");
