@@ -50,7 +50,7 @@ if __name__ == '__main__':
     genmodel_raw = pd.read_csv('../../../../../../../data/files_genmodel_raw', encoding='ISO-8859-1')
     eobject_raw = pd.read_csv('../../../../../../../data/files_eobject_raw', encoding='ISO-8859-1')
   
-    repository_raw_file = ''../../../../../../../data/repository_raw.csv'
+    repository_raw_file = '../../../../../../../data/repository_raw.csv'
 
     ecore_raw['type'] = 'ecore'
     genmodel_raw['type'] = 'genmodel'

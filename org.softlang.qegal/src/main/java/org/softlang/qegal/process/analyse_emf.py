@@ -2,11 +2,6 @@ import pandas as pd
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-from lxml.objectify import annotate
-import requests
-import json
-import base64
-import config
 import seaborn as sns
 
 if __name__ == '__main__':
