@@ -33,5 +33,5 @@ Rule-based fact extraction in a megamodeling context
 * Import all projects into the workspace.
 * Right-click on the workspace and select ``Export>Plug-in Development>Deployable plug-ins and fragments``.
 * Check all boxes for the three projects and select ``Install into host. Repository:``.
-* Finally install by clicking ``Finish`` and restart Eclipse.
+* Finally install by clicking ``Finish``. Wait until Eclipse finished building. Then, restart (a dialog will ask you to).
 * '.qegal' files can now be opened using the IDE Support.
