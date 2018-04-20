@@ -18,7 +18,10 @@ Rule-based fact extraction in a megamodeling context
 * (Optional) ``login_git=<github-username>`` 
 * (Optional) ``password_git=<github-password>`` (only needed for the Git API)
 * When running Java add the VM Arguments *-Xss* and *-Xmx* depending on your system (e.g., -Xss4m -Xmx10000m).
-* (Optional) Run the main in [QueryGitProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/QueryGitProcess.java) to query recently indexed EMF related files on GitHub producing `files_ecore_raw.csv`, `files_eobject_raw.csv` and `files_genmodel_raw.csv` in the data folder.
+* (Optional) Run the main in [QueryGitProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/QueryGitProcess.java) to query recently indexed EMF related files on GitHub. In the data folder, this produces:
+  * [`files_ecore_raw.csv`](https://raw.githubusercontent.com/softlang/qegal/master/org.softlang.qegal/data/files_ecore_raw.csv): Query results for `.ecore` extension.
+  * [`files_eobject_raw.csv`](https://raw.githubusercontent.com/softlang/qegal/master/org.softlang.qegal/data/files_eobject_raw.csv): Query results for `extends EObject {`. 
+  * [`files_genmodel_raw.csv`](https://raw.githubusercontent.com/softlang/qegal/master/org.softlang.qegal/data/files_genmodel_raw.csv): Query results for `.genmodel` extension.
 * (Optional) Run the python script [combine_raw.py](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/combine_raw.py) to combine the data of the previous step and to annotate meta-data to the repositories producing `repository_raw.csv`.
 * (Optional) Run the main in [LayoutMiningProcess.java](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/LayoutMiningProcess.java) to mine the repository layout detection ([rules](https://github.com/softlang/qegal/tree/master/org.softlang.qegal/src/main/java/org/softlang/qegal/modules/layout)) on `repository_raw.csv` to produce `repository_layout.csv`.
 * (Optional) Run the python script [filter_vanilla.py](https://github.com/softlang/qegal/blob/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process/filter_vanilla.py) to filter the `repository_layout.csv` and to produce `repository_vanilla.csv`.
@@ -31,7 +34,7 @@ Rule-based fact extraction in a megamodeling context
 
 ## How to install XText IDE support:
 * Import all projects into the workspace.
-* Right-click on the workspace and select ``Export>Deployable plug-ins and fragments``.
-* Check all boxes for the three projects and ``Install into host. Repository:``.
-* Finally install by clicking ``Finish`` and restart Eclipse.
+* Right-click on the workspace and select ``Export>Plug-in Development>Deployable plug-ins and fragments``.
+* Check all boxes for the three projects and select ``Install into host. Repository:``.
+* Finally install by clicking ``Finish``. Wait until Eclipse finished building. Then, restart (a dialog will ask you to).
 * '.qegal' files can now be opened using the IDE Support.
