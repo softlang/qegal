@@ -26,7 +26,7 @@ public class Poms {
 	}
 
 	public static void queryPoms() throws Exception {
-		String query = "https://api.github.com/search/code?q=filename:built.sbt+extension:sbt";
+		String query = "https://api.github.com/search/code?q=filename:build.sbt+extension:sbt";
 
 		int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
 
