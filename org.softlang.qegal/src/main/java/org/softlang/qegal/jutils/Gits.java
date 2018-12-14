@@ -57,26 +57,26 @@ public class Gits {
 			}
 		}
 
-		// Update repository if necessary.
-		// if (git != null) {
-		// try {
-		// FetchResult fetch = git.fetch().call();
-		// if (!bare)
-		// git.pull().call();
-		//
-		// if (!bare) {
-		// Status status = git.status().call();
-		//
-		// if (!status.isClean()) {
-		// exceptions.add(new Exception("Not clean"));
-		// git = null;
-		// }
-		// }
-		//
-		// } catch (GitAPIException e) {
-		// exceptions.add(e);
-		// }
-		// }
+		 //Update repository if necessary.
+		 if (git != null) {
+		 try {
+		 FetchResult fetch = git.fetch().call();
+		 if (!bare)
+		 git.pull().call();
+		
+		 if (!bare) {
+		 Status status = git.status().call();
+		
+		 if (!status.isClean()) {
+		 exceptions.add(new Exception("Not clean"));
+		 git = null;
+		 }
+		 }
+		
+		 } catch (GitAPIException e) {
+		 exceptions.add(e);
+		 }
+		 }
 
 		return git;
 	}

@@ -73,7 +73,7 @@ public class IOGitBare implements IOLayer {
 
 	@Override
 	public InputStream access(String uri) throws IOException {
-
+		System.out.println(uri);
 		TreeWalk walk = forPath(uri);
 		ObjectId objectId = walk.getObjectId(0);
 		ObjectLoader loader = repository.open(objectId);
