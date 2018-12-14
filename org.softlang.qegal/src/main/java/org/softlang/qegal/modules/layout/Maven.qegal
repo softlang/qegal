@@ -1,0 +1,17 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+import org.softlang.qegal.buildins.Children
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// TODO: This needs to be reverted on parsing xml. Building an effective model for poms is not in this scope.
+(?file, sl:manifestsAs, sl:File) (?file, sl:elementOf, sl:XML) Children(?file, ?project, "pom.xml") ->
+    (?file, sl:elementOf, sl:Pom) (?file, sl:role, sl:BuildFile).
+
+
+[mavenDependency: (?x, sl:elementOf, sl:Pom) ->
+	DecXml(?x, "//*", sl:partOf, ?x)
+	DecXml(?x, "//*", sl:elementOf, sl:MavenDependency)]

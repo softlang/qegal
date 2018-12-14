@@ -75,7 +75,7 @@ public class LayoutMiningProcess {
 				IMinedRepository mined = QegalProcess2.execute(iolayer,
 						new File(JUtils.configuration("temp") + "/mined_alpha_repositories/" + address),
 						Collections.singleton(new File("src/main/java/org/softlang/qegal/modules/layout")),
-						1000 * 60 * 10, QegalLogging.EXCEPTIONS, false);
+						1000 * 60 * 10, QegalLogging.EXCEPTIONS, true);
 
 				// Duplicate declaration and component detection.
 				Model model = mined.model();

@@ -11,9 +11,15 @@ import org.softlang.qegal.buildins.Children
 (?file, sl:manifestsAs, sl:File) (?file, sl:elementOf, sl:XML) Children(?file, ?project, "pom.xml") ->
     (?file, sl:elementOf, sl:Pom) (?file, sl:role, sl:BuildFile).
 
-//(?file, sl:elementOf, sl:Pom) (?file, sl:partOf, ?project) StrPom(?file, "/groupId", ?groupId) StrPom(?file, "/artifactId", ?artifactId)
-//    UriConcat(sl:dec ,"/",?groupId, ":", ?artifactId, ?reference)  -> (?file, sl:decOccurs, ?reference) (?reference, sl:resolvesTo, ?project).
-//    
+(?file, sl:elementOf, sl:XML) StrXml(?file, ?name, ?element) ->
+	(?name, sl:hasValue, ?element).
+
+(?file, sl:elementOf, sl:XML) ->
+	(?file, sl:lalala, sl:LOL).
+	
+/*(?file, sl:elementOf, sl:Pom) (?file, sl:partOf, ?project) StrPom(?file, "/groupId", ?groupId) StrPom(?file, "/artifactId", ?artifactId)
+    UriConcat(sl:dec ,"/",?groupId, ":", ?artifactId, ?reference)  -> (?file, sl:decOccurs, ?reference) (?reference, sl:resolvesTo, ?project).
+*/    
 //(?file, sl:elementOf, sl:Pom) ->
 //	DecPom(?file, "/dependencies", sl:partOf, ?file)
 //	DecPom(?file, "/dependencies", sl:elementOf, sl:PomDependency).

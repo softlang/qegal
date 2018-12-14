@@ -1,0 +1,71 @@
+<repository:/pom.xml>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/XML> , <http://org.softlang.com/Pom> ;
+      <http://org.softlang.com/identifiesAs>
+              "activiti-root" ;
+      <http://org.softlang.com/isConnectedTo>
+              <repository:/pom.xml> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/pom.xml#/ns:project(1)/ns:dependency(1)/ns:groupId(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/resolvable> , <http://org.softlang.com/groupId> ;
+      <http://org.softlang.com/groupIdOf>
+              <repository:/pom.xml#/ns:project(1)/ns:dependency(1)> ;
+      <http://org.softlang.com/hasValue>
+              "hahahah" ;
+      <http://org.softlang.com/partOf>
+              <repository:/pom.xml> .
+
+<http://org.softlang.com/qegal/Evaluation>
+      <http://org.softlang.com/File>
+              <repository:/pom.xml> ;
+      <http://org.softlang.com/Folder>
+              <repository:/> ;
+      <http://org.softlang.com/MavenDependency>
+              <repository:/pom.xml#/ns:project(1)/ns:dependency(1)> ;
+      <http://org.softlang.com/Pom>
+              <repository:/pom.xml> ;
+      <http://org.softlang.com/Property>
+              <repository:/pom.xml#/ns:project(1)/ns:version(1)> ;
+      <http://org.softlang.com/XML>
+              <repository:/pom.xml> ;
+      <http://org.softlang.com/artifactId>
+              <repository:/pom.xml#/ns:project(1)/ns:dependency(1)/ns:artifactId(1)> ;
+      <http://org.softlang.com/groupId>
+              <repository:/pom.xml#/ns:project(1)/ns:dependency(1)/ns:groupId(1)> ;
+      <http://org.softlang.com/resolvable>
+              <repository:/pom.xml#/ns:project(1)/ns:dependency(1)/ns:groupId(1)> , <repository:/pom.xml#/ns:project(1)/ns:dependency(1)/ns:artifactId(1)> , <repository:/pom.xml#/ns:project(1)/ns:version(1)> .
+
+<repository:/pom.xml#/ns:project(1)/ns:dependency(1)/ns:artifactId(1)>
+      <http://org.softlang.com/artifactIdOf>
+              <repository:/pom.xml#/ns:project(1)/ns:dependency(1)> ;
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/resolvable> , <http://org.softlang.com/artifactId> ;
+      <http://org.softlang.com/hasValue>
+              "blalala" ;
+      <http://org.softlang.com/partOf>
+              <repository:/pom.xml> .
+
+<repository:/>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> .
+
+<repository:/pom.xml#/ns:project(1)/ns:version(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/resolvable> , <http://org.softlang.com/Property> ;
+      <http://org.softlang.com/hasName>
+              "version" , "project.version" ;
+      <http://org.softlang.com/hasValue>
+              "7.0.0-SNAPSHOT" ;
+      <http://org.softlang.com/partOf>
+              <repository:/pom.xml> .
+
+<repository:/pom.xml#/ns:project(1)/ns:dependency(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MavenDependency> ;
+      <http://org.softlang.com/partOf>
+              <repository:/pom.xml> .

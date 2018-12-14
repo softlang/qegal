@@ -34,10 +34,12 @@ if __name__ == '__main__':
 
     repositories['uniform_build'] = repositories.apply(lambda x: sum([x[i] for i in builds]) == 1, axis=1)
 
+    #print(repositories)
     uniform = repositories[repositories.uniform_build].sum(axis=0)
     vanilla = repositories[
         repositories.uniform_build & (repositories.components == 1) & (repositories.duplicates == 0)]
 
+    vanilla = repositories
     print(vanilla)
     vanilla.to_csv(vanilla_file, index=False)
 

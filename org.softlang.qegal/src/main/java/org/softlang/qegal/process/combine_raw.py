@@ -18,7 +18,7 @@ if __name__ == '__main__':
     plt.rcParams["font.size"] = 14
 
     headers = {
-        'Authorization': 'Basic ' + base64.b64encode((config.login_git + ':' + config.password_git).encode()).decode()}
+        'Authorization': 'Basic ' + base64.b64encode(("tmilles" + ':' + "Progamer00)").encode()).decode()}
 
 
     def collect(service):
@@ -41,22 +41,24 @@ if __name__ == '__main__':
 
         rl = rl - 1
         encoded_authorization = 'Basic ' + base64.b64encode(
-            (config.login_git + ':' + config.password_git).encode()).decode()
+            ("tmilles" + ':' + "Progamer00)").encode()).decode()
         headers = {'Authorization': encoded_authorization}
         return json.loads(requests.get(service, headers=headers).text)
 
 
-    ecore_raw = pd.read_csv('../../../../../../../data/files_ecore_raw.csv', encoding='ISO-8859-1')
-    genmodel_raw = pd.read_csv('../../../../../../../data/files_genmodel_raw', encoding='ISO-8859-1')
-    eobject_raw = pd.read_csv('../../../../../../../data/files_eobject_raw', encoding='ISO-8859-1')
-  
+    #ecore_raw = pd.read_csv('../../../../../../../data/files_ecore_raw.csv', encoding='ISO-8859-1')
+    #genmodel_raw = pd.read_csv('../../../../../../../data/files_genmodel_raw', encoding='ISO-8859-1')
+    #eobject_raw = pd.read_csv('../../../../../../../data/files_eobject_raw', encoding='ISO-8859-1')
+    maven_raw = pd.read_csv('../../../../../../../data/repos_maven.csv', encoding='ISO-8859-1')
     repository_raw_file = '../../../../../../../data/repository_raw.csv'
+    
+    maven_raw['type'] = 'maven'
 
-    ecore_raw['type'] = 'ecore'
-    genmodel_raw['type'] = 'genmodel'
-    eobject_raw['type'] = 'eobject'
+    #ecore_raw['type'] = 'ecore'
+    #genmodel_raw['type'] = 'genmodel'
+    #eobject_raw['type'] = 'eobject'
 
-    repositories = data = pd.concat([ecore_raw, genmodel_raw, eobject_raw])[['repository', 'type']]
+    repositories = data = pd.concat([maven_raw])[['repository', 'type']]
 
     repositories = repositories.groupby(by='repository').apply(lambda x: x.groupby('type').count().transpose())
     repositories = repositories.fillna(0)

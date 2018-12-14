@@ -1,0 +1,146 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+/* Qegal system namespace */
+@prefix sys: <http://org.softlang.com/qegal/>.
+
+// Metric for counting all manifestation and language types.
+(sys:Evaluation, ?m, ?x)  <- (?x, sl:manifestsAs, ?m).
+(sys:Evaluation, ?l, ?x)  <- (?x, sl:elementOf, ?l).
+
+instance (<repository:/>, sl:manifestsAs, sl:Folder).
+
+(?artifact, sl:partOf,?folder)(?folder, sl:partOf, ?src) (?src, sl:elementOf, sl:SourceFolder) ->
+ (?artifact,sl:partOf,?src).
+
+// Recursive filesystem decomposition.
+(?folder, sl:manifestsAs, sl:Folder) -> DecFs(?folder, "/*", sl:partOf, ?folder).
+
+(?artifact, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) IsDirectory(?artifact) ->
+    (?artifact, sl:manifestsAs, sl:Folder).
+    
+(?artifact, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) IsFile(?artifact) ->
+     	(?artifact, sl:manifestsAs, sl:File).
+    
+    // White list of extensions due to computations efforts of xml wellformedness check.
+(?x, sl:manifestsAs, sl:File) Extension(?x,?ext)
+    NotEqual(?ext,"java")
+    NotEqual(?ext,"html")
+    NotEqual(?ext,"xhtml")
+    NotEqual(?ext,"svg")
+    NotEqual(?ext,"cpp")
+    NotEqual(?ext,"h")
+    XmlWellformed(?x) ->
+    (?x, sl:elementOf, sl:XML).
+
+(?file, sl:manifestsAs, sl:File) (?file, sl:elementOf, sl:XML) Children(?file, ?project, "pom.xml") ->
+    (?file, sl:elementOf, sl:Pom)
+    (?file, sl:isConnectedTo, ?file)
+    StrXml(?file, ?file, sl:identifiesAs, "/ns:project/ns:artifactId/text()").
+    
+
+[Modules: (?file, sl:elementOf, sl:Pom) ->
+	DecXml(?file, "//ns:modules/ns:module", sl:elementOf, sl:Module)
+	DecXml(?file, "//ns:modules/ns:module", sl:elementOf, sl:resolvable)
+	DecXml(?file, "//ns:modules/ns:module", sl:partOf, ?file)
+]
+    
+[properties: (?file, sl:elementOf, sl:Pom) ->
+	DecXml(?file, "/ns:project/ns:properties/*", sl:partOf, ?file)
+    DecXml(?file, "/ns:project/ns:properties/*", sl:elementOf, sl:Property)
+    DecXml(?file, "/ns:project/ns:properties/*", sl:elementOf, sl:resolvable)
+]
+
+[propertyName: (?property, sl:elementOf, sl:Property) 
+	Children(?property, ?any, ?name) 
+	Regex(?name, "ns:(.*)\\(\\d+\\)", ?extractedName)
+	->
+	(?property, sl:hasName, ?extractedName)
+]
+
+[projectVersion: (?file, sl:elementOf, sl:Pom) ->
+	DecXml(?file, "/ns:project/ns:version", sl:partOf, ?file)
+	DecXml(?file, "/ns:project/ns:version", sl:elementOf, sl:Property)
+	DecXml(?file, "/ns:project/ns:version", sl:elementOf, sl:resolvable)
+	DecXml(?file, "/ns:project/ns:version", sl:hasName, "project.version")
+]
+ [mavenDependency: (?file, sl:elementOf, sl:Pom) ->
+	DecXml(?file, "//ns:dependency", sl:partOf, ?file)
+	DecXml(?file, "//ns:dependency", sl:elementOf, sl:MavenDependency)]
+	
+ [mavenDependencyIdentifier: (?dep, sl:elementOf, sl:MavenDependency) (?dep, sl:partOf, ?file) ->
+ 	DecXml(?dep, "/ns:artifactId", sl:artifactIdOf, ?dep)
+ 	DecXml(?dep, "/ns:artifactId", sl:elementOf, sl:artifactId)
+ 	DecXml(?dep, "/ns:artifactId", sl:elementOf, sl:resolvable)
+ 	DecXml(?dep, "/ns:artifactId", sl:partOf, ?file)
+ 	DecXml(?dep, "/ns:groupId", sl:groupIdOf, ?dep)
+ 	DecXml(?dep, "/ns:groupId", sl:elementOf, sl:groupId)
+ 	DecXml(?dep, "/ns:groupId", sl:elementOf, sl:resolvable)
+ 	DecXml(?dep, "/ns:groupId", sl:partOf, ?file)
+ 	DecXml(?dep, "/ns:version", sl:versionOf, ?dep)
+ 	DecXml(?dep, "/ns:version", sl:elementOf, sl:version)
+ 	DecXml(?dep, "/ns:version", sl:elementOf, sl:resolvable)
+ 	DecXml(?dep, "/ns:version", sl:partOf, ?file)]
+ 	
+ [mavenParentFile: (?file, sl:elementOf, sl:Pom) ->
+ 	DecXml(?file, "//ns:parent", sl:partOf, ?file)
+ 	DecXml(?file, "//ns:parent", sl:elementOf, sl:ParentBlock)]
+ 	
+ [mavenParentIdentifier: (?parent, sl:elementOf, sl:ParentBlock) ->
+ 	DecXml(?parent, "/ns:artifactId", sl:artifactIdOf, ?parent)
+ 	DecXml(?parent, "/ns:artifactId", sl:elementOf, sl:artifactId)
+ 	DecXml(?parent, "/ns:artifactId", sl:elementOf, sl:resolvable)
+ 	DecXml(?parent, "/ns:groupId", sl:groupIdOf, ?parent)
+ 	DecXml(?parent, "/ns:groupId", sl:elementOf, sl:groupId)
+ 	DecXml(?parent, "/ns:groupId", sl:elementOf, sl:resolvable)
+ 	DecXml(?parent, "/ns:relativePath", sl:relativePathOf, ?parent)
+ 	DecXml(?parent, "/ns:relativePath", sl:elementOf, sl:relativePath)
+ 	DecXml(?parent, "/ns:relativePath", sl:elementOf, sl:resolvable)]
+ 	
+ [identifyParent: (?parentBlock, sl:elementOf, sl:ParentBlock) 
+ 	(?parentBlock, sl:partOf, ?file)
+ 	(?idNode, sl:artifactIdOf, ?parentBlock)
+ 	(?idNode, sl:hasValue, ?id)
+ 	(?parentFile, sl:identifiesAs, ?id)
+ 	(?parentFile, sl:elementOf, sl:Pom) 
+ 	->
+	(?file, sl:isConnectedTo, ?parentFile)
+	(?parentFile, sl:elementOf, sl:ParentPom)]
+	
+[transitiveConnection: (?a, sl:isConnectedTo, ?b) (?b, sl:isConnectedTo, ?c) ->
+	(?a, sl:isConnectedTo, ?c)]
+
+[identifyViaRelativePath: (?parentBlock, sl:elementOf, sl:ParentBlock) 
+ 	(?parentBlock, sl:partOf, ?file)
+ 	(?relativePath, sl:relativePathOf, ?parentBlock)
+ 	(?relativePath, sl:hasValue, ?value)
+ 	PathCombine(?file, ?value, ?path)
+ 	UriConcat("repository:", ?path, ?parentFile)
+ 	(?parentFile, sl:elementOf, sl:Pom)
+ 	-> 
+ 	(?parentFile, sl:isConnectedTo, ?file)
+	(?file, sl:isConnectedTo, ?parentFile)
+	(?parentFile, sl:elementOf, sl:ParentPom)]
+	
+[resolveAll: (?object, sl:elementOf, sl:resolvable)
+	StrXml(?object, "/text()", ?value)
+	->
+	(?object, sl:hasValue, ?value)
+]
+
+[resolveVariables: (?object, sl:elementOf, sl:resolvable)
+	(?object, sl:hasValue, ?variable)
+	Regex(?variable, "\\$\\{(.+)\\}", ?name)
+	(?property, sl:elementOf, sl:Property)
+	(?property, sl:hasName, ?name)
+	(?property, sl:hasValue, ?value)
+	(?property, sl:partOf, ?file1)
+	(?object, sl:partOf, ?file2)
+	(?file1, sl:isConnectedTo, ?file2)
+	->
+	(?object, sl:hasValue, ?value)
+]

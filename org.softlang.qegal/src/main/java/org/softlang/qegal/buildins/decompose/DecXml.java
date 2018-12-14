@@ -10,12 +10,15 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.jxpath.JXPathContext;
+import org.apache.commons.jxpath.ri.compiler.NodeNameTest;
 import org.apache.commons.jxpath.ri.model.NodePointer;
-import org.apache.jena.graph.Node;
+import org.apache.commons.jxpath.ri.model.dom.DOMNodePointer;
+import org.apache.commons.jxpath.ri.QName;
 import org.softlang.qegal.buildins.Tablings;
 import org.softlang.qegal.io.IOLayer;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
+import org.apache.jena.graph.*;
 
 import com.google.common.collect.Lists;
 
@@ -38,6 +41,7 @@ public class DecXml extends DecDeep {
 			dbf.setNamespaceAware(true);
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document doc = db.parse(iolayer.access(path));
+			String s = doc.getDocumentElement().getAttribute("xmlns");
 			return doc;
 		} catch (SAXException | IOException | ParserConfigurationException e) {
 			throw new RuntimeException(e);
@@ -47,17 +51,20 @@ public class DecXml extends DecDeep {
 	@Override
 	public List<Node> decompose(String uri, String xpath) {
 		String query = deepQuery(uri, xpath);
-
+		//System.out.println(query);
 		Document contextBean = Tablings.get(filepath(uri), TABLE, x -> parse(x));
-
 		JXPathContext context = JXPathContext.newContext(contextBean);
+		context.registerNamespace("ns", "http://maven.apache.org/POM/4.0.0");
+		//context.registerNamespace("xmlns", "http://maven.apache.org/POM/4.0.0");
+		//context.registerNamespace("xsi", "http://www.w3.org/2001/XMLSchema-instance");
 
 		// context.setFunctions(new ClassFunctions(ExtensionFunctionsXml.class,"sl"));
 		// if(xpath.endsWith("namespace::*"))
-		// System.out.println("asdf");
+		//System.out.println("asdf");
 
 		List<Object> result = Lists.newArrayList(context.iteratePointers(query));
-		return result.stream().map(x -> resolve(filepath(uri), (NodePointer) x)).collect(Collectors.toList());
+		List<Node> nodes = result.stream().map(x -> resolve(filepath(uri), (NodePointer) x)).collect(Collectors.toList());
+		return nodes;
 	}
 
 	protected Node resolve(String filepath, NodePointer pointer) {

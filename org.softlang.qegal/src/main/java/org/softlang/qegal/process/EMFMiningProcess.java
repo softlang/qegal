@@ -33,7 +33,7 @@ public class EMFMiningProcess {
 		// Input arguments.
 		boolean bare = true;
 		boolean sample = false;
-		boolean persist = false;
+		boolean persist = true;
 		boolean logon = false;
 		
 		if (args.length > 0)

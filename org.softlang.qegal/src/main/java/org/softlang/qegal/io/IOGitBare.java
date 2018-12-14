@@ -65,6 +65,7 @@ public class IOGitBare implements IOLayer {
 			throws MissingObjectException, IncorrectObjectTypeException, IOException {
 		// Find the commit for this ssh.
 		this.repository = repository;
+		System.out.println(ssh);
 		try (RevWalk revWalk = new RevWalk(repository)) {
 			tree = revWalk.parseCommit(ObjectId.fromString(ssh)).getTree();
 		}

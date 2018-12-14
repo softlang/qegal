@@ -16,14 +16,18 @@ public class StrXml extends DecXml {
 
     @Override
     protected Node resolve(String filepath, NodePointer pointer) {
-        if (pointer instanceof DOMAttributePointer)
-            return NodeFactory.createLiteral(((DOMAttributePointer) pointer).getValue().toString());
-        if (pointer instanceof BeanPointer)
+        if (pointer instanceof DOMAttributePointer) {
+        	return NodeFactory.createLiteral(((DOMAttributePointer) pointer).getValue().toString());
+        }
+        if (pointer instanceof BeanPointer) {
             return NodeFactory.createLiteral(((BeanPointer) pointer).getValue().toString());
-        if (pointer instanceof NamespacePointer)
+        }
+        if (pointer instanceof NamespacePointer) {
             return NodeFactory.createLiteral(((NamespacePointer) pointer).getNamespaceURI());
-        if(pointer instanceof DOMNodePointer)
+        }
+        if(pointer instanceof DOMNodePointer) {
             return NodeFactory.createLiteral(((DOMNodePointer) pointer).getValue().toString());
+        }
 
         throw new RuntimeException("Type not matching");
     }
