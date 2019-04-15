@@ -1,0 +1,101 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// Java files.
+(?x, sl:manifestsAs, sl:File) Extension(?x, "java") -> (?x, sl:elementOf, sl:Java).
+
+//Interface Java vs class Java?
+// -> (?x, sl:elementOf, sl:InterfaceJava).
+// -> (?x, sl:elementOf, sl:ClassJava).
+// -> (?x, sl:elementOf, sl:MethodJava).
+// -> (?x, sl:elementOf, sl:AttributeJava).
+
+[extendsReference: (?class, sl:elementOf, sl:Java)
+	StrJava(?class, "type[1]/extendedTypes[1]/name", ?superclass)
+	->
+	(?class, sl:refersToExtends, ?superclass)
+]
+
+[implementsReference: (?class, sl:elementOf, sl:Java)
+	StrJava(?class, "type[1]/extendedTypes[1]/name", ?interface)
+	->
+	(?class, sl:refersToImplements, ?interface)
+]
+
+[ecorePackageJava2: (?epackage, sl:elementOf, sl:InterfaceJava) (?epackage, sl:refersToExtends, "EPackage")
+	-> 
+	(?epackage, sl:elementOf, sl:EcorePackageJava)
+]
+
+[ecorePackageJavaNSURI: (?epackage, sl:elementOf, sl:EcorePackageJava) 
+	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri)
+	->
+	(?epackage, sl:nsURI, ?nsUri)
+]
+
+[ecoreFactoryJava2: (?efactory, sl:elementOf, sl:InterfaceJava) (?efactory, sl:refersToExtends, "EFactory")
+	-> 
+	(?efactory, sl:elementOf, sl:EcoreFactoryJava)
+]
+
+[ecoreFactoryJavaNSURI: (?efactory, sl:elementOf, sl:EcoreFactoryJava) 
+	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri)
+	->
+	(?epackage, sl:nsURI, ?nsUri)
+]
+
+//determine qualified path, nsuri=package name? no
+
+[ecoreInterfaceJava: (?eclassInterface, sl:elementOf, sl:InterfaceJava)
+	(?eclass, sl:refersToExtends, "EObject")
+	->
+	(?eclass, sl:elementOf, sl:EcoreModelInterfaceJava)
+]
+
+[ecoreClassJava: (?eclassImpl, sl:elementOf, sl:Java)
+	(?eclassImpl, sl:refersToImplements, ?eclassInterfaceName)
+	(?eclassInterface, sl:name, ?eclassInterfaceName)
+	->
+	(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava)
+]
+
+// Java Ecore Package.
+[ecorePackageJava: (?epackage, sl:elementOf, sl:Java) Match(?epackage,".*Package.java") 
+	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri) ->
+    (?epackage, sl:elementOf, sl:EcorePackageJava) (?epackage, sl:nsUri, ?nsUri)]
+
+// Java Ecore Factory for Packages.
+[ecoreFactoryJava: (?factory, sl:elementOf, sl:Java) Match(?factory,".*Factory.java") 
+    StrJava(?factory, "type[1]/extendedTypes[1]/name", "EFactory")
+    (?factory, sl:partOf, ?folder)
+    (?epackage, sl:partOf, ?folder) (?epackage, sl:elementOf, sl:EcorePackageJava)
+    (?epackage, sl:nsUri, ?nsUri)  ->
+    (?factory, sl:elementOf, sl:EcoreFactoryJava) (?factory, sl:nsUri, ?nsUri)]
+
+// Get Java classifiers of each package and factory sharing the same nsUri.
+[ecoreClassifierJava: 
+    (?epackage, sl:elementOf, sl:EcorePackageJava) (?factory, sl:elementOf, sl:EcoreFactoryJava)
+    (?epackage, sl:nsUri, ?nsUri) (?factory, sl:nsUri, ?nsUri)
+    
+    // Get for potential classifiers java files next to the package and factory.
+    (?epackage, sl:partOf, ?folder)
+    (?file, sl:partOf, ?folder) (?file, sl:elementOf, sl:Java)
+
+    // Check that the classifier it is not the factory or package.
+    NotEqual(?file,?epackage) NotEqual(?file,?factory)
+
+    // Check internal hints in the java file. ('(?s)' means single line mode in regex)
+    StrJava(?file, "comments[2]", ?comment)
+    Regex(?comment, "(?s).*[\\n\\r].*@model.*")
+    Regex(?comment, "(?s).*[\\n\\r].*@generated.*")
+
+    // Get some additional information.
+    StrJava(?file, "type[1]/name/identifier", ?classifierName)
+    UriConcat(?nsUri,'#//',?classifierName,?uri) ->
+    (?file, sl:elementOf, sl:EcoreClassifierJava) (?file, sl:uri, ?uri)]
+  

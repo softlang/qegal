@@ -27,28 +27,27 @@ import org.softlang.qegal.jutils.JUtils;
 
 import com.google.common.base.Charsets;
 
-public class QModelsProcess {
+public class QModelProcess {
 	public static void main(String[] args) throws MissingObjectException, IncorrectObjectTypeException, IOException {
 
 		// Input arguments.
 		boolean bare = false;
 
 		CSVParser records = CSVFormat.DEFAULT.withHeader()
-				.parse(new FileReader("src/main/java/org/softlang/qegal/qmodles/hqvanilla.csv"));
+				.parse(new FileReader("src/main/java/org/softlang/qegal/qmodles/target.csv"));
 
-		int i = 20;
+		CSVSink csvsink = new CSVSink(
+				new File("src/main/java/org/softlang/qegal/qmodles/out.csv").getAbsolutePath(),
+				Charsets.UTF_8, SinkType.DYNAMIC);
+
 		for (CSVRecord record : records) {
-			// Just do the first i repositories.
-			i--;
-			if (i <= 0)
-				break;
-
+		
 			Repository repository = null;
 			IOLayer iolayer = null;
 			Map<String, String> properties = new HashMap<>();
 			try {
 				String address = record.get("repository");
-				System.out.println("Starting " + i + " " + address);
+				System.out.println("Starting " + address);
 				String sha = record.get("sha");
 				if (bare) {
 					// Initialise bare repository.
@@ -65,19 +64,21 @@ public class QModelsProcess {
 				// Run mining.
 				IMinedRepository mined = QegalProcess2.execute(iolayer,
 						new File(JUtils.configuration("temp") + "/qmodles/" + address),
-						Collections.singleton(new File("src/main/java/org/softlang/qegal/qmodles")), 1000 * 60 * 10,
+						Collections.singleton(new File("src/main/java/org/softlang/qegal/qmodles/process")), 1000 * 60 * 10,
 						QegalLogging.EXCEPTIONS, true);
 
 				properties.putAll(mined.properties());
 				properties.putAll(record.toMap());
 
-				System.out.println("Mined: " + address);
+				System.out.println("Mined: " + mined.properties());
 			} catch (Exception e) {
 				System.err.println("Exception: " + e.toString());
 				properties.put("exception_in_process", e.toString());
 			} finally {
 				if (repository != null)
 					repository.close();
+				csvsink.write(properties);
+				csvsink.flush();
 			}
 		}
 		records.close();

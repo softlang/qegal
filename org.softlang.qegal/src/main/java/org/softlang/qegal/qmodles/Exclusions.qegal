@@ -1,7 +1,7 @@
 import org.softlang.qegal.buildins.decompose.*
 import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
 
 /* Default softlang namespace */
 @prefix sl: <http://org.softlang.com/>.
-
-(?file, sl:mainfestsAs, sl:File) Extension(?x, "xtext") -> (?x, sl:elementOf, sl:Xtext).
