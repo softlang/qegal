@@ -21,9 +21,17 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 
 // Simple decompositions of Java files.
 (?class, sl:elementOf, sl:Java) ->
-	DecJava(?class, "type[1]/members", sl:partOf,?class)
-	DecJava(?class,"type[1]/members", sl:elementOf, sl:MethodJava).
-
+		DecJava(?class, "type[1]/members", sl:partOf,?class)
+		DecJava(?class,"type[1]/members", sl:elementOf, sl:MemberJava).
+	
+(?member, sl:elementOf,sl:MemberJava) 
+	ClassJava(?member,"","com.github.javaparser.ast.body.MethodDeclaration") ->
+		(?member,sl:partOf,sl:MethodJava).
+		
+(?member, sl:elementOf,sl:MemberJava) 
+	ClassJava(?member,"","com.github.javaparser.ast.body.FieldDeclaration") ->
+		(?member,sl:partOf,sl:AttributeJava).
+			
 ////not yet working
 //[attributeJava: (?class, sl:elementOf, sl:Java)
 //	StrJava(?class, "type[1]/members/variables", ?att)

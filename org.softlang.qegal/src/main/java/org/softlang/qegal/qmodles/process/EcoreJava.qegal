@@ -26,8 +26,12 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 
 // Interfaces are detected by subclassing.
 (?eclassInterface, sl:elementOf, sl:Java)
-	(?eclass, sl:refersToExtends, "EObject") ->
-		(?eclass, sl:elementOf, sl:EcoreModelInterfaceJava).
+	(?eclassInterface, sl:refersToExtendedTypes, "EObject") ->
+		(?eclassInterface, sl:elementOf, sl:EcoreModelInterfaceJava).
+		
+(?super, sl:elementOf, sl:EcoreModelInterfaceJava)
+	(?eclass, sl:refersToExtendedTypes, ?super) ->
+		(?eclass, sl:elementOf, sl:EcoreModelInterfaceJava).		
 
 // Implementations are detected by subclassing interfaces.
 (?eclassImpl, sl:elementOf, sl:Java)
