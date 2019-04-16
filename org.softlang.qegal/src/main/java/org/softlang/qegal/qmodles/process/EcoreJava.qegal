@@ -35,7 +35,20 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 
 // Implementations are detected by subclassing interfaces.
 (?eclassImpl, sl:elementOf, sl:Java)
-	(?eclassImpl, sl:refersToImplementedTypes, ?eclassInterfaceName)
-	(?eclassInterface, sl:name, ?eclassInterfaceName) ->
-		(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava).
-  
+	(?eclassImpl, sl:refersToImplementedTypes, ?eclassInterface)
+	(?eclassInterface, sl:elementOf, sl:EcoreModelInterfaceJava)->
+			(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava).
+				
+(?eAttributeInterfaceSignature, sl:elementOf, sl:MemberJava)
+	(?eclassInterface, sl:elementOf, sl:EcoreModelInterfaceJava)
+	(?eAttributeInterfaceSignature, sl:partOf, ?eClassInterface)
+	StrJava(?eAttributeInterfaceSignature, "/comment/value/content", ?comment) 
+	Regex(?comment, "(?s).*[\\n\\r].*@generated.*") -> 
+		(?eAttributeInterfaceSignature, sl:elementOf, sl:InterfaceMethodSignatureJava).
+
+ (?eAttributeImplementation, sl:elementOf, sl:AttributeJava)
+ 	(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava)
+	(?eAttributeImplementation, sl:partOf, ?eclassImpl)
+	StrJava(?eAttributeImplementation, "/comment/value/content", ?comment) 
+	Regex(?comment, "(?s).*[\\n\\r].*@generated.*") -> 
+		(?eAttributeImplementation, sl:elementOf, sl:ClassAttributeJava).

@@ -26,11 +26,24 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 	
 (?member, sl:elementOf,sl:MemberJava) 
 	ClassJava(?member,"","com.github.javaparser.ast.body.MethodDeclaration") ->
-		(?member,sl:partOf,sl:MethodJava).
+		(?member,sl:elementOf,sl:MethodJava).
 		
 (?member, sl:elementOf,sl:MemberJava) 
 	ClassJava(?member,"","com.github.javaparser.ast.body.FieldDeclaration") ->
-		(?member,sl:partOf,sl:AttributeJava).
+		(?member,sl:elementOf,sl:AttributeJava).
+			
+// Resolving by simple names within project.
+(?source, sl:refersToImplementedTypes, ?alias)
+	(?cls,sl:elementOf,sl:Java)
+	StrJava(?cls, "type[1]/name", ?alias) ->
+		(?source, sl:refersToImplementedTypes, ?cls).
+		
+// Resolving by simple names within project.
+(?source, sl:refersToExtendedTypes, ?alias)
+	(?cls,sl:elementOf,sl:Java)
+	StrJava(?cls, "type[1]/name", ?alias) ->
+		(?source, sl:refersToExtendedTypes, ?cls).
+
 			
 ////not yet working
 //[attributeJava: (?class, sl:elementOf, sl:Java)
