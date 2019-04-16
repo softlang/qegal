@@ -6,73 +6,32 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 /* Default softlang namespace */
 @prefix sl: <http://org.softlang.com/>.
 
-// Java files.
-(?x, sl:manifestsAs, sl:File) Extension(?x, "java") -> (?x, sl:elementOf, sl:Java).
+// Identification of Factory and Package.
+(?epackage, sl:elementOf, sl:Java) 
+	(?epackage, sl:refersToExtendedTypes, "EPackage") -> 
+		(?epackage, sl:elementOf, sl:EcorePackageJava).
 
-//Interface Java vs class Java?
-// -> (?x, sl:elementOf, sl:InterfaceJava).
-// -> (?x, sl:elementOf, sl:ClassJava).
+(?efactory, sl:elementOf, sl:Java) 
+	(?efactory, sl:refersToExtendedTypes, "EFactory") -> 
+		(?efactory, sl:elementOf, sl:EcoreFactoryJava).
+		
+// Extraction of nsuri.
+(?epackage, sl:elementOf, sl:EcorePackageJava) 
+	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri) ->
+		(?epackage, sl:nsURI, ?nsUri).
 
-[extendsReference: (?class, sl:elementOf, sl:Java)
-	StrJava(?class, "type[1]/extendedTypes[1]/name", ?superclass)
-	->
-	(?class, sl:refersToExtends, ?superclass)
-]
+(?efactory, sl:elementOf, sl:EcoreFactoryJava) 
+	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri) ->
+		(?epackage, sl:nsURI, ?nsUri).
 
-[implementsReference: (?class, sl:elementOf, sl:Java)
-	StrJava(?class, "type[1]/implementedTypes/name", ?interface)
-	->
-	(?class, sl:refersToImplements, ?interface)
-]
+// Interfaces are detected by subclassing.
+(?eclassInterface, sl:elementOf, sl:Java)
+	(?eclass, sl:refersToExtends, "EObject") ->
+		(?eclass, sl:elementOf, sl:EcoreModelInterfaceJava).
 
-//not yet working
-[methodJava: (?class, sl:elementOf, sl:Java)
-	StrJava(?class, "type[1]/members/methods", ?method)
-	->
-	(?method, sl:partOf, ?class) (?method, sl:elementOf, sl:MethodJava)
-]
-
-//not yet working
-[attributeJava: (?class, sl:elementOf, sl:Java)
-	StrJava(?class, "type[1]/members/variables", ?att)
-	->
-	(?att, sl:partOf, ?class) (?att, sl:elementOf, sl:AttributeJava)
-]
-
-[ecorePackageJava2: (?epackage, sl:elementOf, sl:InterfaceJava) (?epackage, sl:refersToExtends, "EPackage")
-	-> 
-	(?epackage, sl:elementOf, sl:EcorePackageJava)
-]
-
-[ecorePackageJavaNSURI: (?epackage, sl:elementOf, sl:EcorePackageJava) 
-	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri)
-	->
-	(?epackage, sl:nsURI, ?nsUri)
-]
-
-[ecoreFactoryJava2: (?efactory, sl:elementOf, sl:InterfaceJava) (?efactory, sl:refersToExtends, "EFactory")
-	-> 
-	(?efactory, sl:elementOf, sl:EcoreFactoryJava)
-]
-
-[ecoreFactoryJavaNSURI: (?efactory, sl:elementOf, sl:EcoreFactoryJava) 
-	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri)
-	->
-	(?epackage, sl:nsURI, ?nsUri)
-]
-
-//determine qualified path, nsuri=package name? no
-
-[ecoreInterfaceJava: (?eclassInterface, sl:elementOf, sl:InterfaceJava)
-	(?eclass, sl:refersToExtends, "EObject")
-	->
-	(?eclass, sl:elementOf, sl:EcoreModelInterfaceJava)
-]
-
-[ecoreClassJava: (?eclassImpl, sl:elementOf, sl:Java)
-	(?eclassImpl, sl:refersToImplements, ?eclassInterfaceName)
-	(?eclassInterface, sl:name, ?eclassInterfaceName)
-	->
-	(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava)
-]
+// Implementations are detected by subclassing interfaces.
+(?eclassImpl, sl:elementOf, sl:Java)
+	(?eclassImpl, sl:refersToImplementedTypes, ?eclassInterfaceName)
+	(?eclassInterface, sl:name, ?eclassInterfaceName) ->
+		(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava).
   

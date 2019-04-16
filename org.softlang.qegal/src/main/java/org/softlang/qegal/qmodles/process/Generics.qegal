@@ -1,0 +1,32 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+
+// Java files by extension.
+(?x, sl:manifestsAs, sl:File) Extension(?x, "java") -> (?x, sl:elementOf, sl:Java).
+
+// Subtyping JDT (TODO: Check multiple extensions).
+(?class, sl:elementOf, sl:Java)
+	StrJava(?class, "type[1]/extendedTypes[1]/name", ?superclass) ->
+		(?class, sl:refersToExtendedTypes, ?superclass).
+
+(?class, sl:elementOf, sl:Java)
+	StrJava(?class, "type[1]/implementedTypes[1]/name", ?interface) ->
+		(?class, sl:refersToImplementedTypes, ?interface).
+
+// Simple decompositions of Java files.
+(?class, sl:elementOf, sl:Java) ->
+	DecJava(?class, "type[1]/members", sl:partOf,?class)
+	DecJava(?class,"type[1]/members", sl:elementOf, sl:MethodJava).
+
+////not yet working
+//[attributeJava: (?class, sl:elementOf, sl:Java)
+//	StrJava(?class, "type[1]/members/variables", ?att)
+//	->
+//	(?att, sl:partOf, ?class) (?att, sl:elementOf, sl:AttributeJava)
+//]
