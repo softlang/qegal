@@ -6,7 +6,6 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 /* Default softlang namespace */
 @prefix sl: <http://org.softlang.com/>.
 
-
 // Java files by extension.
 (?x, sl:manifestsAs, sl:File) Extension(?x, "java") -> (?x, sl:elementOf, sl:Java).
 
@@ -24,6 +23,7 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 		DecJava(?class, "type[1]/members", sl:partOf,?class)
 		DecJava(?class,"type[1]/members", sl:elementOf, sl:MemberJava).
 	
+	
 (?member, sl:elementOf,sl:MemberJava) 
 	ClassJava(?member,"","com.github.javaparser.ast.body.MethodDeclaration") ->
 		(?member,sl:elementOf,sl:MethodJava).
@@ -31,6 +31,17 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 (?member, sl:elementOf,sl:MemberJava) 
 	ClassJava(?member,"","com.github.javaparser.ast.body.FieldDeclaration") ->
 		(?member,sl:elementOf,sl:AttributeJava).
+			
+
+(?member, sl:elementOf,sl:MethodJava) 
+	StrJava(?member, "/name", ?name) ->
+		(?member,sl:name,?name).
+		
+(?member, sl:elementOf,sl:AttributeJava) 
+	StrJava(?member, "/variables/name", ?name) ->
+		(?member,sl:name,?name).
+	
+	
 			
 // Resolving by simple names within project.
 (?source, sl:refersToImplementedTypes, ?alias)
