@@ -27,28 +27,28 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 // Interfaces are detected by subclassing.
 (?eclassInterface, sl:elementOf, sl:Java)
 	(?eclassInterface, sl:refersToExtendedTypes, "EObject") ->
-		(?eclassInterface, sl:elementOf, sl:EcoreModelInterfaceJava).
+		(?eclassInterface, sl:elementOf, sl:EClassInterfaceJava).
 		
-(?super, sl:elementOf, sl:EcoreModelInterfaceJava)
+(?super, sl:elementOf, sl:EClassInterfaceJava)
 	(?eclass, sl:refersToExtendedTypes, ?super) ->
-		(?eclass, sl:elementOf, sl:EcoreModelInterfaceJava).		
+		(?eclass, sl:elementOf, sl:EClassInterfaceJava).		
 
 // Implementations are detected by subclassing interfaces.
 (?eclassImpl, sl:elementOf, sl:Java)
 	(?eclassImpl, sl:refersToImplementedTypes, ?eclassInterface)
-	(?eclassInterface, sl:elementOf, sl:EcoreModelInterfaceJava)->
-			(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava).
+	(?eclassInterface, sl:elementOf, sl:EClassInterfaceJava)->
+			(?eclassImpl, sl:elementOf, sl:EClassImplJava).
 				
-(?eAttributeInterfaceSignature, sl:elementOf, sl:MemberJava)
-	(?eclassInterface, sl:elementOf, sl:EcoreModelInterfaceJava)
-	(?eAttributeInterfaceSignature, sl:partOf, ?eClassInterface)
-	StrJava(?eAttributeInterfaceSignature, "/comment/value/content", ?comment) 
+(?eAttributeInterface, sl:elementOf, sl:MethodJava)
+	(?eclassInterface, sl:elementOf, sl:EClassInterfaceJava)
+	(?eAttributeInterface, sl:partOf, ?eClassInterface)
+	StrJava(?eAttributeInterface, "/comment/value/content", ?comment) 
 	Regex(?comment, "(?s).*[\\n\\r].*@generated.*") -> 
-		(?eAttributeInterfaceSignature, sl:elementOf, sl:InterfaceMethodSignatureJava).
+		(?eAttributeInterface, sl:elementOf, sl:EAttributeInterfaceJava).
 
- (?eAttributeImplementation, sl:elementOf, sl:AttributeJava)
- 	(?eclassImpl, sl:elementOf, sl:EcoreModelImplJava)
-	(?eAttributeImplementation, sl:partOf, ?eclassImpl)
-	StrJava(?eAttributeImplementation, "/comment/value/content", ?comment) 
+ (?eAttributeImpl, sl:elementOf, sl:AttributeJava)
+ 	(?eclassImpl, sl:elementOf, sl:EClassImplJava)
+	(?eAttributeImpl, sl:partOf, ?eclassImpl)
+	StrJava(?eAttributeImpl, "/comment/value/content", ?comment) 
 	Regex(?comment, "(?s).*[\\n\\r].*@generated.*") -> 
-		(?eAttributeImplementation, sl:elementOf, sl:ClassAttributeJava).
+		(?eAttributeImpl, sl:elementOf, sl:EAttributeImplJava).
