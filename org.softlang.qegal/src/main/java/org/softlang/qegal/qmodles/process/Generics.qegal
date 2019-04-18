@@ -6,54 +6,170 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 /* Default softlang namespace */
 @prefix sl: <http://org.softlang.com/>.
 
-// Java files by extension.
-(?x, sl:manifestsAs, sl:File) Extension(?x, "java") -> (?x, sl:elementOf, sl:Java).
+@prefix env: <http://org.softlang.com/env/>.
 
-// Subtyping JDT (TODO: Check multiple extensions).
-(?class, sl:elementOf, sl:Java)
-	StrJava(?class, "type[1]/extendedTypes[1]/name", ?superclass) ->
-		(?class, sl:refersToExtendedTypes, ?superclass).
+// #### -- AST Creation -- #############################################################################################
+// Create Java Classes.
+(?jfile, sl:manifestsAs, sl:File) Extension(?jfile, "java") -> (?jfile, sl:elementOf, sl:Java).
+ 
+// Create Packages (if contains one Java file).
+(?package, sl:manifestsAs, sl:Folder) (?jfile, sl:partOf, ?package) (?jfile, sl:elementOf, sl:Java) -> (?package, sl:elementOf, sl:PackageJava).
 
-(?class, sl:elementOf, sl:Java)
-	StrJava(?class, "type[1]/implementedTypes[1]/name", ?interface) ->
-		(?class, sl:refersToImplementedTypes, ?interface).
+// Create Java Methods and Fields.
+(?class, sl:elementOf, sl:Java) -> 
+	DecJava(?class, "type[1]/members", sl:partOf, ?class) 
+	DecJava(?class,"type[1]/members", sl:elementOf, sl:MemberJava).
+(?member, sl:elementOf,sl:MemberJava) ClassJava(?member,"","com.github.javaparser.ast.body.MethodDeclaration") -> (?member,sl:elementOf,sl:MethodJava).
+(?member, sl:elementOf,sl:MemberJava) ClassJava(?member,"","com.github.javaparser.ast.body.FieldDeclaration") -> (?member,sl:elementOf,sl:FieldJava).
 
-// Simple decompositions of Java files.
-(?class, sl:elementOf, sl:Java) ->
-		DecJava(?class, "type[1]/members", sl:partOf,?class)
-		DecJava(?class,"type[1]/members", sl:elementOf, sl:MemberJava).
+// Create Java extended and implemented types
+(?class, sl:elementOf, sl:Java) -> 
+	DecJava(?class,"type[1]/extendedTypes", sl:partOf, ?class) 
+	DecJava(?class,"type[1]/extendedTypes", sl:elementOf, sl:ExtendedTypeJava).
+(?class, sl:elementOf, sl:Java) -> 
+	DecJava(?class,"type[1]/implementedTypes", sl:partOf, ?class) 
+	DecJava(?class,"type[1]/implementedTypes", sl:elementOf, sl:ImplementedTypeJava).
 	
-	
-(?member, sl:elementOf,sl:MemberJava) 
-	ClassJava(?member,"","com.github.javaparser.ast.body.MethodDeclaration") ->
-		(?member,sl:elementOf,sl:MethodJava).
+// Create Java Imports.
+(?class, sl:elementOf, sl:Java) -> 
+	DecJava(?class,"imports", sl:partOf, ?class) 
+	DecJava(?class,"imports", sl:elementOf, sl:ImportJava).
+
+// #### -- AST (qualified) naming-- #############################################################################################
+
+// Naming the package (Q).
+(?package, sl:elementOf, sl:PackageJava) (?jfile, sl:elementOf, sl:Java) 
+	(?jfile,sl:partOf, ?package) StrJava(?jfile, "packageDeclaration/value/name", ?qname)  -> 
+		(?package, env:qname, ?qname).
 		
-(?member, sl:elementOf,sl:MemberJava) 
-	ClassJava(?member,"","com.github.javaparser.ast.body.FieldDeclaration") ->
-		(?member,sl:elementOf,sl:AttributeJava).
-			
+// Naming the class (S).
+(?jfile, sl:elementOf, sl:Java) StrJava(?jfile, "type[1]/name", ?name) -> (?jfile, env:sname, ?name).
+ 
+// Naming the members (S).
+(?member, sl:elementOf,sl:MethodJava) 	StrJava(?member, "/name", ?name) -> 			(?member,env:sname,?name).
+(?member, sl:elementOf,sl:FieldJava) 	StrJava(?member, "/variables/name", ?name) ->	(?member,env:sname,?name).
 
-(?member, sl:elementOf,sl:MethodJava) 
-	StrJava(?member, "/name", ?name) ->
-		(?member,sl:name,?name).
+// Specific inheritance rules.
+(?member, sl:elementOf,sl:MethodJava)  (?jfile, sl:elementOf, sl:Java) (?member, sl:partOf, ?jfile) ->  (?member, env:qinherit, ?jfile).
+(?member, sl:elementOf,sl:FieldJava)  (?jfile, sl:elementOf, sl:Java) (?member, sl:partOf, ?jfile) ->  (?member, env:qinherit, ?jfile).
+(?jfile, sl:elementOf, sl:Java) (?package, sl:elementOf,sl:PackageJava)   (?jfile, sl:partOf, ?package) -> (?jfile, env:qinherit, ?package).
+
+// Generic inheritance rule.
+ (?low, env:qinherit, ?top) (?top, env:qname,?qname) (?low, env:sname,?sname)  StrConcat(?qname,".",?sname,?name) ->  (?low, env:qname,?name).
+
+// #### -- Scopes - #############################################################################################
+
+// Self in e scope
+(?package, sl:elementOf,sl:PackageJava)->  (?package, env:escope, ?package).
+(?jfile, sl:elementOf, sl:Java) ->  (?jfile, env:escope, ?jfile).
+
+(?package, sl:elementOf,sl:PackageJava)->  (?package, env:inscope, ?package).
+(?jfile, sl:elementOf, sl:Java) ->  (?jfile, env:inscope, ?jfile).
+//(?member, sl:elementOf,sl:MethodJava) ->  (?member, env:escope, ?member).
+//(?member, sl:elementOf,sl:FieldJava)  ->  (?member, env:escope, ?member).
+
+// Specific 'in' scope rules.
+(?jfile, sl:elementOf, sl:Java) (?package, sl:elementOf,sl:PackageJava)   (?jfile, sl:partOf, ?package) -> (?jfile, env:inscope, ?package).
+(?member, sl:elementOf,sl:MethodJava)  (?jfile, sl:elementOf, sl:Java) (?member, sl:partOf, ?jfile) ->  (?member, env:inscope, ?jfile).
+(?member, sl:elementOf,sl:FieldJava)  (?jfile, sl:elementOf, sl:Java) (?member, sl:partOf, ?jfile) ->  (?member, env:inscope, ?jfile).
+
+// Specific 'use' scope rules (now with extend and implement type node).
+(?jfile, sl:elementOf, sl:Java) (?package, sl:elementOf,sl:PackageJava)   (?jfile, sl:partOf, ?package) -> (?jfile, env:usescope, ?package).
+(?jfile, sl:elementOf, sl:Java) (?implements, sl:elementOf,sl:ImplementedTypeJava)   (?implements, sl:partOf, ?jfile) -> (?implements, env:usescope, ?jfile).
+(?jfile, sl:elementOf, sl:Java) (?extends, sl:elementOf,sl:ExtendedTypeJava)   (?extends, sl:partOf, ?jfile) -> (?extends, env:usescope, ?jfile).
+//(?member, sl:elementOf,sl:MethodJava)  (?jfile, sl:elementOf, sl:Java) (?member, sl:partOf, ?jfile) ->  (?member, env:usescope, ?jfile).
+//(?member, sl:elementOf,sl:FieldJava)  (?jfile, sl:elementOf, sl:Java) (?member, sl:partOf, ?jfile) ->  (?member, env:usescope, ?jfile).
+
+// Propagation of 'in' and 'use' scope.
+(?x, env:inscope, ?y) (?y, env:inscope, ?z) -> (?x, env:inscope, ?z).
+(?x, env:usescope, ?y) (?y, env:usescope, ?z) -> (?x, env:usescope, ?z).
+
+// Propagation of 'e' scope.
+(?x, env:usescope, ?y) (?y, env:escope, ?z) -> (?x, env:escope, ?z).
+
+// Import use scope by qualified name. (TODO: This is not transitive!)
+(?import,sl:partOf,?jfile) (?import, sl:elementOf, sl:ImportJava) StrJava(?import, "/name", ?qimport) (?rimport,env:qname,?qimport) ->
+	(?jfile,env:escope,?rimport). 
+
+// #### -- Type Resolution - #############################################################################################
+
+// Search something in the scope that is named according to the sname.
+(?implements, sl:partOf, ?jfile) (?jfile,sl:elementOf,sl:Java)
+	(?implements, sl:elementOf,sl:ImplementedTypeJava) StrJava(?implements, "/name", ?sname) (?implements,env:escope,?scope) 
+	(?reference, env:inscope, ?scope) (?reference,env:sname,?sname) (?reference, sl:elementOf, sl:Java)
+	-> (?jfile,sl:implement,?reference).
 		
-(?member, sl:elementOf,sl:AttributeJava) 
-	StrJava(?member, "/variables/name", ?name) ->
-		(?member,sl:name,?name).
-	
-	
-			
-// Resolving by simple names within project.
-(?source, sl:refersToImplementedTypes, ?alias)
-	(?cls,sl:elementOf,sl:Java)
-	StrJava(?cls, "type[1]/name", ?alias) ->
-		(?source, sl:refersToImplementedTypes, ?cls).
+(?implements, sl:partOf, ?jfile) (?jfile,sl:elementOf,sl:Java)
+	(?implements, sl:elementOf,sl:ExtendedTypeJava) StrJava(?implements, "/name", ?sname) (?implements,env:escope,?scope) 
+	(?reference, env:inscope, ?scope) (?reference,env:sname,?sname) (?reference, sl:elementOf, sl:Java)
+	-> (?jfile,sl:extend,?reference).
+
 		
-// Resolving by simple names within project.
-(?source, sl:refersToExtendedTypes, ?alias)
-	(?cls,sl:elementOf,sl:Java)
-	StrJava(?cls, "type[1]/name", ?alias) ->
-		(?source, sl:refersToExtendedTypes, ?cls).
+
+//(?class, sl:elementOf, sl:Java)
+//	StrJava(?class, "type[1]/extendedTypes[1]/name", ?superclass) ->
+//		(?class, sl:refersToExtendedTypes, ?superclass).
+//
+
+// Decomposing typing and naming relevant Java AST parts.
+//StrJava(?jfile, "packageDeclaration/value/name", ?qname) -> 
+//	(?package,env:qname,?qname) (?jfile,sl:env,?package).  
+
+
+		
+//// Imports for java file.
+//(?java, sl:elementOf,sl:Java) ->
+//	StrJava(?java, ?java,sl:qimport,"imports/name").
+
+//// Java environments passing.			
+//(?java, sl:elementOf,sl:Java) ->
+//	(?java, sl:environment, ?java).
+//
+//(?x, sl:partOf, ?y) 
+//	(?y,sl:environment,?env) -> 
+//	(?x,sl:environment,?env).
+//
+//			
+//// Simple names for classes methods and attributes.
+//(?member, sl:elementOf,sl:Java) 
+//	StrJava(?member, "type[1]/name", ?name) ->
+//		(?member,env:sname,?name).
+//
+//// Propagation of qualified names.
+//(?x, sl:partOf, ?y) (?y, env:qname, ?qn) (?x, env:sname, ?sn) 
+//	StrConcat(?qn,".",?sn,?n) ->
+//		(?x,env:qname,?n).
+//		
+//(?ref, sl:elementOf, sl:JavaReference) StrJava(?ref, "/name", ?sref) -> (?ref,sl:sref,?sref).
+//	
+//(?ref, sl:elementOf, sl:JavaReference) 
+//	(?ref,sl:sref,?sref) 
+//	(?ref, sl:environment,?env) 
+//	(?env, sl:qimport, ?import) 
+//	(?refered,env:qname,?import)
+//	(?refered,env:sname,?sref)->
+//		(?ref,sl:ref,?refered).
+//	
+//	
+////// Subtyping JDT
+//(?class, sl:elementOf, sl:Java)
+//	StrJava(?class, "type[1]/extendedTypes[1]/name", ?superclass) ->
+//		(?class, sl:refersToExtendedTypes, ?superclass).
+//
+//(?class, sl:elementOf, sl:Java)
+//	StrJava(?class, "type[1]/implementedTypes[1]/name", ?interface) ->
+//		(?class, sl:refersToImplementedTypes, ?interface).
+//
+//(?source, sl:refersToImplementedTypes, ?alias)
+//	(?cls,sl:elementOf,sl:Java)
+//	StrJava(?cls, "type[1]/name", ?alias) ->
+//		(?source, sl:refersToImplementedTypes, ?cls).
+//		
+//
+//(?source, sl:refersToExtendedTypes, ?alias)
+//	(?cls,sl:elementOf,sl:Java)
+//	StrJava(?cls, "type[1]/name", ?alias) ->
+//		(?source, sl:refersToExtendedTypes, ?cls).
 
 			
 ////not yet working

@@ -7,6 +7,7 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 @prefix sys: <http://org.softlang.com/qegal/>.
 instance (<repository:/>, sl:manifestsAs, sl:Folder).
 
+
 // Recursive filesystem decomposition.
 (?folder, sl:manifestsAs, sl:Folder)  -> DecFs(?folder, "/*", sl:partOf, ?folder).
 

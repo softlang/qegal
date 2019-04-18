@@ -39,6 +39,14 @@ public class Miner {
 		else
 			return namespaces.get(x.split(":")[0].trim()) + x.split(":")[1].trim();
 	}
+	
+
+	private static String literal(String x, Map<String, String> namespaces) {
+			return x.substring(1, x.length() - 1);
+	}
+	
+	
+
 
 	public final static String PREFIX = "@prefix";
 	public final static String IMPORT = "import";
@@ -115,8 +123,12 @@ public class Miner {
 					String predicate = tripleWithoutBraces.split(",")[1].trim();
 					String object = tripleWithoutBraces.split(",")[2].trim();
 
-					addTriple(layer, plain(subject, namespaces), plain(predicate, namespaces),
-							plain(object, namespaces));
+					if (!object.contains("\""))
+						addTriple(layer, plain(subject, namespaces), plain(predicate, namespaces),
+								plain(object, namespaces));
+					else 
+						addTripleWithLiteral(layer, plain(subject, namespaces), plain(predicate, namespaces),
+								literal(object,namespaces));
 				} else
 					content.append(line + "\n");
 			}
@@ -143,6 +155,11 @@ public class Miner {
 	public void addTriple(int layer, String subject, String predicate, String object) {
 		Model model = initialModels.computeIfAbsent(layer, x -> ModelFactory.createDefaultModel());
 		model.add(model.createResource(subject), model.createProperty(predicate), model.getResource(object));
+	}
+
+	public void addTripleWithLiteral(int layer, String subject, String predicate, String object) {
+		Model model = initialModels.computeIfAbsent(layer, x -> ModelFactory.createDefaultModel());
+		model.add(model.createResource(subject), model.createProperty(predicate), model.createLiteral(object));
 	}
 
 	public void addRule(int layer, Rule rule) {

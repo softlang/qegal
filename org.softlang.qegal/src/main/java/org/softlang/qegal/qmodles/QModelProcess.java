@@ -64,7 +64,7 @@ public class QModelProcess {
 				// Run mining.
 				IMinedRepository mined = QegalProcess2.execute(iolayer,
 						new File(JUtils.configuration("temp") + "/qmodles/" + address),
-						Collections.singleton(new File("src/main/java/org/softlang/qegal/qmodles/process")), 1000 * 60 * 10,
+						Collections.singleton(new File("src/main/java/org/softlang/qegal/qmodles/process")), 1000 * 60 * 60 * 6,
 						QegalLogging.EXCEPTIONS, true);
 
 				properties.putAll(mined.properties());

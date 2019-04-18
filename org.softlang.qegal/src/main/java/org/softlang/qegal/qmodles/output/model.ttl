@@ -1,93 +1,91 @@
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(8)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.createAToBMapAdapter" ;
+      <http://org.softlang.com/env/sname>
               "createAToBMapAdapter" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(14)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.eIsSet" ;
+      <http://org.softlang.com/env/sname>
               "eIsSet" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(4)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/imports(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "modelSwitch" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(10)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "setTypedValue" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(6)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.eGet" ;
+      <http://org.softlang.com/env/sname>
               "eGet" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(7)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "setTypedKey" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(5)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl.createB" ;
+      <http://org.softlang.com/env/sname>
               "createB" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(2)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/imports(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java>
+<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/type(1)/implementedTypes(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> ;
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
+              <http://org.softlang.com/ImplementedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "Switch" .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(18)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "setHash" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
-
-<repository:/bin/org/softlang/sampleemap/myemap/util>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> ;
-      <http://org.softlang.com/partOf>
-              <repository:/bin/org/softlang/sampleemap/myemap> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(10)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.getAToBMap" ;
+      <http://org.softlang.com/env/sname>
               "getAToBMap" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
@@ -95,30 +93,38 @@
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java>
       <http://org.softlang.com/elementOf>
               <http://org.softlang.com/Java> , <http://org.softlang.com/EcorePackageJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage" ;
+      <http://org.softlang.com/env/sname>
+              "MyemapPackage" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/extend>
+              <cls:EPackage> ;
       <http://org.softlang.com/manifestsAs>
               <http://org.softlang.com/File> ;
       <http://org.softlang.com/nsURI>
               <http://org.softlang.sampleemap> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "EPackage" .
+              <repository:/src/org/softlang/sampleemap/myemap> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(1)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "init" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(14)>
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/imports(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "isCreated" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
 <repository:/bin/org/softlang/sampleemap/myemap/util/MyemapSwitch.class>
       <http://org.softlang.com/manifestsAs>
@@ -126,42 +132,42 @@
       <http://org.softlang.com/partOf>
               <repository:/bin/org/softlang/sampleemap/myemap/util> .
 
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(23)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(7)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getMyemapFactory" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(7)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(5)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "caseAToBMap" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch.isSwitchFor" ;
+      <http://org.softlang.com/env/sname>
               "isSwitchFor" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(21)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getValue" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/members(4)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapFactory.getMyemapPackage" ;
+      <http://org.softlang.com/env/sname>
               "getMyemapPackage" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
@@ -172,6 +178,16 @@
       <http://org.softlang.com/partOf>
               <repository:/bin/org/softlang/sampleemap/myemap> .
 
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
 <repository:/model>
       <http://org.softlang.com/manifestsAs>
               <http://org.softlang.com/Folder> ;
@@ -180,17 +196,1281 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(4)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
+              <http://org.softlang.com/MemberJava> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.value" ;
+      <http://org.softlang.com/env/sname>
               "value" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/B.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EClassInterfaceJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.B" ;
+      <http://org.softlang.com/env/sname>
+              "B" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/extend>
+              <cls:EObject> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(16)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.ATO_BMAP_OPERATION_COUNT" ;
+      <http://org.softlang.com/env/sname>
+              "ATO_BMAP_OPERATION_COUNT" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.eNS_URI" ;
+      <http://org.softlang.com/env/sname>
+              "eNS_URI" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(11)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(9)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.createEObjectAdapter" ;
+      <http://org.softlang.com/env/sname>
+              "createEObjectAdapter" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EClassImplJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl" ;
+      <http://org.softlang.com/env/sname>
+              "AImpl" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/implement>
+              <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/imports(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
+
+<cls:EObject>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EObject> ;
+      <http://org.softlang.com/env/inscope>
+              <cls:EObject> ;
+      <http://org.softlang.com/env/qname>
+              "org.eclipse.emf.ecore.EObject" ;
+      <http://org.softlang.com/env/sname>
+              "EObject" .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.eInverseRemove" ;
+      <http://org.softlang.com/env/sname>
+              "eInverseRemove" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl.createAToBMap" ;
+      <http://org.softlang.com/env/sname>
+              "createAToBMap" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/imports(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/build.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EPackage> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(15)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.toString" ;
+      <http://org.softlang.com/env/sname>
+              "toString" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/imports(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(10)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(8)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/.classpath>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(17)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.initializePackageContents" ;
+      <http://org.softlang.com/env/sname>
+              "initializePackageContents" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch.doSwitch" ;
+      <http://org.softlang.com/env/sname>
+              "doSwitch" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/members(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapFactory.createB" ;
+      <http://org.softlang.com/env/sname>
+              "createB" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/implementedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImplementedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/plugin.xml>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/src/org/softlang/sampleemap/myemap/A.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EClassInterfaceJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.A" ;
+      <http://org.softlang.com/env/sname>
+              "A" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/extend>
+              <cls:EObject> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap> .
+
+<repository:/bin/org/softlang/sampleemap/myemap/MyemapPackage.class>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/bin/org/softlang/sampleemap/myemap> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreFactoryJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> , <cls:EFactory> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapFactory" ;
+      <http://org.softlang.com/env/sname>
+              "MyemapFactory" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/extend>
+              <cls:EFactory> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.isInited" ;
+      <http://org.softlang.com/env/sname>
+              "isInited" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(15)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.ATO_BMAP_FEATURE_COUNT" ;
+      <http://org.softlang.com/env/sname>
+              "ATO_BMAP_FEATURE_COUNT" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/META-INF>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.modelPackage" ;
+      <http://org.softlang.com/env/sname>
+              "modelPackage" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl" ;
+      <http://org.softlang.com/env/sname>
+              "AToBMapImpl" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.eNS_PREFIX" ;
+      <http://org.softlang.com/env/sname>
+              "eNS_PREFIX" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(10)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/imports(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(12)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.eSet" ;
+      <http://org.softlang.com/env/sname>
+              "eSet" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(8)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.eUnset" ;
+      <http://org.softlang.com/env/sname>
+              "eUnset" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/bin/org>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/bin> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.createAAdapter" ;
+      <http://org.softlang.com/env/sname>
+              "createAAdapter" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/imports(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/src/org>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src> .
+
+<cls:EFactory>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EFactory> ;
+      <http://org.softlang.com/env/inscope>
+              <cls:EFactory> ;
+      <http://org.softlang.com/env/qname>
+              "org.eclipse.emf.ecore.EFactory" ;
+      <http://org.softlang.com/env/sname>
+              "EFactory" .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/imports(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(21)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.getAToBMap_Key" ;
+      <http://org.softlang.com/env/sname>
+              "getAToBMap_Key" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/model/My.ecore>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/model> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl.create" ;
+      <http://org.softlang.com/env/sname>
+              "create" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/bin>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(12)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.getAToBMap_Value" ;
+      <http://org.softlang.com/env/sname>
+              "getAToBMap_Value" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(9)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/META-INF/MANIFEST.MF>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/META-INF> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch.caseA" ;
+      <http://org.softlang.com/env/sname>
+              "caseA" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(23)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.getEMap" ;
+      <http://org.softlang.com/env/sname>
+              "getEMap" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/members(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapFactory.createA" ;
+      <http://org.softlang.com/env/sname>
+              "createA" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(10)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.B_FEATURE_COUNT" ;
+      <http://org.softlang.com/env/sname>
+              "B_FEATURE_COUNT" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.eStaticClass" ;
+      <http://org.softlang.com/env/sname>
+              "eStaticClass" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.init" ;
+      <http://org.softlang.com/env/sname>
+              "init" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl" ;
+      <http://org.softlang.com/env/sname>
+              "MyemapFactoryImpl" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/implement>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(18)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.getA_Bs" ;
+      <http://org.softlang.com/env/sname>
+              "getA_Bs" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/type(1)/members(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.BImpl.eStaticClass" ;
+      <http://org.softlang.com/env/sname>
+              "eStaticClass" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.eINSTANCE" ;
+      <http://org.softlang.com/env/sname>
+              "eINSTANCE" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(7)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.eSet" ;
+      <http://org.softlang.com/env/sname>
+              "eSet" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(7)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.createBAdapter" ;
+      <http://org.softlang.com/env/sname>
+              "createBAdapter" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/A.java#/type(1)/members(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.A.getBs" ;
+      <http://org.softlang.com/env/sname>
+              "getBs" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/A.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(13)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.eUnset" ;
+      <http://org.softlang.com/env/sname>
+              "eUnset" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/plugin.properties>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.getTypedKey" ;
+      <http://org.softlang.com/env/sname>
+              "getTypedKey" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/.project>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/imports(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(20)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.getAToBMap" ;
+      <http://org.softlang.com/env/sname>
+              "getAToBMap" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/imports(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/bin/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.class>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/bin/org/softlang/sampleemap/myemap/impl> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/bin/org/softlang/sampleemap/myemap/MyemapPackage$Literals.class>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/bin/org/softlang/sampleemap/myemap> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(11)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.getAToBMap_Key" ;
+      <http://org.softlang.com/env/sname>
+              "getAToBMap_Key" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl.createA" ;
+      <http://org.softlang.com/env/sname>
+              "createA" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/bin/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.class>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/bin/org/softlang/sampleemap/myemap/util> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/members(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapFactory.eINSTANCE" ;
+      <http://org.softlang.com/env/sname>
+              "eINSTANCE" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch.caseB" ;
+      <http://org.softlang.com/env/sname>
+              "caseB" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(7)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.getA" ;
+      <http://org.softlang.com/env/sname>
+              "getA" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/PackageJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap" ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(17)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.getA" ;
+      <http://org.softlang.com/env/sname>
+              "getA" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.A" ;
+      <http://org.softlang.com/env/sname>
+              "A" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.modelSwitch" ;
+      <http://org.softlang.com/env/sname>
+              "modelSwitch" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(10)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.setTypedValue" ;
+      <http://org.softlang.com/env/sname>
+              "setTypedValue" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(7)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.setTypedKey" ;
+      <http://org.softlang.com/env/sname>
+              "setTypedKey" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/B.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/B.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EPackage> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch" ;
+      <http://org.softlang.com/env/sname>
+              "MyemapSwitch" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/File> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(18)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.setHash" ;
+      <http://org.softlang.com/env/sname>
+              "setHash" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(6)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/imports(7)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/bin/org/softlang/sampleemap/myemap/util>
+      <http://org.softlang.com/manifestsAs>
+              <http://org.softlang.com/Folder> ;
+      <http://org.softlang.com/partOf>
+              <repository:/bin/org/softlang/sampleemap/myemap> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl.init" ;
+      <http://org.softlang.com/env/sname>
+              "init" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(14)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.isCreated" ;
+      <http://org.softlang.com/env/sname>
+              "isCreated" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(23)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.getMyemapFactory" ;
+      <http://org.softlang.com/env/sname>
+              "getMyemapFactory" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(7)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch.caseAToBMap" ;
+      <http://org.softlang.com/env/sname>
+              "caseAToBMap" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/A.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/A.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(21)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.getValue" ;
+      <http://org.softlang.com/env/sname>
+              "getValue" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/implementedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImplementedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/imports(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/imports(2)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
 
 <repository:/bin/org/softlang/sampleemap/myemap/MyemapFactory.class>
       <http://org.softlang.com/manifestsAs>
@@ -200,21 +1480,17 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(8)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.getA_Bs" ;
+      <http://org.softlang.com/env/sname>
               "getA_Bs" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/B.java>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreModelInterfaceJava> ;
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "EObject" .
 
 <repository:/bin/org/softlang/sampleemap>
       <http://org.softlang.com/manifestsAs>
@@ -224,32 +1500,28 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(6)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.A__BS" ;
+      <http://org.softlang.com/env/sname>
               "A__BS" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(16)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "ATO_BMAP_OPERATION_COUNT" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(2)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "eNS_URI" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(12)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.ATO_BMAP" ;
+      <http://org.softlang.com/env/sname>
               "ATO_BMAP" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
@@ -260,107 +1532,101 @@
       <http://org.softlang.com/partOf>
               <repository:/bin/org/softlang/sampleemap/myemap/impl> .
 
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(9)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "createEObjectAdapter" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(11)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.eGet" ;
+      <http://org.softlang.com/env/sname>
               "eGet" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(9)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.eIsSet" ;
+      <http://org.softlang.com/env/sname>
               "eIsSet" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreModelImplJava> ;
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "Container" ;
-      <http://org.softlang.com/refersToImplementedTypes>
-              <repository:/src/org/softlang/sampleemap/myemap/A.java> , "A" .
-
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(5)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.createAdapter" ;
+      <http://org.softlang.com/env/sname>
               "createAdapter" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(5)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "eInverseRemove" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(6)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "createAToBMap" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
-
-<repository:/>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(19)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.getKey" ;
+      <http://org.softlang.com/env/sname>
               "getKey" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
-<repository:/build.properties>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(8)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.getTypedValue" ;
+      <http://org.softlang.com/env/sname>
               "getTypedValue" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> , <http://org.softlang.com/ClassAttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.bs" ;
+      <http://org.softlang.com/env/sname>
               "bs" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(15)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/imports(6)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "toString" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/imports(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
 
 <repository:/bin/org/softlang/sampleemap/myemap/impl/AImpl.class>
       <http://org.softlang.com/manifestsAs>
@@ -368,49 +1634,75 @@
       <http://org.softlang.com/partOf>
               <repository:/bin/org/softlang/sampleemap/myemap/impl> .
 
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(5)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
+              <http://org.softlang.com/MemberJava> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/PackageJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl" ;
       <http://org.softlang.com/manifestsAs>
               <http://org.softlang.com/Folder> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap> .
 
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
+
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(13)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.getMyemapFactory" ;
+      <http://org.softlang.com/env/sname>
               "getMyemapFactory" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(22)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.getAToBMap_Value" ;
+      <http://org.softlang.com/env/sname>
               "getAToBMap_Value" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/.classpath>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(17)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "initializePackageContents" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/util>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/PackageJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util" ;
       <http://org.softlang.com/manifestsAs>
               <http://org.softlang.com/Folder> ;
       <http://org.softlang.com/partOf>
@@ -424,8 +1716,14 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(8)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch.defaultCase" ;
+      <http://org.softlang.com/env/sname>
               "defaultCase" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
@@ -438,35 +1736,37 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(22)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.setValue" ;
+      <http://org.softlang.com/env/sname>
               "setValue" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(19)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.getB" ;
+      <http://org.softlang.com/env/sname>
               "getB" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(4)>
+<repository:/src/org/softlang/sampleemap/myemap/A.java#/imports(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "doSwitch" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/members(3)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "createB" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/A.java> .
 
 <repository:/bin/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory$1.class>
       <http://org.softlang.com/manifestsAs>
@@ -476,257 +1776,201 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(9)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.getB" ;
+      <http://org.softlang.com/env/sname>
               "getB" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
-<repository:/plugin.xml>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/> .
-
-<repository:/src/org/softlang/sampleemap/myemap/A.java>
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreModelInterfaceJava> ;
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "EObject" .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
-<repository:/bin/org/softlang/sampleemap/myemap/MyemapPackage.class>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/imports(3)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/bin/org/softlang/sampleemap/myemap> .
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/type(1)/members(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
+              <http://org.softlang.com/MemberJava> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreFactoryJava> ;
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "EFactory" .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.aEClass" ;
+      <http://org.softlang.com/env/sname>
               "aEClass" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(5)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "isInited" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(4)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(15)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "ATO_BMAP_FEATURE_COUNT" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(7)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.A_FEATURE_COUNT" ;
+      <http://org.softlang.com/env/sname>
               "A_FEATURE_COUNT" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/META-INF>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> ;
-      <http://org.softlang.com/partOf>
-              <repository:/> .
-
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(1)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "modelPackage" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(11)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.B_OPERATION_COUNT" ;
+      <http://org.softlang.com/env/sname>
               "B_OPERATION_COUNT" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> ;
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "Container" ;
-      <http://org.softlang.com/refersToImplementedTypes>
-              "Entry" .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(3)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "eNS_PREFIX" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(12)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "eSet" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(8)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "eUnset" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
-
-<repository:/bin/org>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> ;
-      <http://org.softlang.com/partOf>
-              <repository:/bin> .
-
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(6)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "createAAdapter" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(4)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.getBs" ;
+      <http://org.softlang.com/env/sname>
               "getBs" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
-<repository:/src/org/softlang>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org> .
+<cls:EPackage>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EPackage> ;
+      <http://org.softlang.com/env/inscope>
+              <cls:EPackage> ;
+      <http://org.softlang.com/env/qname>
+              "org.eclipse.emf.ecore.EPackage" ;
+      <http://org.softlang.com/env/sname>
+              "EPackage" .
 
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
+              <http://org.softlang.com/MemberJava> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
 
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/implementedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImplementedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(9)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.basicGetTypedValue" ;
+      <http://org.softlang.com/env/sname>
               "basicGetTypedValue" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(7)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl.getMyemapPackage" ;
+      <http://org.softlang.com/env/sname>
               "getMyemapPackage" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(16)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.hash" ;
+      <http://org.softlang.com/env/sname>
               "hash" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
-<repository:/src/org>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(21)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(5)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getAToBMap_Key" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
-
-<repository:/model/My.ecore>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/model> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(3)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "create" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java>
       <http://org.softlang.com/elementOf>
               <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl" ;
+      <http://org.softlang.com/env/sname>
+              "MyemapPackageImpl" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/implement>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
       <http://org.softlang.com/manifestsAs>
               <http://org.softlang.com/File> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "EPackageImpl" ;
-      <http://org.softlang.com/refersToImplementedTypes>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , "MyemapPackage" .
-
-<repository:/bin>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> ;
-      <http://org.softlang.com/partOf>
-              <repository:/> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(12)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getAToBMap_Value" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl> .
 
 <repository:/src/org/softlang/sampleemap>
       <http://org.softlang.com/manifestsAs>
@@ -734,48 +1978,42 @@
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang> .
 
-<repository:/META-INF/MANIFEST.MF>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/imports(4)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/META-INF> .
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(16)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.isInitialized" ;
+      <http://org.softlang.com/env/sname>
               "isInitialized" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(5)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(7)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "caseA" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(23)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getEMap" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/members(2)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "createA" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapSwitch.modelPackage" ;
+      <http://org.softlang.com/env/sname>
               "modelPackage" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
@@ -788,15 +2026,35 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> , <http://org.softlang.com/EcoreModelImplJava> ;
+              <http://org.softlang.com/Java> , <http://org.softlang.com/EClassImplJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.BImpl" ;
+      <http://org.softlang.com/env/sname>
+              "BImpl" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/implement>
+              <repository:/src/org/softlang/sampleemap/myemap/B.java> ;
       <http://org.softlang.com/manifestsAs>
               <http://org.softlang.com/File> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "Container" ;
-      <http://org.softlang.com/refersToImplementedTypes>
-              <repository:/src/org/softlang/sampleemap/myemap/B.java> , "B" .
+              <repository:/src/org/softlang/sampleemap/myemap/impl> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
 <repository:/bin/org/softlang>
       <http://org.softlang.com/manifestsAs>
@@ -804,71 +2062,61 @@
       <http://org.softlang.com/partOf>
               <repository:/bin/org> .
 
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(9)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.KEY_EDEFAULT" ;
+      <http://org.softlang.com/env/sname>
               "KEY_EDEFAULT" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(10)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "B_FEATURE_COUNT" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.bEClass" ;
+      <http://org.softlang.com/env/sname>
               "bEClass" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(5)>
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/extendedTypes(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "eStaticClass" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(6)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "init" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/Java> ;
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "EFactoryImpl" ;
-      <http://org.softlang.com/refersToImplementedTypes>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , "MyemapFactory" .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(8)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "A_OPERATION_COUNT" ;
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <cls:EPackage> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(18)>
+<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(8)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getA_Bs" ;
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.A_OPERATION_COUNT" ;
+      <http://org.softlang.com/env/sname>
+              "A_OPERATION_COUNT" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
@@ -878,111 +2126,111 @@
       <http://org.softlang.com/partOf>
               <repository:/model> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/type(1)/members(2)>
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/imports(4)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "eStaticClass" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(4)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "eINSTANCE" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(14)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.ATO_BMAP__VALUE" ;
+      <http://org.softlang.com/env/sname>
               "ATO_BMAP__VALUE" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(7)>
+<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/extendedTypes(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "eSet" ;
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> , <cls:EFactory> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(7)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "createBAdapter" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/A.java#/type(1)/members(1)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getBs" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/A.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(13)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "eUnset" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/members(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AImpl.eStaticClass" ;
+      <http://org.softlang.com/env/sname>
               "eStaticClass" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
-<repository:/plugin.properties>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/> .
-
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/type(1)/members(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory.isFactoryForType" ;
+      <http://org.softlang.com/env/sname>
               "isFactoryForType" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(6)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java#/imports(4)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getTypedKey" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/BImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(8)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapFactoryImpl.getPackage" ;
+      <http://org.softlang.com/env/sname>
               "getPackage" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
 
-<repository:/.project>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
+<repository:/src/org/softlang/sampleemap/myemap/B.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/B.java> ;
       <http://org.softlang.com/partOf>
-              <repository:/> .
+              <repository:/src/org/softlang/sampleemap/myemap/B.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(17)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.getHash" ;
+      <http://org.softlang.com/env/sname>
               "getHash" ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(7)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
@@ -992,46 +2240,32 @@
       <http://org.softlang.com/partOf>
               <repository:/> .
 
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(20)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/type(1)/implementedTypes(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getAToBMap" ;
+              <http://org.softlang.com/ImplementedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
-<repository:/bin/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.class>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/bin/org/softlang/sampleemap/myemap/impl> .
-
-<repository:/bin/org/softlang/sampleemap/myemap/MyemapPackage$Literals.class>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/bin/org/softlang/sampleemap/myemap> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(11)>
+<repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java#/imports(6)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getAToBMap_Key" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java#/type(1)/members(4)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "createA" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapFactoryImpl.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(15)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.createPackageContents" ;
+      <http://org.softlang.com/env/sname>
               "createPackageContents" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
@@ -1039,12 +2273,22 @@
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java>
       <http://org.softlang.com/elementOf>
               <http://org.softlang.com/Java> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> , <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/util> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.util.MyemapAdapterFactory" ;
+      <http://org.softlang.com/env/sname>
+              "MyemapAdapterFactory" ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/util> ;
       <http://org.softlang.com/manifestsAs>
               <http://org.softlang.com/File> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util> ;
-      <http://org.softlang.com/refersToExtendedTypes>
-              "AdapterFactoryImpl" .
+              <repository:/src/org/softlang/sampleemap/myemap/util> .
 
 <repository:/bin/org/softlang/sampleemap/myemap>
       <http://org.softlang.com/manifestsAs>
@@ -1054,39 +2298,29 @@
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(24)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
+              <http://org.softlang.com/MemberJava> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/bin/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.class>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/File> ;
-      <http://org.softlang.com/partOf>
-              <repository:/bin/org/softlang/sampleemap/myemap/util> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java#/type(1)/members(1)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "eINSTANCE" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapFactory.java> .
-
-<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(6)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "caseB" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(20)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/EAttributeInterfaceJava> , <http://org.softlang.com/MemberJava> , <http://org.softlang.com/MethodJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.setKey" ;
+      <http://org.softlang.com/env/sname>
               "setKey" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/imports(8)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
 <repository:/bin/org/softlang/sampleemap/myemap/A.class>
       <http://org.softlang.com/manifestsAs>
@@ -1094,78 +2328,116 @@
       <http://org.softlang.com/partOf>
               <repository:/bin/org/softlang/sampleemap/myemap> .
 
+<repository:/src/org/softlang/sampleemap/myemap/A.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap> , <repository:/src/org/softlang/sampleemap/myemap/A.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/A.java> .
+
 <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/type(1)/members(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> ;
+              <http://org.softlang.com/MemberJava> ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
 
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java#/imports(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapAdapterFactory.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/extendedTypes(1)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ExtendedTypeJava> ;
+      <http://org.softlang.com/env/escope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap/impl> , <cls:EObject> , <repository:/src/org/softlang/sampleemap/myemap/B.java> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/usescope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
+<repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/imports(8)>
+      <http://org.softlang.com/elementOf>
+              <http://org.softlang.com/ImportJava> ;
+      <http://org.softlang.com/partOf>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
+
 <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.MyemapPackageImpl.aToBMapEClass" ;
+      <http://org.softlang.com/env/sname>
               "aToBMapEClass" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(1)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.eNAME" ;
+      <http://org.softlang.com/env/sname>
               "eNAME" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java#/type(1)/members(7)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getA" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/impl/MyemapPackageImpl.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java#/type(1)/members(2)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/impl> , <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.impl.AToBMapImpl.key" ;
+      <http://org.softlang.com/env/sname>
               "key" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/impl/AToBMapImpl.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap>
-      <http://org.softlang.com/manifestsAs>
-              <http://org.softlang.com/Folder> ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap> .
-
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(17)>
-      <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/MethodJava> ;
-      <http://org.softlang.com/name>
-              "getA" ;
-      <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
-
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(9)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.B" ;
+      <http://org.softlang.com/env/sname>
               "B" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
 <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(13)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
+              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/FieldJava> ;
+      <http://org.softlang.com/env/inscope>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> , <repository:/src/org/softlang/sampleemap/myemap> ;
+      <http://org.softlang.com/env/qinherit>
+              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> ;
+      <http://org.softlang.com/env/qname>
+              "org.softlang.sampleemap.myemap.MyemapPackage.ATO_BMAP__KEY" ;
+      <http://org.softlang.com/env/sname>
               "ATO_BMAP__KEY" ;
       <http://org.softlang.com/partOf>
               <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
 
-<repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java#/type(1)/members(5)>
+<repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java#/imports(3)>
       <http://org.softlang.com/elementOf>
-              <http://org.softlang.com/MemberJava> , <http://org.softlang.com/InterfaceMethodSignatureJava> , <http://org.softlang.com/AttributeJava> ;
-      <http://org.softlang.com/name>
-              "A" ;
+              <http://org.softlang.com/ImportJava> ;
       <http://org.softlang.com/partOf>
-              <repository:/src/org/softlang/sampleemap/myemap/MyemapPackage.java> .
+              <repository:/src/org/softlang/sampleemap/myemap/util/MyemapSwitch.java> .
