@@ -2,6 +2,7 @@ package org.softlang.qegal.buildins.decompose;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.WeakHashMap;
 import java.util.stream.Collectors;
@@ -35,7 +36,7 @@ public class DecJava extends DecDeep {
 				new GenericNodePointerFactory<Optional>(1, Optional.class, OptionalNodePointer.class));
 	}
 
-	public static WeakHashMap<String, CompilationUnit> TABLE = new WeakHashMap<>();
+	public static Map<String, CompilationUnit> TABLE = new WeakHashMap<>();
 
 	private CompilationUnit parse(String uri) {
 		try {
