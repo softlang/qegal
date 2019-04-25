@@ -1,18 +1,18 @@
-import org.softlang.qegal.buildins.decompose.*
-import org.softlang.qegal.buildins.*
-import org.softlang.qegal.buildins.string.*
-import org.apache.jena.reasoner.rulesys.builtins.*
-
-/* Default softlang namespace */
-@prefix sl: <http://org.softlang.com/>.
-
-//(?eAttributeInterfaceSignature, sl:elementOf, sl:EAttributeImplJava)
-//	StrJava(?eAttributeInterfaceSignature, "/variables/type", ?type)
-//	Regex(?type,"EMap<.*") ->
-//		(?eAttributeInterfaceSignature, sl:elementOf, sl:EMapAttributeImplJava).
-//	
-//(?eMap, sl:elementOf, sl:Java)
-//	(?eMap, sl:refersToImplementedTypes, ?implemented) 
-//	IsLiteral(?implemented)
-//	Regex(?implemented,"Entry*") ->
-//		(?eMap, sl:elementOf, sl:EMapImplJava).
+//import org.softlang.qegal.buildins.decompose.*
+//import org.softlang.qegal.buildins.*
+//import org.softlang.qegal.buildins.string.*
+//import org.apache.jena.reasoner.rulesys.builtins.*
+//
+///* Default softlang namespace */
+//@prefix sl: <http://org.softlang.com/>.
+//
+////(?eAttributeInterfaceSignature, sl:elementOf, sl:EAttributeImplJava)
+////	StrJava(?eAttributeInterfaceSignature, "/variables/type", ?type)
+////	Regex(?type,"EMap<.*") ->
+////		(?eAttributeInterfaceSignature, sl:elementOf, sl:EMapAttributeImplJava).
+////	
+////(?eMap, sl:elementOf, sl:Java)
+////	(?eMap, sl:refersToImplementedTypes, ?implemented) 
+////	IsLiteral(?implemented)
+////	Regex(?implemented,"Entry*") ->
+////		(?eMap, sl:elementOf, sl:EMapImplJava).

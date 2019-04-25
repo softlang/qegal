@@ -23,7 +23,7 @@ instance (<cls:EFactory>, env:qname, "org.eclipse.emf.ecore.EFactory").
 
 //// Identification of Factory and Package.
 (?epackage, sl:elementOf, sl:Java) (?epackage, sl:extend, <cls:EPackage>) ->  (?epackage, sl:elementOf, sl:EcorePackageJava).
-(?epackage, sl:elementOf, sl:Java) (?epackage, sl:extend, <cls:EFactory>) ->  (?epackage, sl:elementOf, sl:EcoreFactoryJava).
+(?efactory, sl:elementOf, sl:Java) (?efactory, sl:extend, <cls:EFactory>) ->  (?efactory, sl:elementOf, sl:EcoreFactoryJava).
 
 // Extraction of nsuri.
 (?epackage, sl:elementOf, sl:EcorePackageJava) 
@@ -49,7 +49,7 @@ instance (<cls:EFactory>, env:qname, "org.eclipse.emf.ecore.EFactory").
 	Regex(?comment, "(?s).*[\\n\\r].*@generated.*") -> 
 		(?eAttributeInterface, sl:elementOf, sl:EAttributeInterfaceJava).
 
- (?eAttributeImpl, sl:elementOf, sl:AttributeJava)
+ (?eAttributeImpl, sl:elementOf, sl:FieldJava)
  	(?eclassImpl, sl:elementOf, sl:EClassImplJava)
 	(?eAttributeImpl, sl:partOf, ?eclassImpl)
 	StrJava(?eAttributeImpl, "/comment/value/content", ?comment) 

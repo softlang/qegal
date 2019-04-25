@@ -22,6 +22,7 @@ import org.softlang.qegal.io.IOGitBare;
 import org.softlang.qegal.io.IOLayer;
 import org.softlang.qegal.jutils.CSVSink;
 import org.softlang.qegal.jutils.CSVSink.SinkType;
+import org.softlang.qegal.utils.QegalUtils;
 import org.softlang.qegal.jutils.Gits;
 import org.softlang.qegal.jutils.JUtils;
 
@@ -33,15 +34,20 @@ public class QModelProcess {
 		// Input arguments.
 		boolean bare = false;
 
+		String ttlout = "src/main/java/org/softlang/qegal/qmodles/output/ttls/";
+		
 		CSVParser records = CSVFormat.DEFAULT.withHeader()
 				.parse(new FileReader("src/main/java/org/softlang/qegal/qmodles/target.csv"));
 
-		CSVSink csvsink = new CSVSink(
-				new File("src/main/java/org/softlang/qegal/qmodles/out.csv").getAbsolutePath(),
+		CSVSink csvsink = new CSVSink(new File("src/main/java/org/softlang/qegal/qmodles/out.csv").getAbsolutePath(),
 				Charsets.UTF_8, SinkType.DYNAMIC);
 
-		for (CSVRecord record : records) {
+		// Delet the ttl outs.
+		for(File file : new File(ttlout).listFiles()) 
+			file.delete();
 		
+		for (CSVRecord record : records) {
+
 			Repository repository = null;
 			IOLayer iolayer = null;
 			Map<String, String> properties = new HashMap<>();
@@ -64,8 +70,11 @@ public class QModelProcess {
 				// Run mining.
 				IMinedRepository mined = QegalProcess2.execute(iolayer,
 						new File(JUtils.configuration("temp") + "/qmodles/" + address),
-						Collections.singleton(new File("src/main/java/org/softlang/qegal/qmodles/process")), 1000 * 60 * 60 * 6,
-						QegalLogging.ALL, true);
+						Collections.singleton(new File("src/main/java/org/softlang/qegal/qmodles/process")),
+						1000 * 60 * 60 * 6, QegalLogging.NONE, false);
+
+				QegalUtils.write(mined.model(),
+						new File(ttlout + address.replace("/", "#") + ".ttl"));
 
 				properties.putAll(mined.properties());
 				properties.putAll(record.toMap());
