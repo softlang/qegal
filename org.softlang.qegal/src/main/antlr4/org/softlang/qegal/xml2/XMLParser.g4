@@ -36,7 +36,11 @@ document    :   prolog? misc* element misc*;
 prolog      :   XMLDeclOpen attribute* SPECIAL_CLOSE ;
 
 content     :   chardata?
-                ((element | reference | CDATA | PI | COMMENT) chardata?)* ;
+                ((element | reference | cdata | pi | comment) chardata?)* ;
+
+cdata: CDATA;
+pi:PI;
+comment:COMMENT;
 
 element     :   '<' Name attribute* '>' content '<' '/' Name '>'
             |   '<' Name attribute* '/>'
@@ -44,7 +48,9 @@ element     :   '<' Name attribute* '>' content '<' '/' Name '>'
 
 reference   :   EntityRef | CharRef ;
 
-attribute   :   Name '=' STRING ; // Our STRING is AttValue in spec
+attribute   :   Name '=' value ; // Our STRING is AttValue in spec
+
+value: STRING;
 
 /** ``All text that is not markup constitutes the character data of
  *  the document.''

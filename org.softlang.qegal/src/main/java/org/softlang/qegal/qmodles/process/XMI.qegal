@@ -1,0 +1,25 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+@prefix cls: <http://org.softlang.com/emf/>.
+@prefix env: <http://org.softlang.com/env/>.
+
+// Root of XMI.
+(?x, sl:elementOf, sl:XMI) DecXml2(?x,"element",?element) -> (?element, sl:elementOf, sl:XMIElement).
+
+// Recursive decomposition.
+(?element, sl:elementOf, sl:XMIElement) ->
+	DecXml2(?element,"/content",sl:partOf,?element)
+	DecXml2(?element,"/content",sl:elementOf,sl:XMIElement).
+
+//(?ecoreXMI, sl:elementOf, sl:EcoreXMI) DecXml2(?ecoreXMI,"element",?ePackageXMI) -> (?ePackageXMI, sl:elementOf, sl:PackageXMI).
+ 
+
+// ?eClassXMI 
+//(?ePackageXMI, sl:elementOf, sl:PackageXMI) -> 
+//	DecXml2(?ePackageXMI,"/c/eClassifiers",sl:partOf,?ePackageXMI)
+//	DecXml2(?ePackageXMI,"/c/eClassifiers",sl:elementOf,sl:ClassXMI).

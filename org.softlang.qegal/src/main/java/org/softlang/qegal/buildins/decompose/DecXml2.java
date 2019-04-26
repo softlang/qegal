@@ -5,16 +5,14 @@ import java.util.List;
 import java.util.WeakHashMap;
 import java.util.stream.Collectors;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.jxpath.JXPathContext;
 import org.apache.commons.jxpath.ri.model.NodePointer;
 import org.apache.jena.graph.Node;
 import org.softlang.qegal.buildins.Tablings;
-import org.softlang.qegal.io.IOLayer;
-import org.w3c.dom.Document;
+import org.softlang.qegal.xml2.Document;
+import org.softlang.qegal.xml2.XML2Parser;
 import org.xml.sax.SAXException;
 
 import com.google.common.collect.Lists;
@@ -34,13 +32,8 @@ public class DecXml2 extends DecDeep {
 
 	public Document parse(String path) {
 		try {
-			// TODO: Replace by generated parser.
-			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-			dbf.setNamespaceAware(true);
-			DocumentBuilder db = dbf.newDocumentBuilder();
-			Document doc = db.parse(iolayer.access(path));
-			return doc;
-		} catch (SAXException | IOException | ParserConfigurationException e) {
+			return XML2Parser.parse(iolayer.access(path));
+		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
 	}

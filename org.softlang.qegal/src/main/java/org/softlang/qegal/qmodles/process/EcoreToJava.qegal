@@ -1,0 +1,35 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+@prefix cls: <http://org.softlang.com/emf/>.
+@prefix env: <http://org.softlang.com/env/>.
+
+// Ecore things.
+(?ecoreXMI, sl:manifestsAs, sl:File) Extension(?ecoreXMI,"ecore") -> (?ecoreXMI, sl:elementOf, sl:EcoreXMI).
+(?ecoreXMI, sl:elementOf, sl:EcoreXMI) -> (?ecoreXMI, sl:elementOf, sl:XMI).
+
+(?ePackageXMI, sl:elementOf, sl:XMIElement) StrXml2(?ePackageXMI,"/name","ecore:EPackage") -> (?ePackageXMI, sl:elementOf, sl:PackageXMI).
+
+(?ePackageXMI, sl:elementOf, sl:PackageXMI) (?eClassXMI,sl:partOf,?ePackageXMI) (?eClassXMI, sl:elementOf, sl:XMIElement)    
+	StrXml2(?eClassXMI,"/name","eClassifiers") -> (?eClassXMI, sl:elementOf, sl:ClassXMI).
+
+(?eClassXMI, sl:elementOf, sl:ClassXMI) (?eStructuralFeatureXMI,sl:partOf,?eClassXMI) (?eStructuralFeatureXMI, sl:elementOf, sl:XMIElement)  
+	StrXml2(?eStructuralFeatureXMI,"/name","eStructuralFeatures") -> (?eStructuralFeatureXMI, sl:elementOf, sl:StructuralFeatureXMI).
+
+//(?ePackageXMI, sl:elementOf, sl:PackageXMI) -> 
+//	DecXml2(?ePackageXMI,"/c/eClassifiers",sl:partOf,?ePackageXMI)
+//	DecXml2(?ePackageXMI,"/c/eClassifiers",sl:elementOf,sl:ClassXMI).
+
+// ?eStructuralFeatureXMI
+
+
+// Generator things.
+(?generatorXMI, sl:manifestsAs, sl:File) Extension(?generatorXMI,"genmodel") -> (?generatorXMI, sl:elementOf, sl:GeneratorXMI).
+
+// ?generatorClassXMI
+
+// ?generatorFeatureXMI
