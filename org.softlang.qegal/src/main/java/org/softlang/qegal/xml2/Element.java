@@ -30,7 +30,7 @@ public class Element implements Content {
 
 	public Map getA() {
 		if (a == null) {
-			Map<String, String> a = new HashMap<>();
+			a = new HashMap<>();
 			for (Attribute x : attributes)
 				a.put(x.getName(), x.getValue());
 		}

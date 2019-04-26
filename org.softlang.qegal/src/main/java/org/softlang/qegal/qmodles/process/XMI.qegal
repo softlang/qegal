@@ -9,7 +9,7 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 @prefix env: <http://org.softlang.com/env/>.
 
 // Root of XMI.
-(?x, sl:elementOf, sl:XMI) DecXml2(?x,"element",?element) -> (?element, sl:elementOf, sl:XMIElement).
+(?file, sl:elementOf, sl:XMI) DecXml2(?file,"element",?element) -> (?element, sl:elementOf, sl:XMIElement) (?element, sl:partOf, ?file).
 
 // Recursive decomposition.
 (?element, sl:elementOf, sl:XMIElement) ->

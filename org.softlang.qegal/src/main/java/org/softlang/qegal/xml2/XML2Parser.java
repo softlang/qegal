@@ -9,6 +9,8 @@ import java.io.InputStream;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.apache.commons.lang.CharUtils;
+import org.apache.commons.lang.StringUtils;
 import org.softlang.qegal.xml2.XMLParser.AttributeContext;
 import org.softlang.qegal.xml2.XMLParser.ChardataContext;
 import org.softlang.qegal.xml2.XMLParser.DocumentContext;
@@ -71,7 +73,7 @@ public class XML2Parser {
 	static Attribute transform(AttributeContext child) {
 		Attribute result = new Attribute();
 		result.setName(child.Name().getText());
-		result.setValue(child.value().getText());
+		result.setValue(StringUtils.strip(child.value().getText(), "\""));
 		return result;
 	}
 	
