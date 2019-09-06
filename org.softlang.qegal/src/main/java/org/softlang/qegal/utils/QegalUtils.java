@@ -12,6 +12,11 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.Syntax;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
@@ -175,5 +180,16 @@ public class QegalUtils {
     public static String uri(File file) {
         return file.getAbsolutePath().replace("\\", "/");
     }
+    
+    public static Set<String> query(Model model, String querytext){
+		Set<String> results = new HashSet<>();
+		Query query = QueryFactory.create(querytext, Syntax.syntaxARQ);
+		try (QueryExecution qe = QueryExecutionFactory.create(query, model)) {
+			qe.execSelect().forEachRemaining(r -> results.add(r.get("?x").toString()));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return results;
+	}
 
 }

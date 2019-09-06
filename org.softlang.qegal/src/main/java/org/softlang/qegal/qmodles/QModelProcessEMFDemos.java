@@ -39,6 +39,7 @@ import org.softlang.qegal.jutils.CSVSink;
 import org.softlang.qegal.jutils.CSVSink.SinkType;
 import org.softlang.qegal.jutils.JUtils;
 import org.softlang.qegal.utils.QegalUtils;
+import static org.softlang.qegal.utils.QegalUtils.query;
 
 import com.beust.jcommander.internal.Sets;
 import com.google.common.base.Charsets;
@@ -227,16 +228,5 @@ public class QModelProcessEMFDemos {
 				e.printStackTrace();
 			}
 		}
-	}
-	
-	public static Set<String> query(Model model, String querytext){
-		Set<String> results = new HashSet<>();
-		Query query = QueryFactory.create(querytext, Syntax.syntaxARQ);
-		try (QueryExecution qe = QueryExecutionFactory.create(query, model)) {
-			qe.execSelect().forEachRemaining(r -> results.add(r.get("?x").toString()));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return results;
 	}
 }
