@@ -36,6 +36,7 @@ public class XML2Parser {
 
 	static Document transform(DocumentContext x) {
 		Document result = new Document();
+		
 		if (x.prolog() != null)
 			result.setProlog(transform(x.prolog()));
 
@@ -47,6 +48,7 @@ public class XML2Parser {
 
 	static Element transform(ElementContext element) {
 		Element result = new Element();
+		result.setParsedText(element.getText());
 		result.setName(element.Name(0).getText());
 		
 		for (ParseTree child : element.attribute()) {
@@ -72,6 +74,7 @@ public class XML2Parser {
 
 	static Attribute transform(AttributeContext child) {
 		Attribute result = new Attribute();
+		
 		result.setName(child.Name().getText());
 		result.setValue(StringUtils.strip(child.value().getText(), "\""));
 		return result;
@@ -79,12 +82,14 @@ public class XML2Parser {
 	
 	static Chardata transform(ChardataContext child) {
 		Chardata result = new Chardata();
+		result.setParsedText(child.getText());
 		result.setText(child.getText());
 		return result;
 	}
 
 	static UnhandledElement transform(ParseTree child) {
 		UnhandledElement result = new UnhandledElement();
+		result.setParsedText(child.getText());
 		result.setType(child.getClass().getSimpleName());
 		result.setText(child.getText());
 		return result;

@@ -13,7 +13,8 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 (?jfile, sl:manifestsAs, sl:File) Extension(?jfile, "java") -> (?jfile, sl:elementOf, sl:Java).
 
 (?mod, sl:elementOf, sl:Java) StrPropertyJava(?mod,"type[1]/isInterface",?name) -> (?mod,sl:isinterface,?name).
- (?file, sl:elementOf, sl:Java) StrJava(?file,"type[1]",?str) -> (?file, env:content, ?str).
+
+(?file, sl:elementOf, sl:Java) StrJava(?file,"type[1]",?str) -> (?file, env:content, ?str).
  
 // # Create Packages AST (if it contains one Java file).
 (?package, sl:manifestsAs, sl:Folder) (?jfile, sl:partOf, ?package) (?jfile, sl:elementOf, sl:Java) -> (?package, sl:elementOf, sl:PackageJava).

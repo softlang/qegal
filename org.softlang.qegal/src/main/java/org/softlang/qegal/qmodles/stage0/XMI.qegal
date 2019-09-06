@@ -11,12 +11,12 @@ import org.apache.jena.reasoner.rulesys.builtins.*
 // Root of XMI.
 (?file, sl:elementOf, sl:XMI) DecXml2(?file,"element",?element) -> (?element, sl:elementOf, sl:XMIElement) (?element, sl:partOf, ?file).
 
-
 // Recursive decomposition.
-//(?element, sl:elementOf, sl:XMIElement) ->
-//	DecXml2(?element,"/content",sl:partOf,?element)
-//	DecXml2(?element,"/content",sl:elementOf,sl:XMIElement).
-	
+(?element, sl:elementOf, sl:XMIElement) ->
+	DecXml2(?element,"/content",sl:partOf,?element)
+	DecXml2(?element,"/content",sl:elementOf,sl:XMIElement).
+(?element, sl:elementOf, sl:XMIElement) StrPropertyXml2(?element,"/getParsedText",?content) -> (?element,env:content,?content).
+
 //Accessing String content does not work properly. See while debugging StrXml2
 //(?el, sl:elementOf, sl:XMIElement) StrXml2(?el,"",?content) -> (?el,env:content,?content).
 

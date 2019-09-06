@@ -4,4 +4,6 @@ public interface Content {
 
 	String getText();
 	
+	String getParsedText();
+	void setParsedText(String text);
 }

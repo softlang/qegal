@@ -11,6 +11,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 public class Element implements Content {
 
 	private List<Content> content;
+	private String parsedText;
 
 	private List<Attribute> attributes;
 
@@ -63,9 +64,16 @@ public class Element implements Content {
 			return "";
 		StringBuilder result = new StringBuilder();
 		for (Content child : content)
-			if (child instanceof Chardata)
-				result.append(((Chardata) child).getText());
+			result.append(child.getText());
 
 		return result.toString();
+	}
+
+	public String getParsedText() {
+		return parsedText;
+	}
+
+	public void setParsedText(String text) {
+		parsedText = text;
 	}
 }
