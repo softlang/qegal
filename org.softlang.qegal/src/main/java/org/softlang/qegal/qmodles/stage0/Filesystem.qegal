@@ -1,0 +1,18 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+
+import org.apache.jena.reasoner.rulesys.builtins.*
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+@prefix sys: <http://org.softlang.com/qegal/>.
+instance (<repository:/>, sl:manifestsAs, sl:Folder).
+
+
+// Recursive filesystem decomposition.
+(?folder, sl:manifestsAs, sl:Folder)  -> DecFs(?folder, "/*", sl:partOf, ?folder).
+
+(?artifact, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) IsDirectory(?artifact) ->
+    (?artifact, sl:manifestsAs, sl:Folder).
+    
+(?artifact, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) IsFile(?artifact) ->
+    (?artifact, sl:manifestsAs, sl:File).

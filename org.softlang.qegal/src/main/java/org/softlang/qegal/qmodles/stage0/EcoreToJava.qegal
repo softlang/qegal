@@ -1,0 +1,102 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+@prefix cls: <http://org.softlang.com/emf/>.
+@prefix env: <http://org.softlang.com/env/>.
+
+// #### Ecore #############################################################################################
+// Ecore file.
+(?ecoreXMI, sl:manifestsAs, sl:File) Extension(?ecoreXMI,"ecore") -> (?ecoreXMI, sl:elementOf, sl:EcoreXMI).
+
+(?ecoreXMI, sl:elementOf, sl:EcoreXMI) -> (?ecoreXMI, sl:elementOf, sl:XMI).
+
+// Ecore root
+(?ePackageXMI, sl:elementOf, sl:XMIElement) StrXml2(?ePackageXMI,"/name","ecore:EPackage") -> (?ePackageXMI, sl:elementOf, sl:PackageXMI).
+
+ // Class.
+(?ePackageXMI, sl:elementOf, sl:PackageXMI) (?eClassXMI,sl:partOf,?ePackageXMI) (?eClassXMI, sl:elementOf, sl:XMIElement)    
+	StrXml2(?eClassXMI,"/name","eClassifiers") -> (?eClassXMI, sl:elementOf, sl:ClassXMI).
+	
+ // Feature.
+(?eClassXMI, sl:elementOf, sl:ClassXMI) (?eStructuralFeatureXMI,sl:partOf,?eClassXMI) (?eStructuralFeatureXMI, sl:elementOf, sl:XMIElement)  
+	StrXml2(?eStructuralFeatureXMI,"/name","eStructuralFeatures") -> (?eStructuralFeatureXMI, sl:elementOf, sl:StructuralFeatureXMI).
+	
+// Naming
+ (?eClassXMI, sl:elementOf, sl:ClassXMI) StrXml2(?eClassXMI,"/a/name",?sname) -> (?eClassXMI,env:sname,?sname).
+ 
+
+ (?eStructuralFeatureXMI, sl:elementOf, sl:StructuralFeatureXMI) StrXml2(?eStructuralFeatureXMI,"/a/name",?sname) -> (?eStructuralFeatureXMI,env:sname,?sname).
+ 
+// #### Generator #############################################################################################
+// Generator file.
+(?generatorXMI, sl:manifestsAs, sl:File) Extension(?generatorXMI,"genmodel") -> (?generatorXMI, sl:elementOf, sl:GeneratorXMI).
+
+(?generatorXMI, sl:elementOf, sl:GeneratorXMI) -> (?generatorXMI, sl:elementOf, sl:XMI).
+
+// Generator root.
+(?genmodelXMI, sl:elementOf, sl:XMIElement) StrXml2(?genmodelXMI,"/name","genmodel:GenModel") -> (?genmodelXMI, sl:elementOf, sl:GenmodelXMI).
+
+(?genmodelXMI, sl:elementOf, sl:GenmodelXMI) (?genPackageXMI, sl:partOf, ?genmodelXMI) (?genPackageXMI, sl:elementOf, sl:XMIElement)
+	StrXml2(?genPackageXMI,"/name","genPackages") -> (?genPackageXMI, sl:elementOf, sl:GenPackageXMI).
+
+(?genClassXMI, sl:elementOf, sl:XMIElement) (?genClassXMI, sl:partOf, ?genPackageXMI) (?genPackageXMI, sl:elementOf, sl:GenPackageXMI)
+	StrXml2(?genClassXMI,"/name","genClasses") -> (?genClassXMI, sl:elementOf, sl:GenClassXMI).
+
+(?genFeatureXMI, sl:elementOf, sl:XMIElement) (?genFeatureXMI, sl:partOf, ?genClassXMI) (?genClassXMI, sl:elementOf, sl:GenClassXMI)
+	StrXml2(?genFeatureXMI,"/name","genFeatures") -> (?genFeatureXMI, sl:elementOf, sl:GenFeatureXMI).
+	
+(?genOperationXMI, sl:elementOf, sl:XMIElement) (?genOperationXMI, sl:partOf, ?genClassXMI) (?genClassXMI, sl:elementOf, sl:GenClassXMI)
+	StrXml2(?genOperationXMI,"/name","genOperations") -> (?genOperationXMI, sl:elementOf, sl:GenOperationXMI).
+
+// Naming (GenClassXMI). 	
+ (?genClassXMI, sl:elementOf, sl:GenClassXMI) StrXml2(?genClassXMI,"/a/ecoreClass",?text) Regex(?text,"(.*?)(#//)(.*)",?t1,?t2,?sname) -> 
+ 	(?genClassXMI,env:sname,?sname).
+ 	
+// Naming (GenFeatureXMI). 	
+(?genFeatureXMI, sl:elementOf, sl:GenFeatureXMI) StrXml2(?genFeatureXMI,"/a/ecoreFeature",?text) Regex(?text,"(.*?)(#//)(.*?)(/)(.*)",?t1,?t2,?t3,?t4,?sname) -> 
+ 	(?genFeatureXMI,env:sname,?sname).
+ 	
+// # Name inheritance Class, Method and Field.
+(?low, sl:elementOf,sl:GenClassXMI)  (?top, sl:elementOf, sl:GenPackageXMI) (?low, sl:partOf, ?top) 
+	(?top, env:qname,?qname) (?low, env:sname,?sname) StrConcat(?qname,".",?sname,?name) ->  (?low, env:qname,?name).
+	
+(?low, sl:elementOf,sl:GenFeatureXMI)  (?top, sl:elementOf, sl:GenClassXMI) (?low, sl:partOf, ?top) 
+	(?top, env:qname,?qname) (?low, env:sname,?sname) StrConcat(?qname,".",?sname,?name) ->  (?low, env:qname,?name).
+
+// #### Generator to Ecore #############################################################################################
+// Files.
+(?generatorXMI, sl:elementOf, sl:GeneratorXMI) (?genmodelXMI, sl:partOf, ?generatorXMI) (?genmodelXMI, sl:elementOf, sl:GenmodelXMI) 
+	(?generatorXMI, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) StrXml2(?genmodelXMI,"/c/foreignModel/text",?foreignModel) 
+	UriConcat(?folder,"/",?foreignModel, ?ecoreXMI) (?ecoreXMI, sl:elementOf, sl:EcoreXMI) 
+		-> (?genmodelXMI, sl:ModelGenerator, ?ecoreXMI).
+// Packages.
+(?genPackageXMI, sl:elementOf, sl:GenPackageXMI) (?genPackageXMI, sl:partOf, ?genmodelXMI) (?genmodelXMI, sl:elementOf, sl:GenmodelXMI)
+	(?genmodelXMI, sl:ModelGenerator, ?ecoreXMI) (?ePackageXMI, sl:elementOf, sl:PackageXMI) (?ePackageXMI,sl:partOf,?ecoreXMI)
+	-> (?genPackageXMI, sl:ModelPackageGenerator, ?ePackageXMI).
+	
+// Classes.
+(?genPackageXMI, sl:ModelPackageGenerator, ?ePackageXMI)
+	 (?genClassXMI,sl:partOf,?genPackageXMI) (?genClassXMI, sl:elementOf, sl:GenClassXMI) (?genClassXMI, env:sname, ?sname)
+	 (?eClassXMI,sl:partOf,?ePackageXMI) (?eClassXMI, sl:elementOf, sl:ClassXMI) (?eClassXMI,env:sname,?sname)
+	 -> (?genClassXMI , sl:ModelClassGenerator, ?eClassXMI).
+	
+// Features.
+ (?genClassXMI , sl:ModelClassGenerator, ?eClassXMI)
+	 (?genFeatureXMI,sl:partOf,?genClassXMI) (?genFeatureXMI, sl:elementOf, sl:GenFeatureXMI) (?genFeatureXMI, env:sname, ?sname)
+	 (?eStructuralFeatureXMI,sl:partOf,?eClassXMI) (?eStructuralFeatureXMI, sl:elementOf, sl:StructuralFeatureXMI) (?eStructuralFeatureXMI,env:sname,?sname)
+	  -> (?genFeatureXMI , sl:ModelFeatureGenerator, ?eStructuralFeatureXMI).
+
+// Naming (GenPackageXMI).
+(?genPackageXMI, sl:elementOf, sl:GenPackageXMI) StrXml2(?genPackageXMI,"/a/basePackage",?basePackage) 
+	(?genPackageXMI, sl:ModelPackageGenerator, ?ePackageXMI) StrXml2(?ePackageXMI,"/a/name",?pkgname) 
+	StrConcat(?basePackage,".", ?pkgname,?qname) ->
+ 	(?genPackageXMI,env:qname,?qname).
+
+// #### Generator to Java #############################################################################################
+ (?genClassXMI, sl:elementOf, sl:GenClassXMI) (?genClassXMI,env:qname,?qname) 
+	(?eclassImpl, sl:elementOf, sl:EClassInterfaceJava) (?eclassImpl,env:qname,?qname) 
+	  -> (?genClassXMI , sl:GeneratorToEClassInterfaceJava, ?eclassImpl).

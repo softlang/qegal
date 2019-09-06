@@ -1,0 +1,57 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+@prefix cls: <http://org.softlang.com/emf/>.
+@prefix env: <http://org.softlang.com/env/>.
+
+// Class import EObject
+instance (<cls:EObject>, sl:elementOf, sl:Java).
+instance (<cls:EObject>, env:sname, "EObject").
+instance (<cls:EObject>, env:qname, "org.eclipse.emf.ecore.EObject").
+// Class import EPackage
+instance (<cls:EPackage>, sl:elementOf, sl:Java).
+instance (<cls:EPackage>, env:sname, "EPackage").
+instance (<cls:EPackage>, env:qname, "org.eclipse.emf.ecore.EPackage").
+// Class import EFactory
+instance (<cls:EFactory>, sl:elementOf, sl:Java).
+instance (<cls:EFactory>, env:sname, "EFactory").
+instance (<cls:EFactory>, env:qname, "org.eclipse.emf.ecore.EFactory").
+
+//// Identification of Factory and Package.
+(?epackage, sl:elementOf, sl:Java) (?epackage, sl:extend, <cls:EPackage>) ->  (?epackage, sl:elementOf, sl:EcorePackageJava).
+(?efactory, sl:elementOf, sl:Java) (?efactory, sl:extend, <cls:EFactory>) ->  (?efactory, sl:elementOf, sl:EcoreFactoryJava).
+
+// Extraction of nsuri.
+(?epackage, sl:elementOf, sl:EcorePackageJava) 
+	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri) ->
+		(?epackage, sl:nsURI, ?nsUri).
+
+(?efactory, sl:elementOf, sl:EcoreFactoryJava) 
+	UriJava(?epackage, "type[1]/members/variables[name/identifier='eNS_URI']/initializer/value/value", ?nsUri) ->
+		(?epackage, sl:nsURI, ?nsUri).
+
+//// Interfaces are detected by subclassing.
+(?eclassInterface, sl:elementOf, sl:Java) (?eclassInterface, sl:extend, <cls:EObject>) -> (?eclassInterface, sl:elementOf, sl:EClassInterfaceJava).
+(?super, sl:elementOf, sl:EClassInterfaceJava) (?eclass, sl:extend, ?super) -> (?eclass, sl:elementOf, sl:EClassInterfaceJava).		
+
+//// Implementations are detected by subclassing interfaces.
+(?eclassImpl, sl:elementOf, sl:Java) (?eclassImpl, sl:implement, ?eclassInterface) (?eclassInterface, sl:elementOf, sl:EClassInterfaceJava) ->
+	(?eclassImpl, sl:elementOf, sl:EClassImplJava).
+			
+(?eAttributeInterface, sl:elementOf, sl:MethodJava)
+	(?eclassInterface, sl:elementOf, sl:EClassInterfaceJava)
+	(?eAttributeInterface, sl:partOf, ?eClassInterface)
+	StrJava(?eAttributeInterface, "/comment/value/content", ?comment) 
+	Regex(?comment, "(?s).*[\\n\\r].*@model.*") -> 
+		(?eAttributeInterface, sl:elementOf, sl:EAttributeInterfaceJava).
+
+ (?eAttributeImpl, sl:elementOf, sl:FieldJava)
+ 	(?eclassImpl, sl:elementOf, sl:EClassImplJava)
+	(?eAttributeImpl, sl:partOf, ?eclassImpl)
+	StrJava(?eAttributeImpl, "/comment/value/content", ?comment) 
+	Regex(?comment, "(?s).*[\\n\\r].*@generated.*") -> 
+		(?eAttributeImpl, sl:elementOf, sl:EAttributeImplJava).
