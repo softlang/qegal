@@ -16,9 +16,10 @@ public class StrXml2 extends DecXml2 {
 
     @Override
     protected Node resolve(String filepath, NodePointer pointer) {
-        if (pointer instanceof BeanPointer)
-            return NodeFactory.createLiteral(((BeanPointer) pointer).getValue().toString());
-
+        if (pointer instanceof BeanPointer) {
+        	String v = pointer.getValue().toString();
+            return NodeFactory.createLiteral(v);
+        }
         throw new RuntimeException("Type not matching");
     }
 }

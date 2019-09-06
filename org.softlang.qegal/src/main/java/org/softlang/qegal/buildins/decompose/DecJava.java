@@ -38,7 +38,7 @@ public class DecJava extends DecDeep {
 
 	public static Map<String, CompilationUnit> TABLE = new WeakHashMap<>();
 
-	private CompilationUnit parse(String uri) {
+	protected CompilationUnit parse(String uri) {
 		try {
 			return JavaParser.parse(iolayer.access(uri));
 		} catch (IOException e) {
@@ -54,7 +54,9 @@ public class DecJava extends DecDeep {
 		JXPathContext context = JXPathContext.newContext(contextBean);
 		List<Object> result = Lists.newArrayList(context.iteratePointers(query));
 
-		return result.stream().map(x -> resolve(filepath(uri), (NodePointer) x)).collect(Collectors.toList());
+		return result.stream()
+					 .map(x -> resolve(filepath(uri), (NodePointer) x))
+					 .collect(Collectors.toList());
 	}
 
 	protected Node resolve(String filepath, NodePointer pointer) {

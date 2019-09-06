@@ -38,6 +38,7 @@ public class DecXml extends DecDeep {
 			dbf.setNamespaceAware(true);
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document doc = db.parse(iolayer.access(path));
+
 			return doc;
 		} catch (SAXException | IOException | ParserConfigurationException e) {
 			throw new RuntimeException(e);
@@ -49,7 +50,7 @@ public class DecXml extends DecDeep {
 		String query = deepQuery(uri, xpath);
 
 		Document contextBean = Tablings.get(filepath(uri), TABLE, x -> parse(x));
-
+		String text = contextBean.getTextContent();
 		JXPathContext context = JXPathContext.newContext(contextBean);
 
 		// context.setFunctions(new ClassFunctions(ExtensionFunctionsXml.class,"sl"));
