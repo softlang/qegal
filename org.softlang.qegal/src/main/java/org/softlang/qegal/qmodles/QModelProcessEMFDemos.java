@@ -1,20 +1,15 @@
 package org.softlang.qegal.qmodles;
 
-import static org.softlang.qegal.utils.QegalUtils.query;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
 import java.nio.file.Files;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -47,11 +42,10 @@ public class QModelProcessEMFDemos {
 
 		String stagepath = "data/qmodles/stage0/";
 		
-		download();
+		//download(); //You still need to build projects after the download.
 		//detection(stagepath);
-		//createStatistics(stagepath);
+		createStatistics(stagepath);
 		
-		//createTestProtocol(stagepath);
 	}
 	
 	public static void download() {
@@ -228,41 +222,5 @@ public class QModelProcessEMFDemos {
 		}
 
 		return 0;
-	}
-	
-	public static void createTestProtocol(String stagepath) {
-		String ttlout = stagepath + "ttls/";
-		
-		File stage0 = new File(ttlout);
-		
-		Map<String, String[]> options = new HashMap<>();
-		String[] subsetJava = {"EcorePackageJava","EcoreFactoryJava","EClassInterfaceJava","EClassImplJava"}; 
-		options.put("Java", subsetJava);
-		String[] subsetMethodJava = {"EAttributeInterfaceJava", "EAttributeImplJava"};
-		options.put("MethodJava", subsetMethodJava);
-		String[] subsetXMI = {"EcoreXMI", "GeneratorXMI"};
-		options.put("XMI", subsetXMI);
-		String[] subsetXMIElement = {"PackageXMI", "ClassXMI","StructuralFeatureXMI"
-				,"GenmodelXMI", "GenPackageXMI", "GenClassXMI", "GenFeatureXMI","GenOperationXMI"};
-		options.put("XMIElement", subsetXMIElement);
-		
-		for (File file : stage0.listFiles(f -> f.getAbsolutePath().endsWith(".ttl"))) {
-			File out = new File(stagepath+ "Testprotocol-"+file.getName()+".csv");
-			try {
-				FileWriter fw = new FileWriter(out, false);
-				Model model = RDFDataMgr.loadModel(file.getAbsolutePath());
-				
-				for(String overlang : options.keySet()) {
-					String querytext = "PREFIX sl: <http://org.softlang.com/> \n" + "SELECT DISTINCT ?x WHERE { ?x sl:elementOf" + " sl:"+ overlang +". }";
-					Set<String> elements = query(model,querytext);
-					for(String el : elements) {
-						fw.write(el + ", " + String.join(",", options.get(overlang)) +", " +overlang +"\n");
-					}
-				}
-				fw.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 	}
 }

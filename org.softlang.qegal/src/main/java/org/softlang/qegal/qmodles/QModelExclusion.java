@@ -27,7 +27,7 @@ import org.softlang.qegal.jutils.JUtils;
 
 import com.google.common.base.Charsets;
 
-public class QModelExclulsion {
+public class QModelExclusion {
 	public static void main(String[] args) throws MissingObjectException, IncorrectObjectTypeException, IOException {
 
 		// Input arguments.
