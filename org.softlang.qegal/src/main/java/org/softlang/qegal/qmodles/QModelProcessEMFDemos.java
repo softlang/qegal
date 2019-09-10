@@ -1,35 +1,34 @@
 package org.softlang.qegal.qmodles;
 
-import java.io.BufferedReader;
+import static org.softlang.qegal.utils.QegalUtils.query;
+
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 import java.nio.file.Files;
-import java.nio.file.StandardOpenOption;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Collectors;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
-import javax.swing.Action;
-
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
-import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.query.Syntax;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.riot.RDFDataMgr;
-import org.eclipse.jgit.errors.IncorrectObjectTypeException;
-import org.eclipse.jgit.errors.MissingObjectException;
 import org.softlang.qegal.IMinedRepository;
 import org.softlang.qegal.QegalLogging;
 import org.softlang.qegal.QegalProcess2;
@@ -39,9 +38,7 @@ import org.softlang.qegal.jutils.CSVSink;
 import org.softlang.qegal.jutils.CSVSink.SinkType;
 import org.softlang.qegal.jutils.JUtils;
 import org.softlang.qegal.utils.QegalUtils;
-import static org.softlang.qegal.utils.QegalUtils.query;
 
-import com.beust.jcommander.internal.Sets;
 import com.google.common.base.Charsets;
 
 public class QModelProcessEMFDemos {
@@ -49,11 +46,50 @@ public class QModelProcessEMFDemos {
 	public static void main(String[] args) throws IOException {
 
 		String stagepath = "data/qmodles/stage0/";
-
-		detection(stagepath);
-		createStatistics(stagepath);
 		
-		createTestProtocol(stagepath);
+		download();
+		//detection(stagepath);
+		//createStatistics(stagepath);
+		
+		//createTestProtocol(stagepath);
+	}
+	
+	public static void download() {
+		URL website;
+		try {
+			website = new URL("http://www.informit.com/content/images/9780321331885/downloads/examples.zip");
+			File f = new File(JUtils.configuration("temp")+"/demos.zip");
+			FileUtils.copyURLToFile(website, f);
+			
+			//unzip
+	        File destDir = new File(JUtils.configuration("temp"));
+	        byte[] buffer = new byte[1024];
+	        ZipInputStream zis = new ZipInputStream(new FileInputStream(f));
+	        ZipEntry zipEntry = zis.getNextEntry();
+	        while (zipEntry != null) {
+	        	File newFile = new File(destDir, zipEntry.getName());
+	        	newFile.getParentFile().mkdirs();
+	        	boolean exists = newFile.createNewFile();
+	        	newFile.setWritable(true);
+	            String destDirPath = destDir.getCanonicalPath();
+	            String destFilePath = newFile.getCanonicalPath();
+	             
+	            if (!destFilePath.startsWith(destDirPath + File.separator)) {
+	                throw new IOException("Entry is outside of the target dir: " + zipEntry.getName());
+	            }
+	            FileOutputStream fos = new FileOutputStream(newFile);
+	            int len;
+	            while ((len = zis.read(buffer)) > 0) {
+	                fos.write(buffer, 0, len);
+	            }
+	            fos.close();
+	            zipEntry = zis.getNextEntry();
+	        }
+	        zis.closeEntry();
+	        zis.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void detection(String stagepath) throws IOException {
