@@ -1,17 +1,12 @@
 package org.softlang.qegal.qmodles;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URL;
 import java.nio.file.Files;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -36,95 +31,66 @@ import org.softlang.qegal.utils.QegalUtils;
 
 import com.google.common.base.Charsets;
 
-public class QModelProcessEMFDemos {
+public class QModelProcessLocal {
 
-	public static void main(String[] args) throws IOException {
 
-		String stagepath = "data/qmodles/stage0/";
-		
-		//download(); //You still need to build projects after the download.
-		//detection(stagepath);
-		createStatistics(stagepath);
-		
-	}
-	
-	public static void download() {
-		URL website;
-		try {
-			website = new URL("http://www.informit.com/content/images/9780321331885/downloads/examples.zip");
-			File f = new File(JUtils.configuration("temp")+"/demos.zip");
-			FileUtils.copyURLToFile(website, f);
-			
-			//unzip
-	        File destDir = new File(JUtils.configuration("temp"));
-	        byte[] buffer = new byte[1024];
-	        ZipInputStream zis = new ZipInputStream(new FileInputStream(f));
-	        ZipEntry zipEntry = zis.getNextEntry();
-	        while (zipEntry != null) {
-	        	File newFile = new File(destDir, zipEntry.getName());
-	        	newFile.getParentFile().mkdirs();
-	        	boolean exists = newFile.createNewFile();
-	        	newFile.setWritable(true);
-	            String destDirPath = destDir.getCanonicalPath();
-	            String destFilePath = newFile.getCanonicalPath();
-	             
-	            if (!destFilePath.startsWith(destDirPath + File.separator)) {
-	                throw new IOException("Entry is outside of the target dir: " + zipEntry.getName());
-	            }
-	            FileOutputStream fos = new FileOutputStream(newFile);
-	            int len;
-	            while ((len = zis.read(buffer)) > 0) {
-	                fos.write(buffer, 0, len);
-	            }
-	            fos.close();
-	            zipEntry = zis.getNextEntry();
-	        }
-	        zis.closeEntry();
-	        zis.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public static void detection(String stagepath) throws IOException {
-		String ttlout = stagepath + "ttls/";
-
-		// list of local projects
-		File f = new File(stagepath+"in_local.csv");
+	/**
+	 * Preceding Steps: 
+	 * 1. Download demo project files from
+	 * "http://www.informit.com/content/images/9780321331885/downloads/examples.zip"
+	 * 2. Create new EMF projects based on the models.
+	 * 3. Scope: Create a CSV file that consists of all paths to relevant demo projects.
+	 * 
+	 * @param datapath: This folder contains all relevant data.
+	 * @param localProjectList: The CSV file contains the paths to projects.
+	 * @param qegalDir: This folder contains all .qegal files that shall be used.
+	 * 
+	 * @return This procedure executes the inference rules from qegalDir on each project linked by localProjectList
+	 * and creates the respective .ttl files in the datapath.
+	 */
+	public static void detection(String datapath, File localProjectList, File qegalDir) {
+		String ttlout = datapath + "ttls/";
 
 		CSVSink csvsink = new CSVSink(new File("src/main/java/org/softlang/qegal/qmodles/out.csv").getAbsolutePath(),
 				Charsets.UTF_8, SinkType.DYNAMIC);
 
-		// Delet the ttl outs.
-		System.out.println(ttlout);
-		for (File file : new File(ttlout).listFiles())
-			file.delete();
+		
+		
+		
+		Map<String, String> properties = new HashMap<>();
+		try {
+			// Delet the ttl outs.
+			if(new File(ttlout).exists())
+				for (File file : new File(ttlout).listFiles())
+					file.delete();
+			else
+				FileUtils.forceMkdir(new File(ttlout));
+			
+			// Run inference
+			for (String inLocal : Files.readAllLines(localProjectList.toPath())) {
+				File projectDir = new File(inLocal);
+				IOLayer iolayer = new IOFilesystem(projectDir);
 
-		for (String inLocal : Files.readAllLines(f.toPath())) {
-			File projectDir = new File(inLocal);
-			IOLayer iolayer = new IOFilesystem(projectDir);
-
-			Map<String, String> properties = new HashMap<>();
-			try {
 				// Run mining.
 				IMinedRepository mined = QegalProcess2.execute(iolayer,
 						new File(JUtils.configuration("temp") + "/qmodles/" + projectDir.getName()),
-						Collections.singleton(new File("src/main/java/org/softlang/qegal/qmodles/stage0")),
-						1000 * 60 * 60 * 6, QegalLogging.NONE, false);
+						Collections.singleton(qegalDir), 1000 * 60 * 60 * 6, QegalLogging.NONE, false);
 
 				QegalUtils.write(mined.model(), new File(ttlout + projectDir.getName() + ".ttl"));
 
 				properties.putAll(mined.properties());
 
 				System.out.println("Mined: " + mined.properties());
-			} catch (Exception e) {
-				System.err.println("Exception: " + e.toString());
-				properties.put("exception_in_process", e.toString());
-			} finally {
-				csvsink.write(properties);
-				csvsink.flush();
 			}
+		} catch (Exception e) {
+			System.err.println("Exception: " + e.toString());
+			properties.put("exception_in_process", e.toString());
+			e.printStackTrace();
+		} finally {
+			csvsink.write(properties);
+			csvsink.flush();
 		}
+
 	}
 
 	public static void createStatistics(String stagepath) {
@@ -155,8 +121,8 @@ public class QModelProcessEMFDemos {
 			for (File file : stage0.listFiles(f -> f.getAbsolutePath().endsWith(".ttl"))) {
 				// read RDF graph
 				Model model = RDFDataMgr.loadModel(file.getAbsolutePath());
-				
-				//count
+
+				// count
 				int[] counts = new int[columnnames.length];
 				int[] ocounts = new int[overestimates.length];
 				for (int i = 0; i < languages.length; i++) {

@@ -59,9 +59,9 @@ public class GroundTruth {
 				
 				for(String overlang : options.keySet()) {
 					String querytext = "PREFIX sl: <http://org.softlang.com/> \n" + "SELECT DISTINCT ?x WHERE { ?x sl:elementOf" + " sl:"+ overlang +". }";
-					Set<String> elements = query(model,querytext);
-					for(String el : elements) {
-						fw.write(el + ", " + String.join(",", options.get(overlang)) +", " +overlang +"\n");
+					Set<QuerySolution> elements = query(model,querytext);
+					for(QuerySolution el : elements) {
+						fw.write(el.toString() + ", " + String.join(",", options.get(overlang)) +", " +overlang +"\n");
 					}
 				}
 				fw.close();

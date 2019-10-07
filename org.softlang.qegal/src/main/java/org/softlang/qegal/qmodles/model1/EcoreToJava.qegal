@@ -1,0 +1,27 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+// #### Ecore Model ####
+(?ecoreModel, sl:manifestsAs, sl:File) Extension(?ecoreModel,"ecore") -> (?ecoreModel, sl:instanceOf, sl:EcoreModel).
+
+
+// #### Generator Model ####
+(?generatorModel, sl:manifestsAs, sl:File) Extension(?generatorModel,"genmodel") -> (?generatorModel, sl:instanceOf, sl:GeneratorModel).
+
+
+// #### Create Generator Model #####
+(?generatorModel, sl:instanceOf, sl:GeneratorModel) (?genmodelXMI, sl:partOf, ?generatorModel) (?genmodelXMI, sl:instanceOf, sl:GenmodelXMI) 
+	(?generatorModel, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) StrXml2(?genmodelXMI,"/c/foreignModel/text",?foreignModel) 
+	UriConcat(?folder,"/",?foreignModel, ?ecoreModel) (?ecoreModel, sl:instanceOf, sl:EcoreModel) 
+		-> (?genmodelXMI, sl:CreateGeneratorModel, ?ecoreModel).
+
+(?generatorModel, sl:instanceOf, sl:GeneratorModel) 
+  (?generatorModel, sl:partOf, ?folder)
+  StrXml2(?generatorModel,"//foreignModel/text",?foreignModel) 
+  UriConcat(?folder,"/",?foreignModel, ?ecoreModel)
+  ->  (?ecoreModel, sl:CreateGeneratorModel,?generatorModel).

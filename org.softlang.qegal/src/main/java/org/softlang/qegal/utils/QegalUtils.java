@@ -16,6 +16,7 @@ import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.Syntax;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -181,11 +182,11 @@ public class QegalUtils {
         return file.getAbsolutePath().replace("\\", "/");
     }
     
-    public static Set<String> query(Model model, String querytext){
-		Set<String> results = new HashSet<>();
+    public static Set<QuerySolution> query(Model model, String querytext){
+		Set<QuerySolution> results = new HashSet<>();
 		Query query = QueryFactory.create(querytext, Syntax.syntaxARQ);
 		try (QueryExecution qe = QueryExecutionFactory.create(query, model)) {
-			qe.execSelect().forEachRemaining(r -> results.add(r.get("?x").toString()));
+			qe.execSelect().forEachRemaining(results::add);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -1,0 +1,3 @@
+<repository:/model/PrimerPO.ecore> sl:instanceOf sl:EcoreModel.  
+<repository:/model/PrimerPO.genmodel> sl:instanceOf sl:GeneratorModel.
+<repository:/model/PrimerPO.ecore> sl:CreateGeneratorModel <repository:/model/PrimerPO.genmodel>.

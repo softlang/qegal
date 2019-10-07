@@ -43,7 +43,7 @@ public class GroundTruthTest {
 				String qtext = "PREFIX sl: <http://org.softlang.com/> \n" + "SELECT DISTINCT ?x WHERE { <" + uri
 						+ "> sl:elementOf ?x. }";
 				Set<String> languages = query(model, qtext).stream()
-														   .map(l -> l.replace("http://org.softlang.com/", ""))
+														   .map(l -> l.toString().replace("http://org.softlang.com/", ""))
 														   .collect(Collectors.toSet());
 				
 				languages.retainAll(underestimates);
