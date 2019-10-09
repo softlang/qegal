@@ -1,0 +1,11 @@
+repository:/model/PrimerPO.ecore sl:instanceOf sl:EcoreModel
+repository:/model/PrimerPO.genmodel sl:instanceOf sl:GeneratorModel
+repository:/model/PrimerPO.ecore sl:CreateGeneratorModel repository:/model/PrimerPO.genmodel
+repository:/src/ppo/Item.java sl:instanceOf sl:Interface
+repository:/src/ppo/PurchaseOrder.java sl:instanceOf sl:Interface
+repository:/src/ppo/impl/ItemImpl.java sl:instanceOf sl:InterfaceImpl
+repository:/src/ppo/impl/PurchaseOrderImpl.java sl:instanceOf sl:InterfaceImpl
+repository:/src/ppo/util/PpoAdapterFactory.java sl:instanceOf sl:AdapterFactory
+repository:/model/PrimerPO.genmodel#/element/content(4)/content(10) sl:GenerateJavaCode repository:/src/ppo/Item.java
+repository:/model/PrimerPO.genmodel#/element/content(4)/content(10) sl:GenerateJavaCode repository:/src/ppo/impl/ItemImpl.java
+repository:/model/PrimerPO.genmodel#/element/content(4) sl:GenerateJavaCode repository:/src/ppo/util/PpoAdapterFactory.java

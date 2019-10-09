@@ -1,0 +1,3 @@
+<repository:/src/ppo/PpoPackage.java> sl:instanceOf sl:Interface.
+<repository:/src/ppo/PpoFactory.java> sl:instanceOf sl:Interface.
+<repository:/src/ppo/PpoFactory.java> sl:instanceOf sl:AdapterFactory.

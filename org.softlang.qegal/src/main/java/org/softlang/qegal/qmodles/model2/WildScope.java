@@ -1,4 +1,4 @@
-package org.softlang.qegal.qmodles.model1;
+package org.softlang.qegal.qmodles.model2;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,9 +22,9 @@ public class WildScope {
 	public static final int GIT_INDEXED_MAX_SIZE = 384000;
 
 	public static void main(String[] args) throws IOException {
-		File eObjectProjectsCSV = new File("data/qmodles/model1/wild/files_eobject_raw.csv");
-		File genModelProjectsCSV = new File("data/qmodles/model1/wild/files_genmodel_raw.csv");
-		File ecoreModelProjectsCSV = new File("data/qmodles/model1/wild/files_ecoremodel_raw.csv");
+		File eObjectProjectsCSV = new File("data/qmodles/model2/wild/files_eobject_raw.csv");
+		File genModelProjectsCSV = new File("data/qmodles/model2/wild/files_genmodel_raw.csv");
+		File ecoreModelProjectsCSV = new File("data/qmodles/model2/wild/files_ecoremodel_raw.csv");
 		
 		queryEObject(eObjectProjectsCSV);
 		queryGenmodel(genModelProjectsCSV);

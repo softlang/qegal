@@ -1,4 +1,4 @@
-package org.softlang.qegal.qmodles.model1;
+package org.softlang.qegal.qmodles.model3;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,39 +22,14 @@ public class WildScope {
 	public static final int GIT_INDEXED_MAX_SIZE = 384000;
 
 	public static void main(String[] args) throws IOException {
-		File eObjectProjectsCSV = new File("data/qmodles/model1/wild/files_eobject_raw.csv");
-		File genModelProjectsCSV = new File("data/qmodles/model1/wild/files_genmodel_raw.csv");
-		File ecoreModelProjectsCSV = new File("data/qmodles/model1/wild/files_ecoremodel_raw.csv");
+		File eClassProjectsCSV = new File("data/qmodles/model3/wild/files_eclass_raw.csv");
 		
-		queryEObject(eObjectProjectsCSV);
-		queryGenmodel(genModelProjectsCSV);
-		queryEcore(ecoreModelProjectsCSV);
+		queryEClass(eClassProjectsCSV);
 	}
 
-	public static void queryEObject(File file) throws IOException {
-		String query = "https://api.github.com/search/code?q=%22extends%20EObject%20{%22+language:java";
+	public static void queryEClass(File file) throws IOException {
+		String query = "https://api.github.com/search/code?q=%22extends%20EClass%20{%22+language:java";
 
-		//int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
-
-		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);
-		printer.printRecord("total", "low", "high", "page", "repository", "url");
-		collectAll(printer, query, 0, GIT_INDEXED_MAX_SIZE);
-		printer.close();
-	}
-
-	public static void queryGenmodel(File file) throws IOException {
-		String query = "https://api.github.com/search/code?q=GenModel+extension:genmodel";
-
-		//int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
-
-		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);
-		printer.printRecord("total", "low", "high", "page", "repository", "url");
-		collectAll(printer, query, 0, GIT_INDEXED_MAX_SIZE);
-		printer.close();
-	}
-
-	public static void queryEcore(File file) throws IOException {
-		String query = "https://api.github.com/search/code?q=EClass+extension:ecore";
 		//int totalCount = collect(query).getAsJsonObject().get("total_count").getAsInt();
 
 		CSVPrinter printer = CSVFormat.DEFAULT.print(file, Charsets.UTF_8);

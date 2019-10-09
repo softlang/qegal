@@ -1,0 +1,103 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+@prefix env: <http://org.softlang.com/env/>.
+@prefix cls: <http://org.softlang.com/emf/>.
+
+// #### Ecore Model ####
+(?ecoreModel, sl:manifestsAs, sl:File) Extension(?ecoreModel,"ecore") -> (?ecoreModel, sl:instanceOf, sl:EcoreModel).
+
+// #### Generator Model ####
+(?generatorModel, sl:manifestsAs, sl:File) Extension(?generatorModel,"genmodel") -> (?generatorModel, sl:instanceOf, sl:GeneratorModel).
+
+// #### Create Generator Model #####
+(?generatorModel, sl:instanceOf, sl:GeneratorModel) 
+  (?generatorModel, sl:partOf, ?folder)
+  StrXml2(?generatorModel,"//foreignModel/text",?foreignModel) 
+  UriConcat(?folder,"/",?foreignModel, ?ecoreModel)
+  ->  (?ecoreModel, sl:CreateGeneratorModel,?generatorModel).
+
+// #### Interface ####
+instance (<cls:EObject>, sl:elementOf, sl:Java).
+instance (<cls:EObject>, env:sname, "EObject").
+instance (<cls:EObject>, env:qname, "org.eclipse.emf.ecore.EObject").
+
+(?interface, sl:extend, <cls:EObject>) 
+ -> (?interface, sl:instanceOf, sl:Interface).
+(?super, sl:instanceOf, sl:Interface) (?interface, sl:extend, ?super) 
+ -> (?interface, sl:instanceOf, sl:Interface).		
+
+// #### Interface Implementation ####
+(?interface, sl:instanceOf, sl:Interface) (?impl, sl:implement, ?interface)  
+ -> (?impl, sl:instanceOf, sl:InterfaceImpl).
+
+// ### AdapterFactoryImpl Instance Triple ####
+instance (<cls:AdapterFactoryImpl>, sl:elementOf, sl:Java).
+instance (<cls:AdapterFactoryImpl>, env:sname, "AdapterFactoryImpl").
+instance (<cls:AdapterFactoryImpl>, env:qname, "org.eclipse.emf.common.notify.impl.AdapterFactoryImpl").
+
+(?adaptfac, sl:extend, <cls:AdapterFactoryImpl>)
+ -> (?adaptfac, sl:instanceOf, sl:AdapterFactory).
+
+// ### Generate Java Code Helpers ###
+
+(?genmodel, sl:instanceOf, sl:GeneratorModel) -> (?genmodel, sl:elementOf, sl:XMI).
+(?ecore, sl:instanceOf, sl:EcoreModel) -> (?ecore, sl:elementOf, sl:XMI).
+
+(?ePackage, sl:elementOf, sl:XMIElement) StrXml2(?ePackage,"/name","ecore:EPackage") -> (?ePackage, sl:instanceOf, sl:EPackage).
+
+(?ecoreModel, sl:CreateGeneratorModel, ?genmodel)
+ (?genmodelroot, sl:partOf,?genmodel) 
+ (?genPackage, sl:partOf, ?genmodelroot) 
+ (?genPackage, sl:instanceOf, sl:GeneratorPackage)
+ (?ePackage, sl:instanceOf, sl:EPackage) 
+ (?ePackage,sl:partOf,?ecoreModel)
+	-> (?ePackage, sl:CreateGeneratorModelPackage, ?genPackage).
+
+// Generator root.
+(?genmodelroot, sl:elementOf, sl:XMIElement) StrXml2(?genmodelroot,"/name","genmodel:GenModel") -> (?genmodelroot, sl:instanceOf, sl:GeneratorRoot).
+
+(?genmodelroot, sl:instanceOf, sl:GeneratorRoot) (?genPackage, sl:partOf, ?genmodelroot)
+	StrXml2(?genPackage,"/name","genPackages") -> (?genPackage, sl:instanceOf, sl:GeneratorPackage).
+
+(?genPackage, sl:instanceOf, sl:GeneratorPackage) (?genClass, sl:partOf, ?genPackage) (?genClass, sl:elementOf, sl:XMIElement) 
+	StrXml2(?genClass,"/name","genClasses") -> (?genClass, sl:instanceOf, sl:GeneratorClass).
+
+// Naming (GenPackage).
+(?ePackage, sl:CreateGeneratorModelPackage, ?genPackage) 
+ StrXml2(?genPackage,"/a/basePackage",?basePackage) 
+ StrXml2(?ePackage,"/a/name",?pkgname) 
+ StrConcat(?basePackage,".", ?pkgname,?qname) ->
+ 	(?genPackage,env:qname,?qname).
+ 	
+(?ePackage, sl:CreateGeneratorModelPackage, ?genPackage) 
+ StrXml2(?ePackage,"/a/name",?pkgname)  ->
+ 	(?genPackage,env:qname,?pkgname).
+
+// Naming (GenClass). 	
+(?genClass, sl:instanceOf, sl:GeneratorClass) StrXml2(?genClass,"/a/ecoreClass",?text) Regex(?text,"(.*?)(#//)(.*)",?t1,?t2,?sname) -> 
+ 	(?genClass,env:sname,?sname).
+ 	
+// Name inheritance Class
+(?low, sl:instanceOf,sl:GeneratorClass) (?low, sl:partOf, ?top) 
+  (?top, env:qname,?qname) (?low, env:sname,?sname) StrConcat(?qname,".",?sname,?name) 
+  ->  (?low, env:qname,?name).
+
+// ### Generate Java Code ###
+(?genClass, sl:instanceOf, sl:GeneratorClass) (?genClass,env:qname,?qname) 
+	(?interface, sl:instanceOf, sl:Interface) (?interface,env:qname,?qname) 
+	  -> (?genClass , sl:GenerateJavaCode, ?interface).
+
+(?genClass, sl:GenerateJavaCode, ?interface) (?impl, sl:implement, ?interface)
+ -> (?genClass, sl:GenerateJavaCode, ?impl).
+ 
+(?genPackage, sl:instanceOf, sl:GeneratorPackage)
+ (?genPackage, env:qname, ?qname)
+ StrConcat(?qname,".","util", ?util)
+ (?utilPackage, env:qname, ?util)
+ (?adaptFac, sl:instanceOf, sl:AdapterFactory) (?adaptFac, sl:partOf, ?utilPackage)
+  -> (?genPackage, sl:GenerateJavaCode, ?adaptFac).

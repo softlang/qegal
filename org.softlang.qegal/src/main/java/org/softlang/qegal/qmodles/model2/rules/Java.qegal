@@ -1,0 +1,82 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+import org.softlang.qegal.buildins.string.*
+import org.apache.jena.reasoner.rulesys.builtins.*
+
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+
+@prefix env: <http://org.softlang.com/env/>.
+
+// #### AST Creation #############################################################################################
+// # Create Java Classes AST.
+(?jfile, sl:manifestsAs, sl:File) Extension(?jfile, "java") -> (?jfile, sl:elementOf, sl:Java).
+ 
+// # Create Packages AST (if it contains one Java file).
+(?package, sl:manifestsAs, sl:Folder) (?jfile, sl:partOf, ?package) (?jfile, sl:elementOf, sl:Java) -> (?package, sl:elementOf, sl:PackageJava).
+
+// # Create Java extended and implemented types AST.
+(?class, sl:elementOf, sl:Java) -> 
+	DecJava(?class,"type[1]/extendedTypes", sl:partOf, ?class) 
+	DecJava(?class,"type[1]/extendedTypes", sl:elementOf, sl:ExtendedTypeJava).
+(?class, sl:elementOf, sl:Java) -> 
+	DecJava(?class,"type[1]/implementedTypes", sl:partOf, ?class) 
+	DecJava(?class,"type[1]/implementedTypes", sl:elementOf, sl:ImplementedTypeJava).
+	
+// # Create Java Imports AST.
+(?class, sl:elementOf, sl:Java) -> 
+	DecJava(?class,"imports", sl:partOf, ?class) 
+	DecJava(?class,"imports", sl:elementOf, sl:ImportJava).
+
+// #### AST (qualified) naming #############################################################################################
+
+// # Naming the package (Qualified).
+(?package, sl:elementOf, sl:PackageJava) (?jfile, sl:elementOf, sl:Java) 
+	(?jfile,sl:partOf, ?package) StrJava(?jfile, "packageDeclaration/value/name", ?qname)  -> 
+		(?package, env:qname, ?qname).
+		
+// # Naming the class (Simple).
+(?jfile, sl:elementOf, sl:Java) StrJava(?jfile, "type[1]/name", ?name) -> (?jfile, env:sname, ?name).
+ 
+// # Name inheritance Class, Method and Field.
+(?low, sl:elementOf,sl:Java)  (?top, sl:elementOf, sl:PackageJava) (?low, sl:partOf, ?top) 
+	(?top, env:qname,?qname) (?low, env:sname,?sname) StrConcat(?qname,".",?sname,?name) ->  (?low, env:qname,?name).
+
+// #### Scopes #############################################################################################
+
+// Self in 'e' scope
+(?package, sl:elementOf,sl:PackageJava)->  (?package, env:escope, ?package).
+(?jfile, sl:elementOf, sl:Java) ->  (?jfile, env:escope, ?jfile).
+
+(?package, sl:elementOf,sl:PackageJava) ->  (?package, env:inscope, ?package).
+(?jfile, sl:elementOf, sl:Java) ->  (?jfile, env:inscope, ?jfile).
+
+// # Specific 'in' scope rules.
+(?jfile, sl:elementOf, sl:Java) (?package, sl:elementOf,sl:PackageJava)   (?jfile, sl:partOf, ?package) -> (?jfile, env:inscope, ?package).
+
+// # Specific 'use' scope rules (now with extend and implement type node).
+(?jfile, sl:elementOf, sl:Java) (?package, sl:elementOf,sl:PackageJava)   (?jfile, sl:partOf, ?package) -> (?jfile, env:usescope, ?package).
+(?jfile, sl:elementOf, sl:Java) (?implements, sl:elementOf,sl:ImplementedTypeJava)   (?implements, sl:partOf, ?jfile) -> (?implements, env:usescope, ?jfile).
+(?jfile, sl:elementOf, sl:Java) (?extends, sl:elementOf,sl:ExtendedTypeJava)   (?extends, sl:partOf, ?jfile) -> (?extends, env:usescope, ?jfile).
+
+// # Propagation of 'e', 'in' and 'use' scope.
+(?x, env:inscope, ?y) (?y, env:inscope, ?z) -> (?x, env:inscope, ?z).
+(?x, env:usescope, ?y) (?y, env:usescope, ?z) -> (?x, env:usescope, ?z).
+(?x, env:usescope, ?y) (?y, env:escope, ?z) -> (?x, env:escope, ?z).
+
+// # Import 'e' scope by qualified name.
+(?import,sl:partOf,?jfile) (?import, sl:elementOf, sl:ImportJava) StrJava(?import, "/name", ?qimport) (?rimport,env:qname,?qimport) ->
+	(?jfile,env:escope,?rimport). 
+
+// #### Type Resolution #############################################################################################
+
+// # Search something in the scope that is named according to the sname.
+(?implements, sl:partOf, ?jfile) (?jfile,sl:elementOf,sl:Java)
+	(?implements, sl:elementOf,sl:ImplementedTypeJava) StrJava(?implements, "/name", ?sname) (?implements,env:escope,?scope) 
+	(?reference, env:inscope, ?scope) (?reference,env:sname,?sname) (?reference, sl:elementOf, sl:Java)
+	-> (?jfile,sl:implement,?reference).
+		
+(?implements, sl:partOf, ?jfile) (?jfile,sl:elementOf,sl:Java)
+	(?implements, sl:elementOf,sl:ExtendedTypeJava) StrJava(?implements, "/name", ?sname) (?implements,env:escope,?scope) 
+	(?reference, env:inscope, ?scope) (?reference,env:sname,?sname) (?reference, sl:elementOf, sl:Java)
+	-> (?jfile,sl:extend,?reference).

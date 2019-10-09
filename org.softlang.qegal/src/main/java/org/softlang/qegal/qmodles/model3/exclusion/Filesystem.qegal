@@ -1,0 +1,47 @@
+import org.softlang.qegal.buildins.decompose.*
+import org.softlang.qegal.buildins.*
+
+import org.apache.jena.reasoner.rulesys.builtins.*
+/* Default softlang namespace */
+@prefix sl: <http://org.softlang.com/>.
+@prefix sys: <http://org.softlang.com/qegal/>.
+instance (<repository:/>, sl:manifestsAs, sl:Folder).
+
+// Recursive filesystem decomposition.
+(?folder, sl:manifestsAs, sl:Folder)  -> DecFs(?folder, "/*", sl:partOf, ?folder).
+
+(?artifact, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) IsDirectory(?artifact) ->
+    (?artifact, sl:manifestsAs, sl:Folder).
+    
+(?artifact, sl:partOf, ?folder) (?folder, sl:manifestsAs, sl:Folder) IsFile(?artifact) ->
+    (?artifact, sl:manifestsAs, sl:File).
+
+(sys:Evaluation,?l, ?x)  <- (?x, sl:facilitates, ?l).
+
+//Mining Inclusion Properties
+(?file, sl:manifestsAs, sl:File) Extension(?file, "ecore") 		Read(?file,?content) Regex(?content,"(?s).*EClass.*") ->  				(?file, sl:facilitates, sl:Ecore).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "genmodel") 	Read(?file,?content) Regex(?content,"(?s).*genmodel.*") ->  			(?file, sl:facilitates, sl:GeneratorModel).
+
+//Mining Exclusion Properties
+(?file, sl:manifestsAs, sl:File) Extension(?file, "atl") 		Read(?file,?content) Regex(?content,"(?s).*rule.*") ->  				(?file, sl:facilitates, sl:ATL).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "xtext") 		Read(?file,?content) Regex(?content,"(?s).*grammar.*") ->  				(?file, sl:facilitates, sl:Xtext).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "qvto") 		Read(?file,?content) Regex(?content,"(?s).*transformation.*") ->  		(?file, sl:facilitates, sl:QVTo).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "emf") 		Read(?file,?content) Regex(?content,"(?s).*class.*") ->  				(?file, sl:facilitates, sl:Emfatic).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "mtl") 		Read(?file,?content) Regex(?content,"(?s).*template.*") ->  			(?file, sl:facilitates, sl:Acceleo).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "egl") 		Read(?file,?content) Regex(?content,"(?s).*var.*") ->  					(?file, sl:facilitates, sl:EGL).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "eiq") 		Read(?file,?content) Regex(?content,"(?s).*pattern.*") ->  				(?file, sl:facilitates, sl:IncQuery).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "ecore") 		Read(?file,?content) Regex(?content,"(?s).*gmf.diagram.*") -> 			(?file, sl:facilitates, sl:Eugenia).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "gmfgraph") 	Read(?file,?content) Regex(?content,"(?s).*figure.*") ->  				(?file, sl:facilitates, sl:GMF).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "eol") 		Read(?file,?content) Regex(?content,"(?s).*var.*") ->  					(?file, sl:facilitates, sl:EOL).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "etl") 		Read(?file,?content) Regex(?content,"(?s).*transform.*") ->  			(?file, sl:facilitates, sl:ETL).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "evl") 		Read(?file,?content) Regex(?content,"(?s).*context.*") ->  				(?file, sl:facilitates, sl:EVL).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "ocl") 		Read(?file,?content) Regex(?content,"(?s).*context.*") ->  				(?file, sl:facilitates, sl:OCL).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "odesign") 	Read(?file,?content) Regex(?content,"(?s).*node.*") ->  				(?file, sl:facilitates, sl:Sirius).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "henshin") 	Read(?file,?content) Regex(?content,"(?s).*rule.*") ->  				(?file, sl:facilitates, sl:Henshin).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "m2t") 		Read(?file,?content) Regex(?content,"(?s).*texttransformation.*") ->  	(?file, sl:facilitates, sl:MOFScript).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "kmt") 		Read(?file,?content) Regex(?content,"(?s).*class.*") ->  				(?file, sl:facilitates, sl:Kermeta).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "xcore") 		Read(?file,?content) Regex(?content,"(?s).*class.*") ->  				(?file, sl:facilitates, sl:Xcore).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "javajet") 	Read(?file,?content) Regex(?content,"(?s).*jet.*") ->  					(?file, sl:facilitates, sl:JET).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "cs") 		Read(?file,?content) Regex(?content,"(?s).*syntaxdef.*") ->  			(?file, sl:facilitates, sl:EMFText).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "xpt") 		Read(?file,?content) Regex(?content,"(?s).*for.*") ->  					(?file, sl:facilitates, sl:Xpand).
+(?file, sl:manifestsAs, sl:File) Extension(?file, "java") 		Read(?file,?content) Regex(?content,"(?s).*extends EClass.*") ->  		(?file, sl:facilitates, sl:EClass).
