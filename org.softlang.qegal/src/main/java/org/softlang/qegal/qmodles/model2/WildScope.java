@@ -26,7 +26,7 @@ public class WildScope {
 		File genModelProjectsCSV = new File("data/qmodles/model2/wild/files_genmodel_raw.csv");
 		File ecoreModelProjectsCSV = new File("data/qmodles/model2/wild/files_ecoremodel_raw.csv");
 		
-		queryEObject(eObjectProjectsCSV);
+		//queryEObject(eObjectProjectsCSV);
 		queryGenmodel(genModelProjectsCSV);
 		queryEcore(ecoreModelProjectsCSV);
 	}
