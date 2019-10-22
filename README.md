@@ -6,9 +6,7 @@ Rule-based fact extraction in a megamodeling context
 * The top-level project [org.softlang.qegal](https://github.com/softlang/qegal/tree/master/org.softlang.qegal) contains the **mining** related aspects.
 * The top-level projects [org.softlang.qegal.lang](https://github.com/softlang/qegal/tree/master/org.softlang.qegal.lang), [org.softlang.qegal.lang.ide](https://github.com/softlang/qegal/tree/master/org.softlang.qegal.lang.ide) and [org.softlang.qegal.lang.ui](https://github.com/softlang/qegal/tree/master/org.softlang.qegal.lang.ui) contain the **Xtext IDE Support**.
 
-* The **data-set**, including the repository lists and all results, are available in the [data folder of project org.softlang.qegal](https://github.com/softlang/qegal/tree/master/org.softlang.qegal/data) (for preserving relative references).
-* All available **rules** for EMF and layout detection are located in the java package [org.softlang.qegal.modules](https://github.com/softlang/qegal/tree/master/org.softlang.qegal/src/main/java/org/softlang/qegal/modules) as '.qegal' files. The rules can be accessed using a simple text editor or the deployed XText IDE.
-* All available (mining) **processes** are located in the java package [org.softlang.qegal.process](https://github.com/softlang/qegal/tree/master/org.softlang.qegal/src/main/java/org/softlang/qegal/process) an can be used to update the data folder.
+* The **data-sets for megamodel vaidation** are available as [subfolders of the qmodles package](https://github.com/softlang/qegal/tree/mdls/org.softlang.qegal/src/main/java/org/softlang/qegal/qmodles). Please, find more advice in the respective subfolders.
 
 ## How to reproduce the inference:
 * Import the [org.softlang.qegal](https://github.com/softlang/qegal/tree/master/org.softlang.qegal) project into an Eclipse workspace.
